@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "catalog_version": 1,
+  "updated_at": "2026-10-07T19:38:00-04:00",
+  "courses": [
+    {
+      "id": "gbm3000-cardio-1a",
+      "version": 1,
+      "title": "GBM3000 · Cardiovasculaire 1A",
+      "subtitle": "Physiologie, systèmes et technologies — Martin Aguilar",
+      "url": "./gbm3000-cardio-1a.json",
+      "sha256": "d2e505a2f974cb3cb26c63c178825195c1c742977c8fd90b035665892e18866f",
+      "card_count": 59,
+      "exam_count": 36,
+      "qcm_count": 6
+    }
+  ]
+}
