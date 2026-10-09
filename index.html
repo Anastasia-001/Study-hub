@@ -2,9 +2,10 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<meta name="theme-color" content="#071d2a">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f6f4">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Study Hub">
 <title>Study Hub</title>
@@ -13,8 +14,11 @@
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<div id="app"><div class="screen panel home"><div class="eyebrow">Study Hub</div><h1>Chargement…</h1><p>Préparation des cours hors ligne.</p></div></div>
-<div id="toast" class="toast"></div>
+<div id="app"><div class="loading"><b>studyhub.</b><p>Préparation de ta bibliothèque…</p></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="help"><div class="dialog-header"><h2>Study Hub sur iPhone</h2><button id="closeHelp" aria-label="Fermer">×</button></div><ol><li>Ouvre ce site dans <b>Safari</b>.</li><li>Touche <b>Partager → Sur l’écran d’accueil</b>. Active « Ouvrir comme app web » si cette option apparaît, puis Ajouter.</li><li>Ouvre <b>Study Hub depuis sa nouvelle icône</b>, avec Internet, et attends « Prêt pour le hors ligne » ainsi que « Disponible sans Internet » sur chaque cours.</li><li>Active le mode avion, ferme l’app, puis rouvre-la depuis son icône. Vérifie les questions et les réponses.</li></ol><p>Les cours se synchronisent quand tu ouvres l’app, reviens dedans ou retrouves une connexion pendant son utilisation. iOS ne garantit pas la synchronisation lorsque l’app est fermée.</p><p>La progression reste sur cet appareil. iOS peut libérer du stockage : conserve une sauvegarde si tu changes d’appareil ou effaces les données du navigateur.</p><label class="import-label">Restaurer une sauvegarde de progression<input id="importProgress" type="file" accept="application/json,.json"></label></dialog>
+<noscript>Active JavaScript pour utiliser Study Hub.</noscript>
+
 <script src="./app.js" defer></script>
 </body>
 </html>

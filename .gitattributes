@@ -1,0 +1,7 @@
+# Course SHA-256 hashes cover exact bytes. Git must not rewrite JSON line endings.
+*.json -text
+*.js text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf

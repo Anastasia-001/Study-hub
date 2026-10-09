@@ -1,0 +1,7 @@
+{
+  "name": "study-hub",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {"check": "node scripts/catalog.cjs --check", "catalog": "node scripts/catalog.cjs", "test": "node tests/pwa.cjs && node tests/upgrade.cjs"},
+  "devDependencies": {"playwright": "1.62.1"}
+}
