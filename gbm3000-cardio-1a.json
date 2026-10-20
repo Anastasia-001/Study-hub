@@ -1,1 +1,3078 @@
-{"schema":1,"id":"gbm3000-cardio-1a","version":1,"title":"GBM3000 · Cardiovasculaire 1A","subtitle":"Physiologie, systèmes et technologies — Martin Aguilar","updated_at":"2026-10-07T19:38:00-04:00","cards":[{"id":"card-001","section":"Électrophysiologie","exam":true,"qcm":false,"source":"21","question_html":"Pour un cardiomyocyte ventriculaire à réponse rapide, associe chaque phase 0 à 4 à son événement principal.","answer_html":"<b>0</b> dépolarisation rapide · <b>1</b> repolarisation précoce · <b>2</b> plateau · <b>3</b> repolarisation finale · <b>4</b> potentiel de repos."},{"id":"card-002","section":"Électrophysiologie","exam":true,"qcm":false,"source":"21","question_html":"Quels ions dominent les phases 0, 1, 2, 3 et 4 du potentiel d’action ventriculaire?","answer_html":"<b>0 : Na⁺</b> · <b>1 : K⁺</b> · <b>2 : Ca²⁺ + K⁺</b> · <b>3 : K⁺</b> · <b>4 : K⁺</b>."},{"id":"card-003","section":"Électrophysiologie","exam":true,"qcm":false,"source":"21","question_html":"Quelle phase correspond au plateau du potentiel d’action ventriculaire, et quels courants s’y opposent?","answer_html":"La <b>phase 2</b>. L’entrée de <b>Ca²⁺</b> et la sortie de <b>K⁺</b> contribuent ensemble au plateau."},{"id":"card-004","section":"Électrophysiologie","exam":true,"qcm":false,"source":"29","question_html":"À quoi ressemble la phase 4 d’une cellule à réponse rapide?","answer_html":"Elle est <b>stable</b> : la cellule reste au potentiel de repos jusqu’à être dépolarisée par une cellule voisine."},{"id":"card-005","section":"Électrophysiologie","exam":true,"qcm":false,"source":"29, 32","question_html":"Quels tissus cardiaques sont à réponse rapide?","answer_html":"Les <b>oreillettes</b>, les <b>ventricules</b> et le <b>système His–Purkinje</b>."},{"id":"card-006","section":"Électrophysiologie","exam":true,"qcm":false,"source":"29, 32","question_html":"Quels tissus cardiaques sont à réponse lente?","answer_html":"Le <b>nœud sino-auriculaire (NSA)</b> et le <b>nœud atrio-ventriculaire (NAV)</b>."},{"id":"card-007","section":"Électrophysiologie","exam":true,"qcm":false,"source":"29, 32","question_html":"Quel ion porte principalement la phase 0 des cellules à réponse rapide?","answer_html":"Le <b>Na⁺</b>, ce qui donne une dépolarisation très rapide."},{"id":"card-008","section":"Électrophysiologie","exam":true,"qcm":false,"source":"29","question_html":"Quel ion porte principalement la phase 0 des cellules à réponse lente du NSA/NAV?","answer_html":"Le <b>Ca²⁺</b>, principalement via le courant <b>I<sub>Ca,L</sub></b>, donc la dépolarisation est plus lente."},{"id":"card-009","section":"Électrophysiologie","exam":true,"qcm":false,"source":"29","question_html":"Quelle propriété de la phase 4 explique l’automatisme du NSA et du NAV?","answer_html":"La phase 4 présente une <b>dépolarisation spontanée lente</b>; le cours associe notamment cet automatisme à <b>I<sub>f</sub></b> et <b>I<sub>Ca,T</sub></b>."},{"id":"card-010","section":"Électrophysiologie","exam":true,"qcm":false,"source":"29","question_html":"Sur un potentiel d’action, quelle caractéristique renseigne sur la vitesse de conduction?","answer_html":"La <b>pente de la phase 0</b> : plus la dépolarisation est rapide, plus la conduction peut être rapide."},{"id":"card-011","section":"Électrophysiologie","exam":true,"qcm":false,"source":"32","question_html":"Résume la différence centrale entre réponse rapide et réponse lente en une phrase.","answer_html":"<b>Réponse rapide</b> : phase 0 surtout Na⁺, activation/récupération rapides. <b>Réponse lente</b> : phase 0 surtout Ca²⁺, activation/récupération lentes."},{"id":"card-012","section":"Électrophysiologie","exam":false,"qcm":false,"source":"16","question_html":"Quelles sont les deux propriétés fondamentales d’un canal ionique selon le cours?","answer_html":"La <b>sélectivité</b> ionique et le <b>gating</b> (mécanisme/cinétique d’ouverture et de fermeture)."},{"id":"card-013","section":"Électrophysiologie","exam":false,"qcm":false,"source":"16","question_html":"Quels trois types de dépendance d’ouverture des canaux ioniques sont explicitement mentionnés?","answer_html":"Dépendance au <b>voltage</b>, au <b>ligand</b> ou à l’<b>étirement (“stretch”)</b>."},{"id":"card-014","section":"Électrophysiologie","exam":false,"qcm":false,"source":"18","question_html":"Que fait l’ouverture d’un canal ionique au potentiel de membrane?","answer_html":"Elle ne « pousse » pas arbitrairement le potentiel : elle <b>tire V<sub>m</sub> vers le potentiel d’équilibre de l’ion</b>."},{"id":"card-015","section":"Électrophysiologie","exam":false,"qcm":false,"source":"22","question_html":"Dans l’analogie électrique du cardiomyocyte, que représentent la membrane, un canal ionique et un gradient ionique?","answer_html":"<b>Membrane lipidique = condensateur</b> · <b>canal ionique = conductance variable</b> · <b>gradient ionique = source de tension</b>."},{"id":"card-016","section":"Électrophysiologie","exam":false,"qcm":false,"source":"31","question_html":"Quels deux grands facteurs du modèle présenté déterminent la vitesse de conduction dans le tissu?","answer_html":"La <b>source</b> (vitesse de dépolarisation, donc dV/dt<sub>max</sub>) et le <b>couplage</b> entre cellules par les jonctions gap."},{"id":"card-017","section":"Électrophysiologie","exam":false,"qcm":false,"source":"31","question_html":"Pourquoi l’ischémie est-elle particulièrement arythmogène dans le modèle de propagation du cours?","answer_html":"Parce qu’elle peut à la fois <b>affaiblir la source</b> et <b>dégrader le couplage</b>, deux mécanismes qui ralentissent la conduction."},{"id":"card-018","section":"Électrophysiologie","exam":false,"qcm":false,"source":"33","question_html":"Quelles sont les fréquences intrinsèques des trois pacemakers hiérarchisés?","answer_html":"<b>NSA : 60–100/min</b> · <b>jonction AV : 40–60/min</b> · <b>Purkinje : 20–40/min</b>."},{"id":"card-019","section":"Couplage électromécanique","exam":true,"qcm":false,"source":"41","question_html":"Donne, dans l’ordre, les cinq étapes qui relient le plateau du potentiel d’action à la contraction.","answer_html":"1) Entrée de <b>Ca²⁺</b> pendant le plateau · 2) activation des <b>récepteurs à la ryanodine</b> du RS · 3) libération massive de Ca²⁺ du RS · 4) activation des myofilaments <b>actine–myosine</b> · 5) récupération active du Ca²⁺ et restauration de sa concentration."},{"id":"card-020","section":"Couplage électromécanique","exam":true,"qcm":false,"source":"38","question_html":"Quel est le principe du « Ca²⁺-induced Ca²⁺ release » dans le cardiomyocyte?","answer_html":"Une <b>petite entrée de Ca²⁺</b> à travers la membrane déclenche une <b>libération beaucoup plus grande de Ca²⁺</b> depuis le réticulum sarcoplasmique."},{"id":"card-021","section":"Couplage électromécanique","exam":true,"qcm":false,"source":"41, 43","question_html":"Où se trouvent les récepteurs à la ryanodine, et que font-ils?","answer_html":"Sur la membrane du <b>réticulum sarcoplasmique</b>; leur activation provoque la libération de Ca²⁺ du RS dans le cytosol."},{"id":"card-022","section":"Couplage électromécanique","exam":true,"qcm":false,"source":"39","question_html":"Comment le Ca²⁺ permet-il l’interaction entre actine et myosine?","answer_html":"Le Ca²⁺ se lie à la <b>troponine C (TnC)</b>, ce qui retire l’inhibition exercée par <b>TnI</b>; actine et myosine peuvent alors interagir."},{"id":"card-023","section":"Couplage électromécanique","exam":true,"qcm":false,"source":"38, 41","question_html":"Quel est le rôle de SERCA après la contraction?","answer_html":"SERCA <b>repompe le Ca²⁺ cytosolique dans le réticulum sarcoplasmique</b>, contribuant à la relaxation et à la restauration de l’homéostasie calcique."},{"id":"card-024","section":"Couplage électromécanique","exam":true,"qcm":false,"source":"38, 43","question_html":"À quelle phase du potentiel d’action commence le couplage électromécanique présenté dans le cours?","answer_html":"À la <b>phase 2, le plateau</b>, avec l’entrée de Ca²⁺."},{"id":"card-025","section":"Couplage électromécanique","exam":false,"qcm":false,"source":"42, 88","question_html":"Pourquoi la longue durée du potentiel d’action ventriculaire protège-t-elle le cœur contre le tétanos?","answer_html":"La période réfractaire dure presque aussi longtemps que la contraction; une nouvelle activation ne peut donc pas s’additionner immédiatement à la précédente pour produire un tétanos."},{"id":"card-026","section":"Couplage électromécanique","exam":false,"qcm":false,"source":"80","question_html":"De combien de temps environ l’activité électrique précède-t-elle l’activité mécanique?","answer_html":"Environ <b>20 à 50 ms</b>."},{"id":"card-027","section":"Propagation","exam":true,"qcm":false,"source":"45, 47","question_html":"Mets le trajet normal d’activation électrique dans l’ordre.","answer_html":"<b>NSA → oreillettes → NAV → système His–Purkinje → ventricules</b>."},{"id":"card-028","section":"Propagation","exam":true,"qcm":false,"source":"45","question_html":"Quel est le rôle du nœud sino-auriculaire dans le cycle cardiaque?","answer_html":"Il <b>initie le cycle cardiaque</b> et déclenche l’activation des oreillettes."},{"id":"card-029","section":"Propagation","exam":true,"qcm":false,"source":"45, 49","question_html":"Quel est le rôle fonctionnel principal du NAV dans la séquence d’activation?","answer_html":"Il <b>transmet l’influx vers les ventricules avec un délai</b>, ce qui laisse du temps au sang de passer des oreillettes aux ventricules."},{"id":"card-030","section":"Propagation","exam":true,"qcm":false,"source":"45, 50","question_html":"Pourquoi le système His–Purkinje est-il essentiel à l’activation ventriculaire?","answer_html":"Il assure une <b>transmission très rapide</b> de l’influx vers les deux ventricules afin d’activer le myocarde ventriculaire de façon coordonnée."},{"id":"card-031","section":"Propagation","exam":true,"qcm":false,"source":"48","question_html":"Lors de la contraction des oreillettes, quelles valves sont ouvertes pour permettre le remplissage ventriculaire?","answer_html":"Les valves <b>tricuspide</b> et <b>mitrale</b>."},{"id":"card-032","section":"Propagation","exam":true,"qcm":false,"source":"51","question_html":"Lors de la contraction des ventricules, quelles valves s’ouvrent pour l’éjection?","answer_html":"Les valves <b>pulmonaire</b> et <b>aortique</b>."},{"id":"card-033","section":"Propagation","exam":true,"qcm":false,"source":"47–52","question_html":"Quel trajet suit le sang désoxygéné à travers le cœur droit jusqu’aux poumons?","answer_html":"<b>Veines caves → oreillette droite → tricuspide → ventricule droit → valve pulmonaire → artère pulmonaire → poumons</b>."},{"id":"card-034","section":"Propagation","exam":true,"qcm":false,"source":"47–52","question_html":"Quel trajet suit le sang oxygéné depuis les poumons jusqu’à la circulation systémique?","answer_html":"<b>Veines pulmonaires → oreillette gauche → mitrale → ventricule gauche → valve aortique → aorte → perfusion systémique</b>."},{"id":"card-035","section":"Propagation","exam":true,"qcm":false,"source":"52","question_html":"Quelle grande artère transporte du sang désoxygéné, et laquelle transporte du sang oxygéné?","answer_html":"L’<b>artère pulmonaire</b> transporte du sang désoxygéné; l’<b>aorte</b> transporte du sang oxygéné."},{"id":"card-036","section":"Propagation","exam":false,"qcm":false,"source":"53","question_html":"Compare les vitesses de conduction approximatives des oreillettes, du NAV, du His–Purkinje et du myocarde ventriculaire.","answer_html":"<b>Oreillettes ≈ 1 m/s</b> · <b>NAV ≈ 0,05 m/s</b> · <b>His–Purkinje ≈ 2–4 m/s</b> · <b>myocarde ventriculaire ≈ 0,3–1 m/s</b>."},{"id":"card-037","section":"Propagation","exam":false,"qcm":false,"source":"56","question_html":"Comment l’activation électrique passe-t-elle d’un cardiomyocyte au suivant?","answer_html":"Par les <b>jonctions gap</b>, qui laissent passer le courant d’une cellule activée vers une cellule au repos; si le seuil est atteint, cette cellule génère à son tour un potentiel d’action."},{"id":"card-038","section":"Propagation","exam":false,"qcm":false,"source":"58","question_html":"Quel effet une cicatrice myocardique a-t-elle sur la propagation électrique?","answer_html":"La cicatrice <b>ne conduit plus normalement</b>; l’influx doit la contourner, ce qui peut désorganiser la propagation."},{"id":"card-039","section":"Propagation","exam":false,"qcm":false,"source":"57","question_html":"Pourquoi dit-on que la conduction dans le myocarde est anisotrope?","answer_html":"Parce que la <b>vitesse de propagation dépend de l’orientation des fibres</b> et de leur organisation cellulaire."},{"id":"card-040","section":"ECG","exam":true,"qcm":false,"source":"69–70","question_html":"Que mesure réellement un ECG de surface?","answer_html":"Une <b>différence de potentiel électrique entre des électrodes</b>; ce n’est pas une mesure directe d’une activité locale unique."},{"id":"card-041","section":"ECG","exam":true,"qcm":false,"source":"75–77","question_html":"Comment le cours définit-il l’ECG?","answer_html":"Comme une <b>représentation graphique de l’activation électrique du cœur</b>."},{"id":"card-042","section":"ECG","exam":true,"qcm":false,"source":"81","question_html":"À quoi correspond l’onde P?","answer_html":"À l’<b>activation électrique des oreillettes</b>."},{"id":"card-043","section":"ECG","exam":true,"qcm":false,"source":"81, 84","question_html":"À quoi correspond le complexe QRS?","answer_html":"À la <b>dépolarisation / activation des ventricules</b>."},{"id":"card-044","section":"ECG","exam":true,"qcm":false,"source":"81","question_html":"À quoi correspond l’onde T?","answer_html":"À la <b>repolarisation des ventricules</b>."},{"id":"card-045","section":"ECG","exam":true,"qcm":false,"source":"53, 81","question_html":"Quel événement de la séquence cardiaque est principalement reflété par l’intervalle PR?","answer_html":"Le temps entre l’activation auriculaire et l’activation ventriculaire, incluant le <b>délai de conduction au NAV</b>."},{"id":"card-046","section":"ECG","exam":true,"qcm":false,"source":"77","question_html":"Pourquoi parle-t-on de 12 dérivations ECG?","answer_html":"Parce que l’activité électrique du cœur est présentée sous <b>12 angles de vue différents</b>."},{"id":"card-047","section":"ECG","exam":true,"qcm":false,"source":"73","question_html":"Combien d’électrodes sont utilisées pour obtenir un ECG standard à 12 dérivations?","answer_html":"<b>10 électrodes</b>."},{"id":"card-048","section":"ECG","exam":true,"qcm":false,"source":"77–78","question_html":"Combien de signaux réellement indépendants contient un ECG à 12 dérivations?","answer_html":"<b>8 signaux indépendants</b> : les six dérivations frontales se déduisent de deux mesures indépendantes, auxquelles s’ajoutent les six précordiales."},{"id":"card-049","section":"ECG","exam":true,"qcm":false,"source":"78","question_html":"Quelle relation d’Einthoven relie les dérivations I, II et III?","answer_html":"<b>II = I + III</b>, donc <b>III = II − I</b>."},{"id":"card-050","section":"ECG","exam":false,"qcm":false,"source":"71","question_html":"Quelles sont les grandes caractéristiques du signal ECG utile dans le cahier des charges du cours?","answer_html":"Amplitude utile <b>0,5–2 mV</b> · bande diagnostique <b>0,05–150 Hz</b> · bruit d’entrée <b>&lt; 10 µV</b> · offset d’électrode jusqu’à <b>±300 mV</b>."},{"id":"card-051","section":"ECG","exam":false,"qcm":false,"source":"71","question_html":"Quels sont les trois parasites ECG explicitement à nommer dans le cours?","answer_html":"Le <b>60 Hz du réseau</b>, l’<b>EMG</b> et le <b>mouvement de la ligne de base</b>."},{"id":"card-052","section":"ECG","exam":false,"qcm":false,"source":"72","question_html":"Pourquoi un mauvais filtre passe-haut peut-il devenir un problème clinique sur un ECG?","answer_html":"Parce qu’il peut <b>déformer le segment ST</b> et ainsi créer ou masquer l’apparence d’un infarctus."},{"id":"card-053","section":"ECG","exam":false,"qcm":false,"source":"82–83","question_html":"Quel changement ECG est proposé dans le cours pour un infarctus aigu?","answer_html":"Un <b>déplacement du segment ST vers le haut ou vers le bas</b>."},{"id":"card-054","section":"QCM du prof","exam":true,"qcm":true,"source":"23","question_html":"QCM — Lequel est vrai?<br/><br/>1. Phase 0 = courant Ca²⁺<br/>2. Phase 1 = courant K⁺<br/>3. Phase 2 = courant Na⁺<br/>4. Phase 3 = potentiel de repos<br/>5. Phase 4 = plateau","answer_html":"<b>Réponse : 2.</b> La phase 1 correspond à une repolarisation précoce portée par un courant K⁺."},{"id":"card-055","section":"QCM du prof","exam":true,"qcm":true,"source":"35","question_html":"QCM — Laquelle est vraie?<br/><br/>1. Réponse rapide = oreillettes + NSA + NAV<br/>2. Réponse rapide = phase 0 déterminée par Na⁺<br/>3. Réponse rapide = adultes, lente = enfants<br/>4. Réponse lente = oreillettes + ventricules + His–Purkinje","answer_html":"<b>Réponse : 2.</b> Les cellules à réponse rapide ont une phase 0 déterminée principalement par le Na⁺."},{"id":"card-056","section":"QCM du prof","exam":true,"qcm":true,"source":"43","question_html":"QCM — Laquelle est fausse?<br/><br/>1. Le couplage électromécanique convertit l’énergie électrique en énergie mécanique<br/>2. La mitochondrie stocke le Ca²⁺ nécessaire au couplage<br/>3. Le couplage débute avec la phase 2<br/>4. Les récepteurs à la ryanodine sont sur le réticulum sarcoplasmique","answer_html":"<b>Réponse : 2.</b> Le cours présente le <b>réticulum sarcoplasmique</b>, et non la mitochondrie, comme réservoir principal du Ca²⁺ libéré pour le couplage."},{"id":"card-057","section":"QCM du prof","exam":true,"qcm":true,"source":"54","question_html":"QCM — Lequel est vrai?<br/><br/>1. Activation des oreillettes → ouverture pulmonaire/aortique<br/>2. Activation ventriculaire immédiatement avant l’ouverture pulmonaire/aortique<br/>3. Le délai NAV permet le transit à travers tricuspide et aortique<br/>4. His–Purkinje active rapidement les deux oreillettes","answer_html":"<b>Réponse : 2.</b> L’activation des ventricules précède leur contraction et l’ouverture des valves pulmonaire et aortique."},{"id":"card-058","section":"QCM du prof","exam":true,"qcm":true,"source":"66","question_html":"QCM — Lequel est faux?<br/><br/>1. La membrane cellulaire peut être approximée par un capaciteur<br/>2. La connexion électrique entre cardiomyocytes peut être approximée par une diode<br/>3. L’activation électrique du cœur peut être simulée mathématiquement<br/>4. Un infarctus peut affecter la propagation","answer_html":"<b>Réponse : 2.</b> Le couplage entre cardiomyocytes est représenté par des <b>jonctions gap / une résistance longitudinale</b>, pas par une diode."},{"id":"card-059","section":"QCM du prof","exam":true,"qcm":true,"source":"84","question_html":"QCM — Lequel est vrai?<br/><br/>1. L’ECG mesure le débit cardiaque<br/>2. Le QRS représente la dépolarisation des ventricules<br/>3. L’onde T représente l’activation du NAV<br/>4. Les 12 dérivations permettent d’évaluer plusieurs patients à la fois","answer_html":"<b>Réponse : 2.</b> Le complexe QRS correspond à la dépolarisation ventriculaire."}]}
+{
+  "schema": 1,
+  "id": "gbm3000-cardio-1a",
+  "version": 2,
+  "title": "Cours 2 · Cœur électrique et arythmies",
+  "subtitle": "Cardiovasculaire 1 et 2",
+  "number": 2,
+  "updated_at": "2026-10-19",
+  "note": "Étoiles prioritaires; autres notions en complément.",
+  "documents": [
+    {
+      "id": "c2a",
+      "page_count": 73,
+      "title": "Cours 2 — Système cardiovasculaire 1"
+    },
+    {
+      "id": "c2b",
+      "page_count": 74,
+      "title": "Cours 2 — Système cardiovasculaire 2"
+    },
+    {
+      "id": "c4",
+      "page_count": 83,
+      "title": "Cours 4 — Système cardiovasculaire 3"
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-001",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 19",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            19
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Phase 0 : dépolarisation; phase 2 : plateau",
+        "Phase 0 : repos; phase 2 : repolarisation finale",
+        "Phase 1 : plateau; phase 4 : dépolarisation rapide"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Phase 0 : dépolarisation; phase 2 : plateau",
+      "question_html": "Quelle association phase–événement est correcte pour un PA ventriculaire rapide ?",
+      "answer_html": "<b>0</b> dépolarisation rapide · <b>1</b> repolarisation précoce · <b>2</b> plateau · <b>3</b> repolarisation finale · <b>4</b> potentiel de repos.",
+      "practice": false
+    },
+    {
+      "id": "card-002",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 19",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            19
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "0 : Na⁺; 2 : Ca²⁺ et K⁺; 3 : K⁺",
+        "0 : Ca²⁺; 2 : Na⁺; 3 : Na⁺",
+        "0 : K⁺; 2 : Cl⁻; 3 : Ca²⁺"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "0 : Na⁺; 2 : Ca²⁺ et K⁺; 3 : K⁺",
+      "question_html": "Quelle association phase–ion dominant est correcte pour un PA ventriculaire rapide ?",
+      "answer_html": "<b>0 : Na⁺</b> · <b>1 : K⁺</b> · <b>2 : Ca²⁺ + K⁺</b> · <b>3 : K⁺</b> · <b>4 : K⁺</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-003",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 19",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            19
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Phase 2 : entrée de Ca²⁺ et sortie de K⁺",
+        "Phase 4 : sortie de Na⁺ seulement",
+        "Phase 1 : entrée de Ca²⁺ seulement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Phase 2 : entrée de Ca²⁺ et sortie de K⁺",
+      "question_html": "Quelle phase correspond au plateau du potentiel d’action ventriculaire, et quels courants s’y opposent?",
+      "answer_html": "La <b>phase 2</b>. L’entrée de <b>Ca²⁺</b> et la sortie de <b>K⁺</b> contribuent ensemble au plateau.",
+      "practice": false
+    },
+    {
+      "id": "card-004",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 26",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Stable au repos",
+        "Dépolarisation spontanée lente obligatoire",
+        "Plateau permanent positif"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Stable au repos",
+      "question_html": "À quoi ressemble la phase 4 d’une cellule à réponse rapide?",
+      "answer_html": "Elle est <b>stable</b> : la cellule reste au potentiel de repos jusqu’à être dépolarisée par une cellule voisine.",
+      "practice": false
+    },
+    {
+      "id": "card-005",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 26 · C2 — Système cardiovasculaire 1 · p. 29",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            26
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Oreillettes, ventricules et His–Purkinje",
+        "NSA et NAV uniquement",
+        "Oreillettes, NSA et NAV uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Oreillettes, ventricules et His–Purkinje",
+      "question_html": "Quels tissus cardiaques sont à réponse rapide?",
+      "answer_html": "Les <b>oreillettes</b>, les <b>ventricules</b> et le <b>système His–Purkinje</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-006",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 26 · C2 — Système cardiovasculaire 1 · p. 29",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            26
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "NSA et NAV",
+        "Ventricules et His–Purkinje",
+        "Oreillettes et ventricules uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "NSA et NAV",
+      "question_html": "Quels tissus cardiaques sont à réponse lente?",
+      "answer_html": "Le <b>nœud sino-auriculaire (NSA)</b> et le <b>nœud atrio-ventriculaire (NAV)</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-007",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 26 · C2 — Système cardiovasculaire 1 · p. 29",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            26
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Na⁺",
+        "Ca²⁺",
+        "K⁺"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Na⁺",
+      "question_html": "Quel ion porte principalement la phase 0 des cellules à réponse rapide?",
+      "answer_html": "Le <b>Na⁺</b>, ce qui donne une dépolarisation très rapide.",
+      "practice": false
+    },
+    {
+      "id": "card-008",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 26",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Ca²⁺ par ICa,L",
+        "Na⁺ rapide",
+        "Cl⁻ uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Ca²⁺ par ICa,L",
+      "question_html": "Quel ion porte principalement la phase 0 des cellules à réponse lente du NSA/NAV?",
+      "answer_html": "Le <b>Ca²⁺</b>, principalement via le courant <b>I<sub>Ca,L</sub></b>, donc la dépolarisation est plus lente.",
+      "practice": false
+    },
+    {
+      "id": "card-009",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 26",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Dépolarisation spontanée lente",
+        "Potentiel de repos toujours parfaitement stable",
+        "Absence de tout courant en phase 4"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Dépolarisation spontanée lente",
+      "question_html": "Quelle propriété de la phase 4 explique l’automatisme du NSA et du NAV?",
+      "answer_html": "La phase 4 présente une <b>dépolarisation spontanée lente</b>; le cours associe notamment cet automatisme à <b>I<sub>f</sub></b> et <b>I<sub>Ca,T</sub></b>.",
+      "practice": false
+    },
+    {
+      "id": "card-010",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 26",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "La pente de phase 0",
+        "La durée de la phase 4 uniquement",
+        "La durée du plateau uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La pente de phase 0",
+      "question_html": "Sur un potentiel d’action, quelle caractéristique renseigne sur la vitesse de conduction?",
+      "answer_html": "La <b>pente de la phase 0</b> : plus la dépolarisation est rapide, plus la conduction peut être rapide.",
+      "practice": false
+    },
+    {
+      "id": "card-011",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 29",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Phase 0 rapide : Na⁺; lente : Ca²⁺",
+        "Phase 0 rapide : Ca²⁺; lente : Na⁺",
+        "Rapide chez adultes, lente chez enfants"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Phase 0 rapide : Na⁺; lente : Ca²⁺",
+      "question_html": "Quelle distinction rapide/lente est correcte ?",
+      "answer_html": "<b>Réponse rapide</b> : phase 0 surtout Na⁺, activation/récupération rapides. <b>Réponse lente</b> : phase 0 surtout Ca²⁺, activation/récupération lentes.",
+      "practice": false
+    },
+    {
+      "id": "card-012",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 14",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            14
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Sélectivité et ouverture/fermeture",
+        "Amplitude et vitesse de l’onde P",
+        "Conduction et contraction mécanique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Sélectivité et ouverture/fermeture",
+      "question_html": "Quelles sont les deux propriétés fondamentales d’un canal ionique selon le cours?",
+      "answer_html": "La <b>sélectivité</b> ionique et le <b>gating</b> (mécanisme/cinétique d’ouverture et de fermeture).",
+      "practice": false
+    },
+    {
+      "id": "card-013",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 14",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            14
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Voltage, ligand ou étirement",
+        "Seulement un changement du gradient de concentration",
+        "Seulement l’hydrolyse de l’ATP pour tous les canaux"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Voltage, ligand ou étirement",
+      "question_html": "Quels trois types de dépendance d’ouverture des canaux ioniques sont explicitement mentionnés?",
+      "answer_html": "Dépendance au <b>voltage</b>, au <b>ligand</b> ou à l’<b>étirement (“stretch”)</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-014",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 18",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            18
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Vm tend vers le potentiel d’équilibre de l’ion",
+        "Vm est toujours rendu positif",
+        "Vm devient toujours égal à zéro"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Vm tend vers le potentiel d’équilibre de l’ion",
+      "question_html": "Que fait l’ouverture d’un canal ionique au potentiel de membrane?",
+      "answer_html": "Elle ne « pousse » pas arbitrairement le potentiel : elle <b>tire V<sub>m</sub> vers le potentiel d’équilibre de l’ion</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-015",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 20",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Membrane : capacité; canal : conductance; gradient : tension",
+        "Membrane : diode; canal : piston",
+        "Membrane : résistance uniquement; gradient : moteur mécanique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Membrane : capacité; canal : conductance; gradient : tension",
+      "question_html": "Dans l’analogie électrique du cardiomyocyte, que représentent la membrane, un canal ionique et un gradient ionique?",
+      "answer_html": "<b>Membrane lipidique = condensateur</b> · <b>canal ionique = conductance variable</b> · <b>gradient ionique = source de tension</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-016",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 28",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Source dépolarisante et couplage intercellulaire",
+        "Seulement la fréquence sinusale",
+        "Seulement la durée de la systole mécanique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Source dépolarisante et couplage intercellulaire",
+      "question_html": "Quels deux grands facteurs du modèle présenté déterminent la vitesse de conduction dans le tissu?",
+      "answer_html": "La <b>source</b> (vitesse de dépolarisation, donc dV/dt<sub>max</sub>) et le <b>couplage</b> entre cellules par les jonctions gap.",
+      "practice": false
+    },
+    {
+      "id": "card-017",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 28",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Source affaiblie et couplage dégradé",
+        "Conduction toujours accélérée et homogène",
+        "Absence de modification électrique possible"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Source affaiblie et couplage dégradé",
+      "question_html": "Pourquoi l’ischémie est-elle particulièrement arythmogène dans le modèle de propagation du cours?",
+      "answer_html": "Parce qu’elle peut à la fois <b>affaiblir la source</b> et <b>dégrader le couplage</b>, deux mécanismes qui ralentissent la conduction.",
+      "practice": false
+    },
+    {
+      "id": "card-018",
+      "section": "Potentiels cardiaques",
+      "source": "C2 — Système cardiovasculaire 1 · p. 30",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "NSA 60–100; AV 40–60; Purkinje 20–40/min",
+        "NSA 20–40; AV 100–150; Purkinje 150–200/min",
+        "Les trois ont toujours 60/min"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "NSA 60–100; AV 40–60; Purkinje 20–40/min",
+      "question_html": "Quelles sont les fréquences intrinsèques des trois pacemakers hiérarchisés?",
+      "answer_html": "<b>NSA : 60–100/min</b> · <b>jonction AV : 40–60/min</b> · <b>Purkinje : 20–40/min</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-019",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 37",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            37
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Entrée Ca²⁺ → RyR → libération RS → myofilaments",
+        "Contraction → entrée Na⁺ → destruction du RS",
+        "Sortie Ca²⁺ → fermeture RyR → contraction immédiate"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Entrée Ca²⁺ → RyR → libération RS → myofilaments",
+      "question_html": "Quel ordre du couplage est correct ?",
+      "answer_html": "1) Entrée de <b>Ca²⁺</b> pendant le plateau · 2) activation des <b>récepteurs à la ryanodine</b> du RS · 3) libération massive de Ca²⁺ du RS · 4) activation des myofilaments <b>actine–myosine</b> · 5) récupération active du Ca²⁺ et restauration de sa concentration.",
+      "practice": false
+    },
+    {
+      "id": "card-020",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 34",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            34
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Petite entrée de Ca²⁺ déclenchant une libération du RS",
+        "Petite sortie de K⁺ provoquant toute la libération calcique",
+        "Entrée de Ca²⁺ constituant à elle seule tout le calcium contractile"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Petite entrée de Ca²⁺ déclenchant une libération du RS",
+      "question_html": "Quel est le principe du « Ca²⁺-induced Ca²⁺ release » dans le cardiomyocyte?",
+      "answer_html": "Une <b>petite entrée de Ca²⁺</b> à travers la membrane déclenche une <b>libération beaucoup plus grande de Ca²⁺</b> depuis le réticulum sarcoplasmique.",
+      "practice": false
+    },
+    {
+      "id": "card-021",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 37 · C2 — Système cardiovasculaire 1 · p. 39",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            37
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            39
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Sur le RS; libération de Ca²⁺",
+        "Sur le sarcolemme; entrée directe de Na⁺",
+        "Sur la membrane mitochondriale; sortie de K⁺"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Sur le RS; libération de Ca²⁺",
+      "question_html": "Où se trouvent les récepteurs à la ryanodine, et que font-ils?",
+      "answer_html": "Sur la membrane du <b>réticulum sarcoplasmique</b>; leur activation provoque la libération de Ca²⁺ du RS dans le cytosol.",
+      "practice": false
+    },
+    {
+      "id": "card-022",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 35",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            35
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Liaison à la troponine C",
+        "Liaison à la tropomyosine sans troponine",
+        "Inactivation irréversible de l’actine"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Liaison à la troponine C",
+      "question_html": "Comment le Ca²⁺ permet-il l’interaction entre actine et myosine?",
+      "answer_html": "Le Ca²⁺ se lie à la <b>troponine C (TnC)</b>, ce qui retire l’inhibition exercée par <b>TnI</b>; actine et myosine peuvent alors interagir.",
+      "practice": false
+    },
+    {
+      "id": "card-023",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 34 · C2 — Système cardiovasculaire 1 · p. 37",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            34
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            37
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Repomper le Ca²⁺ dans le RS",
+        "Repomper le Na⁺ dans le RS",
+        "Libérer le Ca²⁺ du RS vers le cytosol"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Repomper le Ca²⁺ dans le RS",
+      "question_html": "Quel est le rôle de SERCA après la contraction?",
+      "answer_html": "SERCA <b>repompe le Ca²⁺ cytosolique dans le réticulum sarcoplasmique</b>, contribuant à la relaxation et à la restauration de l’homéostasie calcique.",
+      "practice": false
+    },
+    {
+      "id": "card-024",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 34 · C2 — Système cardiovasculaire 1 · p. 39",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            34
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            39
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Phase 2, le plateau",
+        "Phase 4 uniquement",
+        "Phase 1 uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Phase 2, le plateau",
+      "question_html": "À quelle phase du potentiel d’action commence le couplage électromécanique présenté dans le cours?",
+      "answer_html": "À la <b>phase 2, le plateau</b>, avec l’entrée de Ca²⁺.",
+      "practice": false
+    },
+    {
+      "id": "card-025",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 38 · C2 — Système cardiovasculaire 1 · p. 72",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            38
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            72
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Réfractarité longue empêchant la sommation tétanique",
+        "Absence totale de Ca²⁺",
+        "Absence de myofilaments"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Réfractarité longue empêchant la sommation tétanique",
+      "question_html": "Pourquoi la longue durée du potentiel d’action ventriculaire protège-t-elle le cœur contre le tétanos?",
+      "answer_html": "La période réfractaire dure presque aussi longtemps que la contraction; une nouvelle activation ne peut donc pas s’additionner immédiatement à la précédente pour produire un tétanos.",
+      "practice": false
+    },
+    {
+      "id": "card-026",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 62",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            62
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "20–50 ms",
+        "20–50 minutes",
+        "Strictement 0 ms"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "20–50 ms",
+      "question_html": "De combien de temps environ l’activité électrique précède-t-elle l’activité mécanique?",
+      "answer_html": "Environ <b>20 à 50 ms</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-027",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 40 · C2 — Système cardiovasculaire 1 · p. 42",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            40
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            42
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "NSA → oreillettes → NAV → His–Purkinje → ventricules",
+        "NAV → ventricules → NSA → oreillettes",
+        "Ventricules → veines caves → NSA"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "NSA → oreillettes → NAV → His–Purkinje → ventricules",
+      "question_html": "Mets le trajet normal d’activation électrique dans l’ordre.",
+      "answer_html": "<b>NSA → oreillettes → NAV → système His–Purkinje → ventricules</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-028",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 40",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            40
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Initier le cycle et l’activation auriculaire",
+        "Distribuer directement l’activation rapide aux ventricules",
+        "Introduire le délai principal entre oreillettes et ventricules"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Initier le cycle et l’activation auriculaire",
+      "question_html": "Quel est le rôle du nœud sino-auriculaire dans le cycle cardiaque?",
+      "answer_html": "Il <b>initie le cycle cardiaque</b> et déclenche l’activation des oreillettes.",
+      "practice": false
+    },
+    {
+      "id": "card-029",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 40 · C2 — Système cardiovasculaire 1 · p. 44",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            40
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            44
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Retarder et transmettre l’activation aux ventricules",
+        "Activer uniquement la valve mitrale",
+        "Empêcher définitivement toute conduction"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Retarder et transmettre l’activation aux ventricules",
+      "question_html": "Quel est le rôle fonctionnel principal du NAV dans la séquence d’activation?",
+      "answer_html": "Il <b>transmet l’influx vers les ventricules avec un délai</b>, ce qui laisse du temps au sang de passer des oreillettes aux ventricules.",
+      "practice": false
+    },
+    {
+      "id": "card-030",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 40 · C2 — Système cardiovasculaire 1 · p. 45",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            40
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            45
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Distribuer rapidement l’activation ventriculaire",
+        "Ralentir tous les ventricules jusqu’à zéro",
+        "Activer seulement les deux oreillettes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Distribuer rapidement l’activation ventriculaire",
+      "question_html": "Pourquoi le système His–Purkinje est-il essentiel à l’activation ventriculaire?",
+      "answer_html": "Il assure une <b>transmission très rapide</b> de l’influx vers les deux ventricules afin d’activer le myocarde ventriculaire de façon coordonnée.",
+      "practice": false
+    },
+    {
+      "id": "card-031",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 43",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            43
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Mitrale et tricuspide",
+        "Aortique et pulmonaire",
+        "Mitrale et aortique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Mitrale et tricuspide",
+      "question_html": "Lors de la contraction des oreillettes, quelles valves sont ouvertes pour permettre le remplissage ventriculaire?",
+      "answer_html": "Les valves <b>tricuspide</b> et <b>mitrale</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-032",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 46",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            46
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Aortique et pulmonaire",
+        "Mitrale et tricuspide",
+        "Aortique et mitrale"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Aortique et pulmonaire",
+      "question_html": "Pendant l’éjection ventriculaire, quelles valves s’ouvrent ?",
+      "answer_html": "Pendant la phase d’éjection, la pression ventriculaire dépasse celle des grosses artères et ouvre les valves aortique et pulmonaire. Elles restent fermées pendant la contraction isovolumétrique initiale.",
+      "practice": false
+    },
+    {
+      "id": "card-033",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 42 · C2 — Système cardiovasculaire 1 · p. 43 · C2 — Système cardiovasculaire 1 · p. 44 · C2 — Système cardiovasculaire 1 · p. 45 · C2 — Système cardiovasculaire 1 · p. 46 · C2 — Système cardiovasculaire 1 · p. 47",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            42
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            43
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            44
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            45
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            46
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            47
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Veines caves → OD → tricuspide → VD → poumons",
+        "Veines pulmonaires → OD → mitrale → VG",
+        "Aorte → OG → VD → veines caves"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Veines caves → OD → tricuspide → VD → poumons",
+      "question_html": "Quel ordre décrit le cœur droit ?",
+      "answer_html": "<b>Veines caves → oreillette droite → tricuspide → ventricule droit → valve pulmonaire → artère pulmonaire → poumons</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-034",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 42 · C2 — Système cardiovasculaire 1 · p. 43 · C2 — Système cardiovasculaire 1 · p. 44 · C2 — Système cardiovasculaire 1 · p. 45 · C2 — Système cardiovasculaire 1 · p. 46 · C2 — Système cardiovasculaire 1 · p. 47",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            42
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            43
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            44
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            45
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            46
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            47
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Veines pulmonaires → OG → mitrale → VG → aorte",
+        "Veines caves → OG → tricuspide → VD",
+        "Artère pulmonaire → VG → OD → aorte"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Veines pulmonaires → OG → mitrale → VG → aorte",
+      "question_html": "Quel ordre décrit le cœur gauche ?",
+      "answer_html": "<b>Veines pulmonaires → oreillette gauche → mitrale → ventricule gauche → valve aortique → aorte → perfusion systémique</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-035",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 47",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            47
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Artère pulmonaire : désoxygéné; aorte : oxygéné",
+        "Artère pulmonaire : oxygéné; aorte : désoxygéné",
+        "Les deux transportent uniquement du sang désoxygéné"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Artère pulmonaire : désoxygéné; aorte : oxygéné",
+      "question_html": "Quelle grande artère transporte du sang désoxygéné, et laquelle transporte du sang oxygéné?",
+      "answer_html": "L’<b>artère pulmonaire</b> transporte du sang désoxygéné; l’<b>aorte</b> transporte du sang oxygéné.",
+      "practice": false
+    },
+    {
+      "id": "card-036",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 48",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            48
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "NAV, environ 0,05 m/s",
+        "His–Purkinje, environ 2–4 m/s",
+        "Oreillettes, environ 1 m/s"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "NAV, environ 0,05 m/s",
+      "question_html": "Quelle structure conduit le plus lentement dans les valeurs du cours ?",
+      "answer_html": "<b>Oreillettes ≈ 1 m/s</b> · <b>NAV ≈ 0,05 m/s</b> · <b>His–Purkinje ≈ 2–4 m/s</b> · <b>myocarde ventriculaire ≈ 0,3–1 m/s</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-037",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 50",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            50
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Courant via les jonctions gap",
+        "Neurotransmetteur à chaque contact",
+        "Flux de sang traversant la membrane"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Courant via les jonctions gap",
+      "question_html": "Comment l’activation électrique passe-t-elle d’un cardiomyocyte au suivant?",
+      "answer_html": "Par les <b>jonctions gap</b>, qui laissent passer le courant d’une cellule activée vers une cellule au repos; si le seuil est atteint, cette cellule génère à son tour un potentiel d’action.",
+      "practice": false
+    },
+    {
+      "id": "card-038",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 52",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            52
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Obstacle à contourner et propagation perturbée",
+        "Conduction uniformément plus rapide",
+        "Formation systématique d’un nouveau NSA"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Obstacle à contourner et propagation perturbée",
+      "question_html": "Quel effet une cicatrice myocardique a-t-elle sur la propagation électrique?",
+      "answer_html": "La cicatrice <b>ne conduit plus normalement</b>; l’influx doit la contourner, ce qui peut désorganiser la propagation.",
+      "practice": false
+    },
+    {
+      "id": "card-039",
+      "section": "Couplage et conduction",
+      "source": "C2 — Système cardiovasculaire 1 · p. 51",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            51
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "La vitesse dépend de l’orientation des fibres",
+        "La vitesse est identique dans toutes les directions",
+        "La conduction ne dépend d’aucune structure"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La vitesse dépend de l’orientation des fibres",
+      "question_html": "Pourquoi dit-on que la conduction dans le myocarde est anisotrope?",
+      "answer_html": "Parce que la <b>vitesse de propagation dépend de l’orientation des fibres</b> et de leur organisation cellulaire.",
+      "practice": false
+    },
+    {
+      "id": "card-040",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 58 · C2 — Système cardiovasculaire 1 · p. 59",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            58
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            59
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Une différence de potentiel entre électrodes",
+        "Le débit cardiaque direct",
+        "Le voltage d’un unique cardiomyocyte isolé"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une différence de potentiel entre électrodes",
+      "question_html": "Que mesure réellement un ECG de surface?",
+      "answer_html": "Une <b>différence de potentiel électrique entre des électrodes</b>; ce n’est pas une mesure directe d’une activité locale unique.",
+      "practice": false
+    },
+    {
+      "id": "card-041",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 61 · C2 — Système cardiovasculaire 1 · p. 64 · C2 — Système cardiovasculaire 1 · p. 65",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            61
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            64
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            65
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Représentation de l’activité électrique cardiaque",
+        "Image directe de la force de chaque muscle",
+        "Mesure directe de l’oxygénation"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Représentation de l’activité électrique cardiaque",
+      "question_html": "Comment le cours définit-il l’ECG?",
+      "answer_html": "Comme une <b>représentation graphique de l’activation électrique du cœur</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-042",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 63",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            63
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Dépolarisation des oreillettes",
+        "Repolarisation des ventricules",
+        "Fermeture de la valve aortique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Dépolarisation des oreillettes",
+      "question_html": "À quoi correspond l’onde P?",
+      "answer_html": "À l’<b>activation électrique des oreillettes</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-043",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 63 · C2 — Système cardiovasculaire 1 · p. 71",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            63
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            71
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Dépolarisation des ventricules",
+        "Dépolarisation du NAV seul",
+        "Contraction mécanique mesurée directement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Dépolarisation des ventricules",
+      "question_html": "À quoi correspond le complexe QRS?",
+      "answer_html": "À la <b>dépolarisation / activation des ventricules</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-044",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 63",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            63
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Repolarisation ventriculaire",
+        "Dépolarisation auriculaire",
+        "Éjection aortique mesurée directement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Repolarisation ventriculaire",
+      "question_html": "À quoi correspond l’onde T?",
+      "answer_html": "À la <b>repolarisation des ventricules</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-045",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 48 · C2 — Système cardiovasculaire 1 · p. 63",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            48
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            63
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Conduction auricules–ventricules, avec délai AV",
+        "Durée de repolarisation ventriculaire seule",
+        "Volume d’éjection par battement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Conduction auricules–ventricules, avec délai AV",
+      "question_html": "Quel événement de la séquence cardiaque est principalement reflété par l’intervalle PR?",
+      "answer_html": "Le temps entre l’activation auriculaire et l’activation ventriculaire, incluant le <b>délai de conduction au NAV</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-046",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 65",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            65
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "12 points de vue électriques",
+        "12 électrodes sur 12 patients",
+        "12 cavités cardiaques"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "12 points de vue électriques",
+      "question_html": "Pourquoi parle-t-on de 12 dérivations ECG?",
+      "answer_html": "Parce que l’activité électrique du cœur est présentée sous <b>12 angles de vue différents</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-047",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 60",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            60
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "10 électrodes",
+        "12 électrodes",
+        "8 électrodes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "10 électrodes",
+      "question_html": "Combien d’électrodes sont utilisées pour obtenir un ECG standard à 12 dérivations?",
+      "answer_html": "<b>10 électrodes</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-048",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 65 · C2 — Système cardiovasculaire 1 · p. 66",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            65
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            66
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "8 signaux indépendants",
+        "12 signaux indépendants",
+        "2 signaux indépendants"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "8 signaux indépendants",
+      "question_html": "Combien de signaux réellement indépendants contient un ECG à 12 dérivations?",
+      "answer_html": "<b>8 signaux indépendants</b> : les six dérivations frontales se déduisent de deux mesures indépendantes, auxquelles s’ajoutent les six précordiales.",
+      "practice": false
+    },
+    {
+      "id": "card-049",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 66",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            66
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "II = I + III",
+        "I = II + III",
+        "III = I + II"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "II = I + III",
+      "question_html": "Quelle relation d’Einthoven relie les dérivations I, II et III?",
+      "answer_html": "<b>II = I + III</b>, donc <b>III = II − I</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-050",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 67",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            67
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "0,5–2 mV et bande 0,05–150 Hz",
+        "0,5–2 V et bande 5–15 MHz",
+        "0,5–2 nV et bande uniquement continue"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "0,5–2 mV et bande 0,05–150 Hz",
+      "question_html": "Quel ordre de grandeur de signal ECG utile donne le cours ?",
+      "answer_html": "Amplitude utile <b>0,5–2 mV</b> · bande diagnostique <b>0,05–150 Hz</b> · bruit d’entrée <b>&lt; 10 µV</b> · offset d’électrode jusqu’à <b>±300 mV</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-051",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 67",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            67
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Réseau 60 Hz, EMG et dérive de base",
+        "Seulement la couleur des électrodes",
+        "Uniquement les ondes P normales"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Réseau 60 Hz, EMG et dérive de base",
+      "question_html": "Quels sont les trois parasites ECG explicitement à nommer dans le cours?",
+      "answer_html": "Le <b>60 Hz du réseau</b>, l’<b>EMG</b> et le <b>mouvement de la ligne de base</b>.",
+      "practice": false
+    },
+    {
+      "id": "card-052",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 68",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            68
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Déformation possible du segment ST",
+        "Création certaine d’un nouveau pacemaker",
+        "Augmentation mécanique du débit par filtrage"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Déformation possible du segment ST",
+      "question_html": "Pourquoi un mauvais filtre passe-haut peut-il devenir un problème clinique sur un ECG?",
+      "answer_html": "Parce qu’il peut <b>déformer le segment ST</b> et ainsi créer ou masquer l’apparence d’un infarctus.",
+      "practice": false
+    },
+    {
+      "id": "card-053",
+      "section": "ECG et instrumentation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 69 · C2 — Système cardiovasculaire 1 · p. 70",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            69
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            70
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Sus- ou sous-décalage",
+        "Disparition obligatoire de toute onde P",
+        "Doublement obligatoire de tous les intervalles RR"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Sus- ou sous-décalage",
+      "question_html": "Quel changement du segment ST est montré dans les exemples d’infarctus ?",
+      "answer_html": "Les exemples montrent un sus- ou un sous-décalage ST. Ces anomalies doivent être interprétées avec les autres données; elles ne prouvent pas isolément un infarctus.",
+      "practice": false
+    },
+    {
+      "id": "card-054",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 1 · p. 21",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Phase 1 : courant K⁺",
+        "Phase 0 : courant Ca²⁺",
+        "Phase 2 : courant Na⁺",
+        "Phase 4 : plateau"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Phase 1 : courant K⁺",
+      "question_html": "Lequel est vrai pour un PA ventriculaire à réponse rapide ?",
+      "answer_html": "<b>Réponse : 2.</b> La phase 1 correspond à une repolarisation précoce portée par un courant K⁺.",
+      "practice": false
+    },
+    {
+      "id": "card-055",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 1 · p. 32",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            32
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Réponse rapide : phase 0 surtout Na⁺",
+        "Réponse rapide : NSA et NAV",
+        "Rapide chez adultes, lente chez enfants",
+        "Réponse lente : ventricules et His–Purkinje"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Réponse rapide : phase 0 surtout Na⁺",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "<b>Réponse : 2.</b> Les cellules à réponse rapide ont une phase 0 déterminée principalement par le Na⁺.",
+      "practice": false
+    },
+    {
+      "id": "card-056",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 1 · p. 39",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            39
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "La mitochondrie est le réservoir principal de Ca²⁺ libéré",
+        "Les RyR sont sur le réticulum sarcoplasmique",
+        "Le plateau permet une entrée de Ca²⁺",
+        "Le couplage relie excitation et contraction"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La mitochondrie est le réservoir principal de Ca²⁺ libéré",
+      "question_html": "Quel énoncé est faux selon le modèle du couplage du cours ?",
+      "answer_html": "<b>Réponse : 2.</b> Le cours présente le <b>réticulum sarcoplasmique</b>, et non la mitochondrie, comme réservoir principal du Ca²⁺ libéré pour le couplage.",
+      "practice": false
+    },
+    {
+      "id": "card-057",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 1 · p. 49",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            49
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "L’activation ventriculaire précède l’éjection",
+        "His–Purkinje active seulement les oreillettes",
+        "Le délai AV sert au passage dans la valve aortique",
+        "L’activation auriculaire ouvre les valves sigmoïdes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "L’activation ventriculaire précède l’éjection",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "<b>Réponse : 2.</b> L’activation des ventricules précède leur contraction et l’ouverture des valves pulmonaire et aortique.",
+      "practice": false
+    },
+    {
+      "id": "card-058",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 1 · p. 56",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            56
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Le couplage entre cellules est modélisé par une diode",
+        "La membrane est assimilable à un condensateur",
+        "La propagation peut être simulée",
+        "Un infarctus peut perturber la propagation"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le couplage entre cellules est modélisé par une diode",
+      "question_html": "Quel énoncé est faux ?",
+      "answer_html": "<b>Réponse : 2.</b> Le couplage entre cardiomyocytes est représenté par des <b>jonctions gap / une résistance longitudinale</b>, pas par une diode.",
+      "practice": false
+    },
+    {
+      "id": "card-059",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 1 · p. 71",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            71
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Le QRS représente la dépolarisation ventriculaire",
+        "L’ECG mesure directement le débit cardiaque",
+        "L’onde T est l’activation du NAV",
+        "12 dérivations permettent de mesurer 12 patients"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le QRS représente la dépolarisation ventriculaire",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "<b>Réponse : 2.</b> Le complexe QRS correspond à la dépolarisation ventriculaire.",
+      "practice": false
+    },
+    {
+      "id": "c2-001",
+      "section": "Modèles et propagation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 10",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            10
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Environ 1,1 W",
+        "Environ 110 W",
+        "Environ 0,011 W"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Environ 1,1 W",
+      "question_html": "Un cœur éjecte 5 L/min contre 100 mmHg. Quel est l’ordre de grandeur de sa puissance hydraulique ?",
+      "answer_html": "<b>P = ΔP × Q ≈ 1,1 W</b> : 100 mmHg ≈ 13 300 Pa et 5 L/min ≈ 8,3 × 10⁻⁵ m³/s. Avec un rendement de 10 %, la puissance métabolique correspondante est d’environ 11 W.",
+      "practice": false
+    },
+    {
+      "id": "c2-002",
+      "section": "Modèles et propagation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 15",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "1,05 × 10⁻¹¹ C",
+        "1,05 C",
+        "1,05 × 10⁻³ C"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "1,05 × 10⁻¹¹ C",
+      "question_html": "Quelle quantité de charge faut-il déplacer pour changer de 105 mV le potentiel d’une cellule de capacité 100 pF ?",
+      "answer_html": "<b>ΔQ = CΔV = 1,05 × 10⁻¹¹ C</b>, soit environ 6,6 × 10⁷ charges élémentaires. Une très petite fraction des ions cellulaires suffit à charger la membrane.",
+      "practice": false
+    },
+    {
+      "id": "c2-003",
+      "section": "Modèles et propagation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 20",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "10 ms",
+        "10 s",
+        "0,1 µs"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "10 ms",
+      "question_html": "Une membrane a Rm = 10 kΩ·cm² et Cm = 1 µF/cm². Quelle est sa constante de temps ?",
+      "answer_html": "<b>τ = RmCm = 10 ms.</b> Elle caractérise la vitesse de réponse passive de la membrane à un changement de courant.",
+      "practice": false
+    },
+    {
+      "id": "c2-004",
+      "section": "Modèles et propagation",
+      "source": "C2 — Système cardiovasculaire 1 · p. 28 · C2 — Système cardiovasculaire 1 · p. 48",
+      "references": [
+        {
+          "document": "c2a",
+          "pages": [
+            28
+          ]
+        },
+        {
+          "document": "c2a",
+          "pages": [
+            48
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Source de courant et couplage intercellulaire",
+        "Seulement la durée de la période réfractaire",
+        "Seulement le nombre de valves"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Source de courant et couplage intercellulaire",
+      "question_html": "Pourquoi la conduction cardiaque dépend-elle à la fois de la cellule source et de ses voisines ?",
+      "answer_html": "La source doit fournir assez de courant pour charger la membrane des cellules voisines jusqu’au seuil, à travers les <b>jonctions communicantes</b>. Excitabilité, couplage et charge à dépolariser déterminent ensemble la propagation.",
+      "practice": false
+    },
+    {
+      "id": "c2-005",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 4",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Leur site d’origine",
+        "Seulement leur fréquence",
+        "Uniquement leur durée, jamais leur origine"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Leur site d’origine",
+      "question_html": "Qu’est-ce qui distingue une tachycardie supraventriculaire d’une tachycardie ventriculaire ?",
+      "answer_html": "La première prend naissance <b>au-dessus des ventricules</b>, dans les oreillettes ou la région du NAV; la seconde dans les ventricules. Les arythmies ventriculaires peuvent compromettre rapidement le débit et causer une mort subite. « Supraventriculaire » ne signifie pas sans aucun risque.",
+      "practice": false
+    },
+    {
+      "id": "c2-006",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 5",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Focal : foyer; réentrée : onde en boucle",
+        "Focal : boucle; réentrée : foyer unique",
+        "Les deux sont toujours une absence d’activité"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Focal : foyer; réentrée : onde en boucle",
+      "question_html": "Comment distinguer un mécanisme focal d’un mécanisme de réentrée ?",
+      "answer_html": "<b>Focal :</b> un foyer produit des activations anormales qui se propagent. <b>Réentrée :</b> une onde circule dans un trajet et réexcite un tissu redevenu excitable.",
+      "practice": false
+    },
+    {
+      "id": "c2-007",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 6,7",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "λ = VC × PR; L > λ peut la soutenir",
+        "λ = VC/PR; L < λ obligatoire",
+        "λ ne dépend jamais de la réfractarité"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "λ = VC × PR; L > λ peut la soutenir",
+      "question_html": "Quelle est la longueur d’onde cardiaque et quel rapport favorise une réentrée dans un circuit de longueur L ?",
+      "answer_html": "<b>λ = vitesse de conduction × période réfractaire.</b> Une réentrée peut se maintenir si le trajet est assez long pour que le tissu récupère avant le retour de l’onde, typiquement <b>L &gt; λ</b>. Cette condition seule ne garantit pas son initiation.",
+      "practice": false
+    },
+    {
+      "id": "c2-008",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 6",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "10 cm",
+        "1 cm",
+        "100 cm"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "10 cm",
+      "question_html": "Avec une conduction de 0,5 m/s et une période réfractaire de 200 ms, calcule λ.",
+      "answer_html": "<b>λ = 0,5 × 0,2 = 0,10 m = 10 cm.</b> Il faut conserver les unités en secondes et en mètres avant de multiplier.",
+      "practice": false
+    },
+    {
+      "id": "c2-009",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 7 · C2 — Système cardiovasculaire 2 · p. 10",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "document": "c2b",
+          "pages": [
+            10
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Bloc unidirectionnel et retour après récupération",
+        "Bloc permanent dans les deux directions de tout le cœur",
+        "Absence de trajet de retour"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Bloc unidirectionnel et retour après récupération",
+      "question_html": "Quelles conditions permettent d’initier une réentrée dans les deux voies du modèle du cours ?",
+      "answer_html": "Deux trajets aux propriétés différentes, un <b>bloc unidirectionnel</b> dans l’un et un délai de conduction permettant le retour de l’onde dans du tissu récupéré. Un ralentissement de conduction ou un raccourcissement de la période réfractaire peut réduire λ et favoriser le phénomène.",
+      "practice": false
+    },
+    {
+      "id": "c2-010",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 11",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Une voie accessoire crée un trajet parallèle",
+        "Un foyer sinusal toujours absent",
+        "Une valve supplémentaire entre les ventricules"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une voie accessoire crée un trajet parallèle",
+      "question_html": "Pourquoi le syndrome de Wolff–Parkinson–White peut-il produire une réentrée ?",
+      "answer_html": "Une <b>voie accessoire</b> relie oreillettes et ventricules en parallèle du trajet passant par le NAV. Les deux trajets peuvent former une boucle de réentrée; ce mécanisme n’est pas simplement un foyer automatique supplémentaire.",
+      "practice": false
+    },
+    {
+      "id": "c2-011",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 12,13",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Une onde contourne un obstacle et revient",
+        "La cicatrice accélère uniformément tout le tissu",
+        "La cicatrice doit produire une nouvelle valve"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une onde contourne un obstacle et revient",
+      "question_html": "Comment une cicatrice peut-elle entretenir une tachycardie ventriculaire ?",
+      "answer_html": "L’onde peut contourner une zone non conductrice et revenir dans du tissu excitable. Un circuit stable peut donner des QRS de morphologie répétée : <b>tachycardie monomorphe</b>. Une morphologie changeante correspond à une tachycardie polymorphe.",
+      "practice": false
+    },
+    {
+      "id": "c2-012",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 2 · p. 14",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            14
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Remplissage et activation ventriculaire moins efficaces",
+        "Toute fréquence supérieure à 180 est forcément fatale",
+        "L’effort supprime toujours le remplissage"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Remplissage et activation ventriculaire moins efficaces",
+      "question_html": "Pourquoi une tachycardie ventriculaire peut-elle être mal tolérée alors qu’une fréquence élevée pendant un effort peut être physiologique ?",
+      "answer_html": "La tolérance dépend aussi du <b>remplissage et de la coordination de la contraction</b>. Une activation ventriculaire anormale peut rendre l’éjection inefficace; le chiffre de fréquence seul ne suffit pas à comparer les deux situations.",
+      "practice": false
+    },
+    {
+      "id": "c2-013",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 2 · p. 15",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "La TV peut être mono- ou polymorphe",
+        "La réentrée existe seulement dans les ventricules",
+        "WPW est uniquement focal",
+        "Les TSV sont habituellement malignes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La TV peut être mono- ou polymorphe",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "<b>4.</b> Les morphologies mono- et polymorphes sont toutes deux possibles. Les autres propositions contredisent la localisation et les mécanismes présentés dans le cours.",
+      "practice": false
+    },
+    {
+      "id": "c2-014",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 16,17,18,19,20,21,22,23,24,25,26",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "L’événement est intermittent",
+        "L’ECG bref ne mesure jamais d’électricité",
+        "Tout ECG bref traite l’arythmie avant de la voir"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "L’événement est intermittent",
+      "question_html": "Pourquoi un ECG bref peut-il manquer une arythmie symptomatique ?",
+      "answer_html": "L’événement peut être <b>intermittent</b> et absent pendant l’enregistrement. Un Holter, un patch ou un moniteur implantable allonge la période d’observation; le choix dépend notamment de la fréquence des épisodes et de la durée recherchée.",
+      "practice": false
+    },
+    {
+      "id": "c2-015",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 20",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "La radio a un courant élevé même sur une courte durée",
+        "Le courant moyen dépend uniquement de la veille",
+        "La durée de transmission n’influence jamais la pile"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La radio a un courant élevé même sur une courte durée",
+      "question_html": "Pourquoi une transmission radio brève compte-t-elle beaucoup dans le budget énergétique d’un moniteur implantable ?",
+      "answer_html": "La radio consomme beaucoup plus que l’électronique en veille. Dans l’exemple du cours, <b>1 s à 10 mA correspond à environ 22 min de veille</b>. Il faut donc considérer les courants et leurs durées, pas seulement la capacité de la pile.",
+      "practice": false
+    },
+    {
+      "id": "c2-016",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 29,30",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            29,
+            30
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Absence de contraction coordonnée efficace",
+        "Absence obligatoire de tout signal électrique",
+        "Augmentation illimitée du volume d’éjection"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Absence de contraction coordonnée efficace",
+      "question_html": "Pourquoi la fibrillation ventriculaire fait-elle chuter la pression artérielle ?",
+      "answer_html": "L’activité électrique est désorganisée et ne produit plus une <b>contraction ventriculaire coordonnée et efficace</b>. Une activité électrique visible ne prouve donc pas qu’un débit utile existe.",
+      "practice": false
+    },
+    {
+      "id": "c2-017",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 34",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            34
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Détecter et traiter des arythmies ventriculaires dangereuses",
+        "Traiter seulement les bradycardies sans détection de tachycardie",
+        "Enregistrer le rythme sans aucune thérapie possible"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Détecter et traiter des arythmies ventriculaires dangereuses",
+      "question_html": "Quelle est la fonction essentielle d’un défibrillateur cardioverteur implantable (DCI) ?",
+      "answer_html": "<b>Surveiller le rythme</b>, reconnaître les tachyarythmies ventriculaires dangereuses et délivrer une thérapie appropriée, dont un choc lorsque nécessaire. La décision repose sur l’analyse du signal détecté.",
+      "practice": false
+    },
+    {
+      "id": "c2-018",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 35",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            35
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Environ 1 630 V",
+        "Environ 16 V",
+        "Environ 3 V"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Environ 1 630 V",
+      "question_html": "Un condensateur de 150 µF doit stocker 200 J. Quelle tension faut-il environ ?",
+      "answer_html": "E = ½CV², donc <b>V = √(2E/C) ≈ 1 630 V</b>. Pour 35 J avec la même capacité, environ 680 V. Une pile de quelques volts exige donc un convertisseur et une phase de charge.",
+      "practice": false
+    },
+    {
+      "id": "c2-019",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 35,36",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            35,
+            36
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Trajet du courant et forme d’onde comptent aussi",
+        "Les joules n’existent pas dans un DCI",
+        "Toutes les électrodes créent toujours le même champ"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Trajet du courant et forme d’onde comptent aussi",
+      "question_html": "Pourquoi comparer seulement les joules d’un défibrillateur externe et d’un DCI serait-il insuffisant ?",
+      "answer_html": "La position des électrodes et le trajet du courant modifient le champ appliqué au cœur. La forme du choc compte aussi : une onde <b>biphasique</b> inverse sa polarité et peut être efficace avec moins d’énergie qu’une onde monophasique dans les conditions présentées.",
+      "practice": false
+    },
+    {
+      "id": "c2-020",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 38,39,40,41",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            38,
+            39,
+            40,
+            41
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "FP : alerte indue; FN : arythmie manquée",
+        "FP : arythmie manquée; FN : alerte indue",
+        "Les deux sont forcément des mesures correctes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "FP : alerte indue; FN : arythmie manquée",
+      "question_html": "Dans la détection d’arythmie d’un DCI, que représentent un faux positif et un faux négatif ?",
+      "answer_html": "<b>Faux positif :</b> déclarer dangereuse une activité qui ne l’est pas, avec risque de choc inapproprié. <b>Faux négatif :</b> manquer une arythmie dangereuse. Le réglage doit concilier sensibilité et spécificité.",
+      "practice": false
+    },
+    {
+      "id": "c2-021",
+      "section": "Monitorage et défibrillation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 40,41",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            40,
+            41
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Mieux discriminer les rythmes",
+        "Supprimer tout besoin de détection",
+        "Rendre toutes les tachycardies équivalentes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Mieux discriminer les rythmes",
+      "question_html": "Pourquoi combiner fréquence, stabilité, début et morphologie plutôt qu’utiliser seulement un seuil de fréquence ?",
+      "answer_html": "Une fréquence rapide peut avoir plusieurs causes. Ces caractéristiques apportent des informations complémentaires pour <b>discriminer les rythmes</b> et limiter les traitements inappropriés.",
+      "practice": false
+    },
+    {
+      "id": "c2-022",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 42",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            42
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Le NAV peut limiter la transmission en FA",
+        "La FA produit toujours une contraction ventriculaire synchronisée à chaque onde atriale",
+        "Le NAV peut coordonner les ventricules pendant toute FV"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le NAV peut limiter la transmission en FA",
+      "question_html": "Pourquoi la fibrillation auriculaire et la fibrillation ventriculaire n’ont-elles pas la même conséquence mécanique immédiate ?",
+      "answer_html": "En FA, le <b>NAV limite la transmission</b> des activations auriculaires vers les ventricules; une activité ventriculaire et un débit peuvent persister. En FV, l’activation ventriculaire elle-même est désorganisée et le débit efficace s’effondre.",
+      "practice": false
+    },
+    {
+      "id": "c2-023",
+      "section": "Arythmies et réentrée",
+      "source": "C2 — Système cardiovasculaire 2 · p. 42 · C4 — Système cardiovasculaire 3 · p. 77",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            42
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            77
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Stase → thrombus → embolie cérébrale",
+        "FA → flux auriculaire accru empêchant tout caillot",
+        "FA → thrombus limité aux veines pulmonaires uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Stase → thrombus → embolie cérébrale",
+      "question_html": "Quel lien relie fibrillation auriculaire, appendice auriculaire gauche et AVC ?",
+      "answer_html": "Une contraction auriculaire inefficace favorise la <b>stase sanguine et la formation de thrombus</b>, notamment dans l’appendice auriculaire gauche. Une embolisation vers le cerveau peut causer un AVC.",
+      "practice": false
+    },
+    {
+      "id": "c2-024",
+      "section": "Stimulation cardiaque",
+      "source": "C2 — Système cardiovasculaire 2 · p. 44,45,46,47",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            44,
+            45,
+            46,
+            47
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Une P sur deux est conduite",
+        "Deux QRS pour chaque P",
+        "Une P pour quatre QRS"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une P sur deux est conduite",
+      "question_html": "Que signifie une conduction atrioventriculaire 2:1 sur un tracé comportant des ondes P ?",
+      "answer_html": "<b>Une onde P sur deux est conduite</b> aux ventricules et suivie d’un QRS. Il faut comparer les activations auriculaires aux activations ventriculaires, plutôt que compter seulement les P.",
+      "practice": false
+    },
+    {
+      "id": "c2-025",
+      "section": "Stimulation cardiaque",
+      "source": "C2 — Système cardiovasculaire 2 · p. 46,47",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            46,
+            47
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Adapter les impulsions aux battements spontanés",
+        "Garantir deux impulsions simultanées sur chaque T",
+        "Mesurer uniquement le débit pulmonaire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Adapter les impulsions aux battements spontanés",
+      "question_html": "Pourquoi un stimulateur cardiaque doit-il détecter l’activité spontanée avant de stimuler ?",
+      "answer_html": "Pour adapter la stimulation aux battements présents et <b>éviter des impulsions inutiles ou mal synchronisées</b>. La sonde peut servir à la fois à la détection et à la stimulation.",
+      "practice": false
+    },
+    {
+      "id": "c2-026",
+      "section": "Stimulation cardiaque",
+      "source": "C2 — Système cardiovasculaire 2 · p. 48,49",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            48,
+            49
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Le seuil de capture dépend de la durée",
+        "La durée n’a aucun effet",
+        "Toutes les amplitudes capturent toujours"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le seuil de capture dépend de la durée",
+      "question_html": "Pourquoi la durée d’une impulsion et son amplitude doivent-elles être considérées ensemble ?",
+      "answer_html": "Le <b>seuil de capture dépend de la durée</b> : une impulsion plus courte demande généralement une amplitude plus élevée. Le réglage recherche une capture fiable avec une consommation limitée et une marge appropriée.",
+      "practice": false
+    },
+    {
+      "id": "c2-027",
+      "section": "Stimulation cardiaque",
+      "source": "C2 — Système cardiovasculaire 2 · p. 53",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            53
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Les bradyarythmies",
+        "Toutes les tachycardies par choc uniquement",
+        "Les sténoses aortiques"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Les bradyarythmies",
+      "question_html": "Quelle anomalie rythmique le stimulateur permanent corrige-t-il principalement ?",
+      "answer_html": "Les <b>bradyarythmies</b> et certains troubles de conduction : il fournit une activation lorsque le rythme spontané est insuffisant. Une stimulation ventriculaire myocardique peut produire un spike suivi d’un QRS large.",
+      "practice": false
+    },
+    {
+      "id": "c2-028",
+      "section": "Stimulation cardiaque",
+      "source": "C2 — Système cardiovasculaire 2 · p. 54",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            54
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "0,25 µJ; tension doublée → énergie ×4",
+        "0,25 J; tension doublée → énergie ×2",
+        "25 µJ; tension doublée → énergie inchangée"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "0,25 µJ; tension doublée → énergie ×4",
+      "question_html": "Calcule l’énergie d’une impulsion de 0,5 V, de 0,5 ms, dans 500 Ω. Que devient-elle si la tension double ?",
+      "answer_html": "E = V²t/R = <b>0,25 µJ</b>. Si seule la tension double, l’énergie est multipliée par <b>4</b>. C’est une raison de ne pas augmenter inutilement l’amplitude.",
+      "practice": false
+    },
+    {
+      "id": "c2-029",
+      "section": "Stimulation cardiaque",
+      "source": "C2 — Système cardiovasculaire 2 · p. 55,56,57,58,59",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            55,
+            56,
+            57,
+            58,
+            59
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Moins de complications de sondes, mais contraintes fonctionnelles",
+        "Aucune pile et aucune limite fonctionnelle",
+        "Toujours plus de cavités stimulées sans compromis"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Moins de complications de sondes, mais contraintes fonctionnelles",
+      "question_html": "Quels compromis distinguent un stimulateur sans sonde d’un système avec sondes ?",
+      "answer_html": "Le système sans sonde évite certaines complications du boîtier et des sondes, comme fracture ou défaut d’isolant. Il présente aussi des contraintes de <b>fonctions disponibles, nombre de cavités stimulées et gestion de fin de pile ou d’extraction</b>.",
+      "practice": false
+    },
+    {
+      "id": "c2-030",
+      "section": "Stimulation cardiaque",
+      "source": "C2 — Système cardiovasculaire 2 · p. 47 · C2 — Système cardiovasculaire 2 · p. 55",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            47
+          ]
+        },
+        {
+          "document": "c2b",
+          "pages": [
+            55
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Adapter la fréquence ou améliorer la synchronisation",
+        "Augmenter obligatoirement tous les chocs",
+        "Supprimer le besoin de capter les battements"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Adapter la fréquence ou améliorer la synchronisation",
+      "question_html": "Pourquoi peut-on ajouter un capteur d’activité ou modifier le site de stimulation ?",
+      "answer_html": "Un capteur permet d’<b>adapter la fréquence à l’activité</b>. La resynchronisation ou la stimulation du système de conduction cherche plutôt à améliorer la coordination de l’activation; ce sont deux objectifs distincts.",
+      "practice": false
+    },
+    {
+      "id": "c2-031",
+      "section": "Questions du prof",
+      "source": "C2 — Système cardiovasculaire 2 · p. 62",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            62
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "La stimulation habituelle est généralement non ressentie",
+        "Le Holter traite les arythmies malignes",
+        "Un filtre cave remplace le stimulateur",
+        "Le stimulateur traite surtout les rythmes rapides"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La stimulation habituelle est généralement non ressentie",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "<b>3.</b> La stimulation localisée utilise une faible énergie. Le Holter enregistre; il ne délivre pas de traitement. Le filtre de veine cave n’a pas pour fonction de stimuler le cœur.",
+      "practice": false
+    },
+    {
+      "id": "c2-032",
+      "section": "Ablation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 63,64,65,66,67",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            63,
+            64,
+            65,
+            66,
+            67
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Localiser le foyer ou le trajet critique",
+        "Mesurer uniquement la fréquence sans localiser le circuit",
+        "Créer systématiquement une voie de conduction parallèle"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Localiser le foyer ou le trajet critique",
+      "question_html": "Quel est le but d’une cartographie électrophysiologique avant une ablation ?",
+      "answer_html": "<b>Localiser le foyer ou le trajet critique</b> de l’arythmie afin de choisir une cible. Détruire ou isoler ce tissu peut supprimer la source ou interrompre la boucle de réentrée.",
+      "practice": false
+    },
+    {
+      "id": "c2-033",
+      "section": "Ablation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 67,68,69",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            67,
+            68,
+            69
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Par conduction thermique",
+        "Seulement par échauffement direct uniforme dans tout le tissu",
+        "Par diffusion instantanée et sans limite de profondeur"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Par conduction thermique",
+      "question_html": "Lors d’une ablation par radiofréquence, comment la lésion s’étend-elle au-delà de la zone directement chauffée ?",
+      "answer_html": "Par <b>conduction thermique</b>. Le chauffage direct est surtout proche de l’électrode; la chaleur diffuse ensuite dans le tissu. Augmenter la durée ne fait pas croître linéairement la profondeur : le modèle du cours la relie à √temps.",
+      "practice": false
+    },
+    {
+      "id": "c2-034",
+      "section": "Ablation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 68",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            68
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Chauffage divisé par 16",
+        "Chauffage divisé par 2",
+        "Chauffage multiplié par 16"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Chauffage divisé par 16",
+      "question_html": "Dans le modèle où le chauffage direct varie comme 1/r⁴, quel est l’effet de doubler la distance r ?",
+      "answer_html": "Il est divisé par <b>16</b>. Le chauffage direct est donc fortement concentré près de l’électrode; il faut distinguer ce phénomène de la diffusion de chaleur.",
+      "practice": false
+    },
+    {
+      "id": "c2-035",
+      "section": "Ablation",
+      "source": "C2 — Système cardiovasculaire 2 · p. 70,71,72",
+      "references": [
+        {
+          "document": "c2b",
+          "pages": [
+            70,
+            71,
+            72
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "RF : chaleur; cryo : gel; champ pulsé : électroporation",
+        "RF : électroporation; cryo : chaleur; champ pulsé : gel",
+        "Les trois utilisent seulement le même refroidissement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "RF : chaleur; cryo : gel; champ pulsé : électroporation",
+      "question_html": "Distingue les mécanismes de la radiofréquence, de la cryoablation et du champ pulsé.",
+      "answer_html": "<b>Radiofréquence :</b> échauffement. <b>Cryoablation :</b> refroidissement et gel. <b>Champ pulsé :</b> électroporation irréversible. La dernière agit par un mécanisme électrique de membrane plutôt que par l’effet thermique recherché par les deux premières.",
+      "practice": false
+    }
+  ]
+}

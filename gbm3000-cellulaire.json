@@ -1,0 +1,2239 @@
+{
+  "schema": 1,
+  "id": "gbm3000-cellulaire",
+  "version": 1,
+  "title": "Cours 1 · Biologie cellulaire",
+  "subtitle": "ADN, protéines et organisation cellulaire",
+  "number": 1,
+  "updated_at": "2026-10-19",
+  "note": "Objectifs et questions du professeur.",
+  "documents": [
+    {
+      "id": "c1",
+      "page_count": 108,
+      "title": "Cours 1 — Introduction à la biologie cellulaire"
+    },
+    {
+      "id": "c1q",
+      "page_count": 3,
+      "title": "Cours 1 — Questions du professeur"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c1-001",
+      "section": "Cellule et microscopie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 8,9,10,11,12",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Faisceau d’électrons à courte longueur d’onde",
+        "Augmentation du seul grossissement optique",
+        "Réduction de l’ouverture des lentilles optiques"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faisceau d’électrons à courte longueur d’onde",
+      "question_html": "Pourquoi un microscope électronique permet-il de voir des détails plus fins qu’un microscope optique ?",
+      "answer_html": "Il utilise un <b>faisceau d’électrons</b> plutôt que la lumière visible. La longueur d’onde associée permet une résolution beaucoup plus fine ; des lentilles électromagnétiques guident les électrons.",
+      "practice": false
+    },
+    {
+      "id": "c1-002",
+      "section": "Cellule et microscopie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 9,10,11",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Microscopie optique",
+        "TEM sur coupe ultrafine",
+        "Microscopie électronique sous vide"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Microscopie optique",
+      "question_html": "Tu veux suivre une cellule vivante qui se déplace. Choisirais-tu la microscopie optique ou le TEM ? Pourquoi ?",
+      "answer_html": "La <b>microscopie optique</b>. Le TEM exige une préparation de l’échantillon biologique incompatible avec l’observation de cellules vivantes ; il sert plutôt à étudier l’ultrastructure.",
+      "practice": false
+    },
+    {
+      "id": "c1-003",
+      "section": "Cellule et microscopie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 12,13,14",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Un noyau et des organites membranaires",
+        "La présence exclusive de ribosomes chez l’eucaryote",
+        "La présence exclusive d’ADN chez le procaryote"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Un noyau et des organites membranaires",
+      "question_html": "Quelle différence de compartimentation distingue une cellule eucaryote d’une cellule procaryote ?",
+      "answer_html": "L’eucaryote possède un <b>noyau entouré d’une enveloppe</b> et des organites membranaires. Le procaryote ne possède ni véritable noyau ni ces organites membranaires ; il possède néanmoins une membrane plasmique et des ribosomes.",
+      "practice": false
+    },
+    {
+      "id": "c1-004",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 15,16,17 · C1 — Introduction à la biologie cellulaire · p. 28",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "ADN : désoxyribose/T; ARN : ribose/U",
+        "ADN : ribose/U; ARN : désoxyribose/T",
+        "Les deux contiennent seulement de l’uracile"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "ADN : désoxyribose/T; ARN : ribose/U",
+      "question_html": "Quelles différences de sucre, de base et d’organisation distinguent généralement l’ADN de l’ARN ?",
+      "answer_html": "ADN : <b>désoxyribose</b>, thymine, généralement deux brins complémentaires. ARN : <b>ribose</b>, uracile à la place de la thymine, généralement un brin pouvant se replier.",
+      "practice": false
+    },
+    {
+      "id": "c1-005",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 15 · C1 — Introduction à la biologie cellulaire · p. 34",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            34
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Réplication ADN→ADN; transcription ADN→ARN; traduction ARN→protéine",
+        "Réplication ARN→protéine; transcription ADN→ADN",
+        "Traduction protéine→ADN; transcription ARN→ADN"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Réplication ADN→ADN; transcription ADN→ARN; traduction ARN→protéine",
+      "question_html": "Distingue réplication, transcription et traduction par leur molécule de départ et leur produit.",
+      "answer_html": "<b>Réplication :</b> ADN → ADN. <b>Transcription :</b> ADN → ARN. <b>Traduction :</b> ARNm → chaîne polypeptidique. Copier le génome n’est donc pas la même opération qu’exprimer un gène.",
+      "practice": false
+    },
+    {
+      "id": "c1-006",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 20,21,22,23",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            20,
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Synthèse 5′→3′ sur des matrices antiparallèles",
+        "Synthèse libre dans les deux sens",
+        "Absence de polymérase sur le brin retardé"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Synthèse 5′→3′ sur des matrices antiparallèles",
+      "question_html": "Pourquoi la réplication produit-elle un brin continu et un brin discontinu ?",
+      "answer_html": "Les deux brins matrices sont <b>antiparallèles</b>, alors que l’ADN polymérase synthétise toujours en <b>5′ → 3′</b>. Un brin suit la fourche continûment ; l’autre est synthétisé par fragments d’Okazaki.",
+      "practice": false
+    },
+    {
+      "id": "c1-007",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 21,22,23",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Un 3′-OH initial fourni par une amorce de primase",
+        "Un 5′-phosphate créé par la ligase",
+        "Un 3′-OH directement créé par l’hélicase"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Un 3′-OH initial fourni par une amorce de primase",
+      "question_html": "À quoi sert l’amorce lors de la réplication, et quelle enzyme la produit dans la fourche représentée ?",
+      "answer_html": "Elle fournit une extrémité <b>3′-OH</b> à partir de laquelle l’ADN polymérase peut allonger le nouveau brin. La <b>primase</b> synthétise l’amorce d’ARN.",
+      "practice": false
+    },
+    {
+      "id": "c1-008",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 22,23",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "La jonction des fragments d’Okazaki",
+        "La séparation initiale des deux brins",
+        "La fixation d’un acide aminé"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La jonction des fragments d’Okazaki",
+      "question_html": "Si la ligase ne fonctionne pas, quelle étape de la formation du brin retardé est compromise ?",
+      "answer_html": "La <b>jonction des fragments d’Okazaki</b> en un brin continu. La polymérase peut produire des fragments, mais leurs discontinuités doivent ensuite être refermées.",
+      "practice": false
+    },
+    {
+      "id": "c1-009",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 23",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Hélicase : sépare; protéines SSB : stabilisent; polymérase : synthétise",
+        "Hélicase : ligature; SSB : sépare; polymérase : stabilise",
+        "Hélicase : sépare; SSB : synthétise; polymérase : ligature"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Hélicase : sépare; protéines SSB : stabilisent; polymérase : synthétise",
+      "question_html": "Associe hélicase, protéines liant l’ADN simple brin et ADN polymérase à leur fonction à la fourche.",
+      "answer_html": "<b>Hélicase :</b> sépare les deux brins. <b>Protéines liant le simple brin :</b> stabilisent les brins séparés. <b>ADN polymérase :</b> allonge le brin complémentaire en 5′ → 3′.",
+      "practice": false
+    },
+    {
+      "id": "c1-010",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 27 · C1 — Introduction à la biologie cellulaire · p. 29,30",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            27
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            29,
+            30
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Recruter la machinerie et situer le début de transcription",
+        "Fournir l’amorce d’ARN de la réplication",
+        "Signaler la terminaison de la traduction"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Recruter la machinerie et situer le début de transcription",
+      "question_html": "Quel est le rôle du promoteur dans la transcription ?",
+      "answer_html": "Il permet le <b>recrutement et le positionnement de la machinerie de transcription</b> au début d’un gène. L’ARN polymérase utilise ensuite un brin d’ADN comme matrice pour produire l’ARN.",
+      "practice": false
+    },
+    {
+      "id": "c1-011",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 27 · C1 — Introduction à la biologie cellulaire · p. 31,32,33,34",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            27
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            31,
+            32,
+            33,
+            34
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Il doit subir une maturation",
+        "Il doit être entièrement répliqué en ADN",
+        "Il doit perdre tous ses exons avant export"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Il doit subir une maturation",
+      "question_html": "Pourquoi le transcrit primaire eucaryote n’est-il pas nécessairement prêt à être traduit ?",
+      "answer_html": "Il subit une <b>maturation</b> : ajout d’une coiffe en 5′, épissage des introns et ajout d’une queue poly(A) en 3′. L’ARNm mature est ensuite exporté vers le cytosol.",
+      "practice": false
+    },
+    {
+      "id": "c1-012",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 31,32",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            31,
+            32
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Introns retirés, exons reliés",
+        "Exons retirés, introns reliés",
+        "Tous les nucléotides sont traduits sans tri"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Introns retirés, exons reliés",
+      "question_html": "Que deviennent les introns et les exons lors de l’épissage ?",
+      "answer_html": "Les <b>introns sont retirés</b> du transcrit ; les <b>exons conservés sont réunis</b>. Un exon appartient à l’ARN mature, sans être nécessairement entièrement traduit.",
+      "practice": false
+    },
+    {
+      "id": "c1-013",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 32",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            32
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Par différentes combinaisons d’exons",
+        "Par traduction des introns uniquement",
+        "Par changement du sens de lecture du même ARNm"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Par différentes combinaisons d’exons",
+      "question_html": "Comment l’épissage alternatif permet-il à un même gène de produire plusieurs protéines ?",
+      "answer_html": "Des combinaisons différentes d’exons sont retenues dans les ARNm. Les séquences traduites peuvent donc différer selon le tissu ou les conditions, comme l’illustre l’exemple de la tropomyosine.",
+      "practice": false
+    },
+    {
+      "id": "c1-014",
+      "section": "ADN, réplication et transcription",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 27 · C1 — Introduction à la biologie cellulaire · p. 34",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            27
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            34
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Transcription nucléaire, traduction cytoplasmique",
+        "Transcription cytoplasmique, traduction nucléaire",
+        "Transcription et traduction exclusivement dans le noyau"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Transcription nucléaire, traduction cytoplasmique",
+      "question_html": "Quelle séparation spatiale existe entre transcription et traduction chez l’eucaryote ?",
+      "answer_html": "La transcription et la maturation de l’ARN se déroulent dans le <b>noyau</b> ; la traduction se déroule sur les <b>ribosomes du cytosol ou associés au RE</b>. L’ARNm doit donc être exporté.",
+      "practice": false
+    },
+    {
+      "id": "c1-015",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 37,38,39,40",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            37,
+            38,
+            39,
+            40
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Anticodon pour l’ARNm, acide aminé transporté",
+        "Codon pour l’ADN, protéine complète transportée",
+        "Site promoteur pour l’ARNm, nucléotide transporté"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Anticodon pour l’ARNm, acide aminé transporté",
+      "question_html": "Pourquoi un ARNt constitue-t-il un adaptateur entre ARN et protéine ?",
+      "answer_html": "Son <b>anticodon</b> reconnaît un codon de l’ARNm ; son extrémité <b>3′</b> porte l’acide aminé correspondant. Il relie ainsi une séquence nucléotidique à un acide aminé.",
+      "practice": false
+    },
+    {
+      "id": "c1-016",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 37 · C1 — Questions du professeur · p. 1",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            37
+          ]
+        },
+        {
+          "document": "c1q",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Le code génétique est dégénéré",
+        "Chaque codon possède trois acides aminés",
+        "Il existe seulement 20 codons"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le code génétique est dégénéré",
+      "question_html": "Pourquoi plusieurs codons peuvent-ils coder le même acide aminé ?",
+      "answer_html": "Le code est <b>dégénéré ou redondant</b> : 61 codons codants correspondent à 20 acides aminés, et 3 codons sont STOP. Certaines substitutions de bases peuvent ainsi ne pas changer l’acide aminé ; cela n’empêche pas toutes les conséquences d’une mutation.",
+      "practice": false
+    },
+    {
+      "id": "c1-017",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Questions du professeur · p. 1",
+      "references": [
+        {
+          "document": "c1q",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Appariement flexible en troisième position du codon",
+        "Échange permanent des sites A et E",
+        "Décalage du cadre de lecture à chaque codon"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Appariement flexible en troisième position du codon",
+      "question_html": "Qu’est-ce que le « wobble » et quel avantage procure-t-il à la cellule ?",
+      "answer_html": "L’appariement à la <b>troisième base du codon</b> est plus flexible qu’aux deux premières. Un même ARNt peut reconnaître plusieurs codons, ce qui réduit le nombre d’ARNt distincts nécessaires.",
+      "practice": false
+    },
+    {
+      "id": "c1-018",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 39,40",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            39,
+            40
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "A : arrivée; P : chaîne; E : sortie",
+        "A : sortie; P : entrée; E : réplication",
+        "Les trois sites fixent seulement des facteurs STOP"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "A : arrivée; P : chaîne; E : sortie",
+      "question_html": "À quoi correspondent les sites A, P et E du ribosome ?",
+      "answer_html": "<b>A :</b> arrivée de l’ARNt chargé. <b>P :</b> ARNt portant la chaîne peptidique. <b>E :</b> sortie de l’ARNt déchargé. La progression du ribosome fait passer les ARNt d’un site à l’autre.",
+      "practice": false
+    },
+    {
+      "id": "c1-019",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 40 · C1 — Questions du professeur · p. 1",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            40
+          ]
+        },
+        {
+          "document": "c1q",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Former la liaison peptidique",
+        "Charger l’ARNt avec son acide aminé",
+        "Retirer les introns du transcrit primaire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Former la liaison peptidique",
+      "question_html": "Quel rôle joue l’activité peptidyl-transférase pendant la traduction ?",
+      "answer_html": "Elle <b>catalyse la liaison peptidique</b> entre acides aminés et transfère la chaîne en croissance sur l’acide aminé de l’ARNt entrant. Elle est portée par la grande sous-unité ribosomale.",
+      "practice": false
+    },
+    {
+      "id": "c1-020",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 37 · C1 — Introduction à la biologie cellulaire · p. 41",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            37
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            41
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "AUG : initiation/cadre; STOP : terminaison",
+        "AUG : terminaison; STOP : élongation",
+        "AUG : initiation; STOP : acides aminés terminaux"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "AUG : initiation/cadre; STOP : terminaison",
+      "question_html": "Que déterminent le codon initiateur et les codons STOP lors de la traduction ?",
+      "answer_html": "Le codon initiateur <b>AUG</b> fixe le début et le cadre de lecture. Un codon <b>STOP</b> termine la synthèse et permet la libération de la chaîne ; il ne code pas un acide aminé.",
+      "practice": false
+    },
+    {
+      "id": "c1-021",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 41",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            41
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Plusieurs ribosomes sur un ARNm : polysome",
+        "Un ribosome synthétise plusieurs chaînes en parallèle",
+        "Une seule chaîne est divisée en protéines identiques"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Plusieurs ribosomes sur un ARNm : polysome",
+      "question_html": "Comment plusieurs protéines peuvent-elles être produites simultanément à partir d’un seul ARNm ?",
+      "answer_html": "Plusieurs ribosomes peuvent se déplacer sur le même ARNm : c’est un <b>polyribosome</b>. Chaque ribosome synthétise sa propre chaîne polypeptidique.",
+      "practice": false
+    },
+    {
+      "id": "c1-022",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 43,44 · C1 — Introduction à la biologie cellulaire · p. 58",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            43,
+            44
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            58
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Repliement et parfois modifications nécessaires",
+        "L’épissage des introns doit encore se faire dans la protéine",
+        "Tous les acides aminés doivent être remplacés"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Repliement et parfois modifications nécessaires",
+      "question_html": "Pourquoi une chaîne nouvellement traduite n’est-elle pas toujours une protéine fonctionnelle ?",
+      "answer_html": "Elle doit acquérir son <b>repliement tridimensionnel</b> et peut subir des modifications post-traductionnelles ou s’assembler avec d’autres sous-unités. La séquence seule ne garantit pas une conformation active.",
+      "practice": false
+    },
+    {
+      "id": "c1-023",
+      "section": "Code génétique et protéines",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 44 · C1 — Introduction à la biologie cellulaire · p. 58",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            44
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            58
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Chaperonne : repliement; protéasome : dégradation",
+        "Chaperonne : dégradation; protéasome : repliement",
+        "Chaperonne : traduction; protéasome : transcription"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Chaperonne : repliement; protéasome : dégradation",
+      "question_html": "Distingue le rôle d’une chaperonne moléculaire de celui du protéasome.",
+      "answer_html": "Une <b>chaperonne</b>, comme Hsp60/Hsp70, aide au repliement. Le <b>protéasome</b> dégrade des protéines, notamment celles qui restent mal repliées malgré les mécanismes de contrôle.",
+      "practice": false
+    },
+    {
+      "id": "c1-024",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 47,48,49,50,51,52,53",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Silencieuse : même AA; faux-sens : autre AA; non-sens : STOP",
+        "Silencieuse : STOP; faux-sens : même AA",
+        "Toutes raccourcissent la protéine"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Silencieuse : même AA; faux-sens : autre AA; non-sens : STOP",
+      "question_html": "Distingue mutation silencieuse, faux-sens et non-sens.",
+      "answer_html": "<b>Silencieuse :</b> le codon modifié spécifie le même acide aminé. <b>Faux-sens :</b> un acide aminé est remplacé. <b>Non-sens :</b> un codon STOP prématuré interrompt la traduction.",
+      "practice": false
+    },
+    {
+      "id": "c1-025",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 48 · C1 — Introduction à la biologie cellulaire · p. 51",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            48
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            51
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Non, l’effet dépend du codon et de la substitution",
+        "Oui, toute substitution crée un STOP",
+        "Oui, elle retire toujours un exon"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Non, l’effet dépend du codon et de la substitution",
+      "question_html": "Une substitution d’une base produit-elle nécessairement une protéine plus courte ?",
+      "answer_html": "<b>Non.</b> Elle peut être silencieuse ou changer un acide aminé sans changer la longueur. Une mutation non-sens, elle, peut créer un STOP prématuré et tronquer la protéine.",
+      "practice": false
+    },
+    {
+      "id": "c1-026",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 53",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            53
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Elle décale le cadre de lecture",
+        "Elle remplace seulement un acide aminé à coup sûr",
+        "Elle rétablit toujours la séquence normale"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Elle décale le cadre de lecture",
+      "question_html": "Pourquoi l’insertion d’une seule base dans une séquence codante peut-elle modifier tous les acides aminés suivants ?",
+      "answer_html": "Les codons sont lus par <b>triplets</b>. Une insertion d’une base décale le cadre de lecture : les triplets en aval changent, souvent jusqu’à un STOP prématuré.",
+      "practice": false
+    },
+    {
+      "id": "c1-027",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 51",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            51
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Une substitution peut modifier fortement la fonction de l’Hb",
+        "Toute mutation est sans effet protéique",
+        "La maladie exige la perte de tous les chromosomes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une substitution peut modifier fortement la fonction de l’Hb",
+      "question_html": "Quel principe la drépanocytose illustre-t-elle dans le cours ?",
+      "answer_html": "Une <b>mutation faux-sens</b> peut modifier un acide aminé de la β-globine, altérer les propriétés de l’hémoglobine et changer la forme des globules rouges. Une petite modification de séquence peut donc avoir un effet fonctionnel majeur.",
+      "practice": false
+    },
+    {
+      "id": "c1-028",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 50",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            50
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Perte, gain ou modification de fonction",
+        "Uniquement perte totale d’activité",
+        "Uniquement augmentation de l’activité"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Perte, gain ou modification de fonction",
+      "question_html": "Quelles conséquences fonctionnelles différentes une mutation peut-elle avoir sur une protéine ?",
+      "answer_html": "Une <b>perte de fonction</b>, un <b>gain de fonction</b> ou une modification conditionnelle, par exemple dépendante de la température. « Mutation » ne signifie donc pas automatiquement disparition complète de l’activité.",
+      "practice": false
+    },
+    {
+      "id": "c1-029",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 54",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            54
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Perte d’un frein au cycle ou à la survie cellulaire",
+        "Activation directe obligatoire d’un proto-oncogène",
+        "Augmentation obligatoire de la fidélité de réplication"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Perte d’un frein au cycle ou à la survie cellulaire",
+      "question_html": "Pourquoi la perte d’un suppresseur de tumeur favorise-t-elle la prolifération ?",
+      "answer_html": "Elle supprime un <b>frein à la croissance</b> ou un mécanisme de surveillance. Le cours donne notamment p53 et BRCA1/BRCA2 comme exemples de gènes liés à cette protection.",
+      "practice": false
+    },
+    {
+      "id": "c1-030",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 54",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            54
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Accumulation facilitée de nouvelles mutations",
+        "Correction plus fidèle de chaque erreur",
+        "Arrêt certain de toute réplication"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Accumulation facilitée de nouvelles mutations",
+      "question_html": "Comment une anomalie d’un gène de réparation de l’ADN peut-elle favoriser un cancer sans stimuler directement la division ?",
+      "answer_html": "Les lésions et erreurs persistent davantage, ce qui augmente l’accumulation de mutations, notamment dans les gènes contrôlant la croissance. L’effet passe par une <b>instabilité génétique</b> accrue.",
+      "practice": false
+    },
+    {
+      "id": "c1-031",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 56",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            56
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Retirer la zone lésée puis resynthétiser et ligaturer",
+        "Ligaturer directement les bases lésées sans les enlever",
+        "Retirer le brin intact et conserver seulement le brin lésé"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Retirer la zone lésée puis resynthétiser et ligaturer",
+      "question_html": "Quel est le principe général d’une réparation de l’ADN par excision ?",
+      "answer_html": "La région endommagée est <b>retirée</b>, l’ADN manquant est <b>resynthétisé à partir du brin intact</b>, puis la continuité du brin est rétablie. Le brin complémentaire fournit l’information de référence.",
+      "practice": false
+    },
+    {
+      "id": "c1-032",
+      "section": "Mutations et contrôle qualité",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 58,59",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            58,
+            59
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Marquer une protéine pour dégradation",
+        "Diriger toute protéine vers la sécrétion",
+        "Garantir le repliement définitif sans dégradation"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Marquer une protéine pour dégradation",
+      "question_html": "À quoi sert la chaîne de polyubiquitine sur la protéine représentée dans le cours ?",
+      "answer_html": "Elle sert de <b>signal d’adressage au protéasome</b>. La protéine ciblée est dépliée et découpée en peptides ; cette voie participe au renouvellement et au contrôle qualité des protéines.",
+      "practice": false
+    },
+    {
+      "id": "c1-033",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 62,63,64,65,66",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            62,
+            63,
+            64,
+            65,
+            66
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Séparation → transfert → anticorps; détection protéique",
+        "Anticorps → PCR → gel; détection d’ADN",
+        "Séparation → transfert → sonde ADN; détection d’ARN"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Séparation → transfert → anticorps; détection protéique",
+      "question_html": "Remets dans l’ordre les grandes étapes d’un Western blot et indique ce qu’il détecte.",
+      "answer_html": "<b>Lyse/extraction → séparation par électrophorèse → transfert sur membrane → détection par anticorps.</b> Il sert à détecter une protéine spécifique dans un mélange.",
+      "practice": false
+    },
+    {
+      "id": "c1-034",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 62,63,64",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            62,
+            63,
+            64
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Le gel freine davantage les grandes protéines",
+        "Les petites protéines portent toujours zéro charge",
+        "Les grandes protéines sont seules attirées par le champ"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le gel freine davantage les grandes protéines",
+      "question_html": "Pourquoi les petites protéines migrent-elles plus loin dans un gel de SDS-PAGE ?",
+      "answer_html": "Le gel agit comme un <b>tamis moléculaire</b>. Le SDS dénature les protéines et leur confère une charge négative relativement uniforme ; la migration dépend alors surtout de leur taille.",
+      "practice": false
+    },
+    {
+      "id": "c1-035",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 64,65,66",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            64,
+            65,
+            66
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "L’identité d’une protéine ciblée par anticorps",
+        "La séquence exacte de tous ses acides aminés",
+        "La quantité totale de tous les lipides"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "L’identité d’une protéine ciblée par anticorps",
+      "question_html": "Quelle information supplémentaire apporte un Western blot par rapport à une coloration des protéines totales ?",
+      "answer_html": "La coloration révèle de nombreuses protéines du mélange. Le Western utilise des <b>anticorps spécifiques</b> pour reconnaître la protéine recherchée, au niveau de la bande correspondant à sa migration.",
+      "practice": false
+    },
+    {
+      "id": "c1-036",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 65,66",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Primaire : cible; secondaire : primaire et signal",
+        "Primaire : secondaire; secondaire : cible",
+        "Primaire et secondaire se lient nécessairement au même épitope"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Primaire : cible; secondaire : primaire et signal",
+      "question_html": "Quel est le rôle respectif de l’anticorps primaire et de l’anticorps secondaire dans la détection indirecte ?",
+      "answer_html": "Le <b>primaire</b> se lie à la protéine cible. Le <b>secondaire marqué</b> se lie au primaire et permet de visualiser le signal.",
+      "practice": false
+    },
+    {
+      "id": "c1-037",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 67,68,69",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            67,
+            68,
+            69
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Absence du 3′-OH nécessaire à l’élongation",
+        "Absence du phosphate 5′ nécessaire à toute synthèse",
+        "Présence d’un groupement 3′-OH supplémentaire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Absence du 3′-OH nécessaire à l’élongation",
+      "question_html": "Pourquoi un didésoxynucléotide arrête-t-il l’élongation de l’ADN dans le séquençage de Sanger ?",
+      "answer_html": "Il ne possède pas le <b>groupement 3′-OH</b> nécessaire à l’ajout du nucléotide suivant. Son incorporation termine donc la chaîne à une position déterminée.",
+      "practice": false
+    },
+    {
+      "id": "c1-038",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 68,69,70,71",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            68,
+            69,
+            70,
+            71
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Classer les fragments par taille et lire les terminaisons",
+        "Lire seulement les fragments les plus longs",
+        "Classer les fragments uniquement par concentration"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Classer les fragments par taille et lire les terminaisons",
+      "question_html": "Comment les fragments terminés à différentes positions permettent-ils de retrouver une séquence par Sanger ?",
+      "answer_html": "On les sépare selon leur <b>longueur</b>. En lisant du fragment le plus court au plus long et en identifiant la base terminale, on obtient la séquence du <b>brin synthétisé en 5′ → 3′</b>.",
+      "practice": false
+    },
+    {
+      "id": "c1-039",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 71",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            71
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Une base identifiée par son signal fluorescent",
+        "Une protéine détectée par un anticorps",
+        "Une copie entière du génome par pic"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une base identifiée par son signal fluorescent",
+      "question_html": "Que représente un pic dans un chromatogramme de séquençage Sanger ?",
+      "answer_html": "Le signal fluorescent associé à une base terminale d’une population de fragments de même longueur. L’ordre des pics permet de lire la séquence du nouveau brin.",
+      "practice": false
+    },
+    {
+      "id": "c1-040",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 72,73",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            72,
+            73
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Dénaturation → hybridation → élongation",
+        "Hybridation → traduction → épissage",
+        "Ligature → fluorescence → protéolyse"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Dénaturation → hybridation → élongation",
+      "question_html": "Nomme les trois étapes d’un cycle de PCR et le rôle de chacune.",
+      "answer_html": "<b>Dénaturation :</b> séparer les brins. <b>Hybridation :</b> fixer les amorces. <b>Élongation :</b> synthétiser les brins complémentaires avec une ADN polymérase. La répétition des cycles amplifie la région ciblée.",
+      "practice": false
+    },
+    {
+      "id": "c1-041",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 72,73",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            72,
+            73
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Délimiter la cible sur les deux brins",
+        "Fixer deux fois la même extrémité sur un seul brin",
+        "Remplacer l’activité de la polymérase"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Délimiter la cible sur les deux brins",
+      "question_html": "Pourquoi utilise-t-on deux amorces en PCR ?",
+      "answer_html": "Elles encadrent la <b>région à amplifier</b>, chacune sur un brin opposé, avec leurs extrémités d’élongation dirigées vers la cible. Elles définissent la spécificité et les limites de l’amplicon.",
+      "practice": false
+    },
+    {
+      "id": "c1-042",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 72,73",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            72,
+            73
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "1 024 fois",
+        "20 fois",
+        "100 fois"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "1 024 fois",
+      "question_html": "Si chaque cycle double idéalement le nombre de molécules cibles, quel facteur d’amplification obtient-on après 10 cycles ?",
+      "answer_html": "<b>2¹⁰ = 1 024.</b> Il s’agit d’un modèle idéal ; l’efficacité réelle et la disponibilité des réactifs limitent l’amplification.",
+      "practice": false
+    },
+    {
+      "id": "c1-043",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Questions du professeur · p. 1,2",
+      "references": [
+        {
+          "document": "c1q",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Amorces courtes et en forte concentration",
+        "Amorces dépourvues de complémentarité",
+        "Longs brins toujours plus rapides à retrouver leur partenaire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Amorces courtes et en forte concentration",
+      "question_html": "Après dénaturation, pourquoi les amorces de PCR s’hybrident-elles rapidement, alors que deux longs brins d’ADN se réassocient plus lentement ?",
+      "answer_html": "Les amorces sont <b>courtes et en forte concentration</b>. La renaturation dépend notamment du temps et de la concentration ; elle est plus lente pour de longues séquences complexes. La dénaturation n’empêche donc pas une renaturation ultérieure.",
+      "practice": false
+    },
+    {
+      "id": "c1-044",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Questions du professeur · p. 1",
+      "references": [
+        {
+          "document": "c1q",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Température de demi-dénaturation",
+        "Température où tout ADN se réplique",
+        "Température où une protéine fond toujours"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Température de demi-dénaturation",
+      "question_html": "Que signifie la température de fusion Tm d’un ADN ?",
+      "answer_html": "La température à laquelle environ <b>50 % de l’ADN est sous forme double brin et 50 % sous forme simple brin</b>, dans les conditions considérées.",
+      "practice": false
+    },
+    {
+      "id": "c1-045",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 75 · C1 — Questions du professeur · p. 3",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            75
+          ]
+        },
+        {
+          "document": "c1q",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Convertir l’ARN en ADN complémentaire",
+        "Transformer l’ADN en ARN avant amplification",
+        "Faire agir l’ADN polymérase directement sur l’ARN"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Convertir l’ARN en ADN complémentaire",
+      "question_html": "Pourquoi faut-il une transcription inverse avant la PCR pour détecter le génome d’un coronavirus à ARN ?",
+      "answer_html": "La PCR amplifie de l’<b>ADN</b>, pas directement de l’ARN. La transcriptase inverse convertit l’ARN viral en <b>ADNc</b>, puis cet ADNc est amplifié : ARN → ADNc → PCR.",
+      "practice": false
+    },
+    {
+      "id": "c1-046",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 60 · C1 — Introduction à la biologie cellulaire · p. 65,66,67,68,69,70,71,72,73",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            60
+          ]
+        },
+        {
+          "document": "c1",
+          "pages": [
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Western : protéine; PCR : amplification; Sanger : séquence",
+        "Western : séquence d’ADN; PCR : protéines; Sanger : amplification seule",
+        "Western : ARN; PCR : séquence complète; Sanger : protéines"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Western : protéine; PCR : amplification; Sanger : séquence",
+      "question_html": "Quelle technique choisir pour détecter une protéine spécifique, amplifier une région d’ADN ou déterminer l’ordre de ses bases ?",
+      "answer_html": "<b>Protéine spécifique :</b> Western blot. <b>Amplification :</b> PCR. <b>Ordre des bases :</b> séquençage, par exemple Sanger. Ces méthodes ne répondent pas à la même question expérimentale.",
+      "practice": false
+    },
+    {
+      "id": "c1-047",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 76,77,78",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            76,
+            77,
+            78
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Émission généralement à plus grande longueur d’onde",
+        "Émission toujours à plus courte longueur d’onde",
+        "Excitation et émission toujours identiques"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Émission généralement à plus grande longueur d’onde",
+      "question_html": "Quel changement de longueur d’onde distingue excitation et émission d’un fluorophore dans le schéma ?",
+      "answer_html": "Le fluorophore absorbe une lumière d’excitation puis émet une lumière de <b>plus grande longueur d’onde</b>. Des filtres séparent l’émission du faisceau excitateur pour former l’image.",
+      "practice": false
+    },
+    {
+      "id": "c1-048",
+      "section": "Techniques moléculaires",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 78,79",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            78,
+            79
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Immunofluorescence : antigène; FISH : acide nucléique",
+        "Immunofluorescence : ADN; FISH : protéine",
+        "Les deux utilisent uniquement des anticorps"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Immunofluorescence : antigène; FISH : acide nucléique",
+      "question_html": "Quelle différence existe entre immunofluorescence et FISH quant à la cible reconnue ?",
+      "answer_html": "L’<b>immunofluorescence</b> utilise des anticorps pour localiser une protéine. La <b>FISH</b> utilise une sonde nucléique complémentaire fluorescente pour localiser une séquence d’acide nucléique.",
+      "practice": false
+    },
+    {
+      "id": "c1-049",
+      "section": "Organites et adressage",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 83,84",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            83,
+            84
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Séquence signal reconnue par la SRP",
+        "Signal nucléaire reconnu par une importine",
+        "Chaîne de polyubiquitine reconnue par le protéasome"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Séquence signal reconnue par la SRP",
+      "question_html": "Qu’est-ce qui dirige un ribosome vers le réticulum endoplasmique lors de la synthèse d’une protéine ?",
+      "answer_html": "Une <b>séquence signal</b> du polypeptide naissant, reconnue par la <b>SRP</b>. L’adressage dépend du produit en cours de synthèse, et non d’une catégorie définitivement distincte de ribosomes.",
+      "practice": false
+    },
+    {
+      "id": "c1-050",
+      "section": "Organites et adressage",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 84,85,86,87",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            84,
+            85,
+            86,
+            87
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Rugueux : protéines; lisse : lipides et autres fonctions",
+        "Rugueux : lipides seulement; lisse : traduction des protéines",
+        "Rugueux : réplication; lisse : épissage nucléaire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Rugueux : protéines; lisse : lipides et autres fonctions",
+      "question_html": "Compare les fonctions principales du RE rugueux et du RE lisse.",
+      "answer_html": "Le <b>RE rugueux</b>, porteur de ribosomes, participe à la production de protéines de la voie sécrétoire et de membranes. Le <b>RE lisse</b> participe notamment à la synthèse lipidique et à la détoxification.",
+      "practice": false
+    },
+    {
+      "id": "c1-051",
+      "section": "Organites et adressage",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 83,84,85,86,87,88",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            83,
+            84,
+            85,
+            86,
+            87,
+            88
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "RE → Golgi → vésicule → extérieur",
+        "Golgi → RE → noyau → extérieur",
+        "RE → lysosome → matrice mitochondriale → extérieur"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "RE → Golgi → vésicule → extérieur",
+      "question_html": "Quel trajet suit typiquement une protéine destinée à être sécrétée ?",
+      "answer_html": "<b>RE → vésicule de transport → appareil de Golgi → vésicule de sécrétion → membrane plasmique.</b> Le Golgi modifie, trie et conditionne les produits avant leur destination finale.",
+      "practice": false
+    },
+    {
+      "id": "c1-052",
+      "section": "Organites et adressage",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 86",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            86
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Assurer l’adressage correct de sa cargaison",
+        "Garantir une fusion identique avec toute membrane",
+        "Empêcher toute reconnaissance spécifique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Assurer l’adressage correct de sa cargaison",
+      "question_html": "Pourquoi une vésicule de transport doit-elle reconnaître une membrane cible précise ?",
+      "answer_html": "Pour livrer sa cargaison au <b>bon compartiment</b>. Le schéma montre l’intervention de protéines de reconnaissance et de fusion, dont les SNARE, qui assurent la spécificité du trafic.",
+      "practice": false
+    },
+    {
+      "id": "c1-053",
+      "section": "Organites et adressage",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 89",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            89
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Son import nucléaire peut être compromis",
+        "Sa traduction devient nécessairement impossible",
+        "Sa sécrétion est nécessairement activée"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Son import nucléaire peut être compromis",
+      "question_html": "Que se passe-t-il si une protéine normalement nucléaire perd son signal de localisation nucléaire ?",
+      "answer_html": "Son adressage au noyau peut être compromis : le signal est reconnu par la machinerie d’importation qui permet le passage par les <b>pores nucléaires</b>.",
+      "practice": false
+    },
+    {
+      "id": "c1-054",
+      "section": "Organites et adressage",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 90",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            90
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Passif : selon gradient; actif : contre gradient avec énergie",
+        "Passif : exige toujours ATP; actif : jamais énergie",
+        "Les deux passent seulement sans protéines"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Passif : selon gradient; actif : contre gradient avec énergie",
+      "question_html": "Distingue transport passif et transport actif à travers une membrane.",
+      "answer_html": "Le transport <b>passif</b> suit le gradient électrochimique. Le transport <b>actif</b> utilise une source d’énergie pour déplacer un soluté contre son gradient, directement ou par couplage.",
+      "practice": false
+    },
+    {
+      "id": "c1-055",
+      "section": "Mitochondrie et énergie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 91,92,93,94,95",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            91,
+            92,
+            93,
+            94,
+            95
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Matrice, espace intermembranaire et cytosol externe",
+        "Un noyau dans chaque crête",
+        "Seulement une cavité sans compartiment"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Matrice, espace intermembranaire et cytosol externe",
+      "question_html": "Quels compartiments séparent les membranes mitochondriales externe et interne ?",
+      "answer_html": "La membrane externe délimite la mitochondrie ; entre les deux membranes se trouve l’<b>espace intermembranaire</b>. La membrane interne, repliée en crêtes, entoure la <b>matrice</b>.",
+      "practice": false
+    },
+    {
+      "id": "c1-056",
+      "section": "Mitochondrie et énergie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 93,94,95",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            93,
+            94,
+            95
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Pompage de H⁺ créant un gradient électrochimique",
+        "Pompage d’ATP vers le cytosol créant une charge",
+        "Synthèse d’ATP sans aucun gradient"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Pompage de H⁺ créant un gradient électrochimique",
+      "question_html": "Comment le transfert d’électrons devient-il une réserve d’énergie utilisable dans la mitochondrie ?",
+      "answer_html": "L’énergie libérée par le transfert d’électrons dans la chaîne respiratoire sert à <b>pomper des H⁺ de la matrice vers l’espace intermembranaire</b>. Le gradient électrochimique ainsi créé stocke l’énergie.",
+      "practice": false
+    },
+    {
+      "id": "c1-057",
+      "section": "Mitochondrie et énergie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 94,95",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            94,
+            95
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Vers la matrice, couplé à ADP + Pi → ATP",
+        "Vers le cytosol, couplé à la traduction",
+        "Vers l’espace intermembranaire, sans réaction couplée"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Vers la matrice, couplé à ADP + Pi → ATP",
+      "question_html": "Dans quel sens les H⁺ traversent-ils l’ATP synthase, et quelle réaction est couplée à ce mouvement ?",
+      "answer_html": "Ils reviennent de l’<b>espace intermembranaire vers la matrice</b>, selon leur gradient. Ce retour est couplé à la synthèse d’<b>ATP à partir d’ADP et de phosphate</b>.",
+      "practice": false
+    },
+    {
+      "id": "c1-058",
+      "section": "Mitochondrie et énergie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 95,96,97,98",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            95,
+            96,
+            97,
+            98
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Accepteur final d’électrons, avec formation d’eau",
+        "Donneur initial d’électrons au complexe I",
+        "Source du carbone de l’acétyl-CoA"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Accepteur final d’électrons, avec formation d’eau",
+      "question_html": "Quel est le rôle de l’oxygène à l’extrémité de la chaîne respiratoire ?",
+      "answer_html": "Il est l’<b>accepteur final des électrons</b> et participe à la formation d’eau. Sans cet accepteur, le transfert d’électrons et le maintien du gradient protonique sont compromis.",
+      "practice": false
+    },
+    {
+      "id": "c1-059",
+      "section": "Mitochondrie et énergie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 95",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            95
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Production de transporteurs réduits NADH/FADH₂",
+        "Transport direct des H⁺ à travers l’ATP synthase",
+        "Synthèse de tout l’ATP sans chaîne respiratoire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Production de transporteurs réduits NADH/FADH₂",
+      "question_html": "Comment le cycle de l’acide citrique alimente-t-il indirectement la synthèse d’ATP ?",
+      "answer_html": "L’oxydation de l’acétyl-CoA réduit notamment le <b>NAD⁺ en NADH</b> et le FAD en FADH₂. Ces transporteurs apportent des électrons à la chaîne respiratoire, qui produit le gradient utilisé par l’ATP synthase.",
+      "practice": false
+    },
+    {
+      "id": "c1-060",
+      "section": "Mitochondrie et énergie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 95",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            95
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Le NADH ne traverse pas librement la membrane interne",
+        "La membrane externe est totalement imperméable à tout métabolite",
+        "Le NADH cytosolique est dépourvu d’électrons"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le NADH ne traverse pas librement la membrane interne",
+      "question_html": "Pourquoi les électrons du NADH cytosolique doivent-ils utiliser des navettes pour rejoindre la mitochondrie ?",
+      "answer_html": "Le <b>NADH ne traverse pas directement la membrane mitochondriale interne</b>. Son pouvoir réducteur est transféré à d’autres composés, qui acheminent indirectement les électrons.",
+      "practice": false
+    },
+    {
+      "id": "c1-061",
+      "section": "Mitochondrie et énergie",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 97 · C1 — Questions du professeur · p. 2",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            97
+          ]
+        },
+        {
+          "document": "c1q",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Libération par étapes et stockage partiel en énergie utilisable",
+        "Libération obligatoire de toute l’énergie en chaleur",
+        "Absence totale de réactions d’oxydation"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Libération par étapes et stockage partiel en énergie utilisable",
+      "question_html": "Quel avantage les oxydations biologiques ont-elles sur une combustion libérant son énergie en une seule étape ?",
+      "answer_html": "La libération <b>par étapes</b> permet de récupérer une partie de l’énergie sous forme de gradient protonique puis d’ATP. Une combustion directe dissipe largement l’énergie en chaleur sans cette conservation contrôlée.",
+      "practice": false
+    },
+    {
+      "id": "c1-062",
+      "section": "Cytosquelette et tissus",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 101,102",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            101,
+            102
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Actine, microtubules et filaments intermédiaires",
+        "Collagène, élastine et fibronectine",
+        "Actine, myosine et collagène uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Actine, microtubules et filaments intermédiaires",
+      "question_html": "Quelles trois grandes familles composent le cytosquelette ?",
+      "answer_html": "Les <b>microtubules</b> constitués de tubuline, les <b>microfilaments</b> d’actine et les <b>filaments intermédiaires</b>. Ils diffèrent par leur structure et leurs fonctions mécaniques.",
+      "practice": false
+    },
+    {
+      "id": "c1-063",
+      "section": "Cytosquelette et tissus",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 101,102",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            101,
+            102
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Rails associés à des moteurs moléculaires",
+        "Déplacement uniquement par diffusion sans organisation",
+        "Trafic assuré exclusivement par la matrice extracellulaire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Rails associés à des moteurs moléculaires",
+      "question_html": "Comment le cytosquelette participe-t-il au transport intracellulaire ?",
+      "answer_html": "Il fournit des <b>pistes</b> sur lesquelles des protéines motrices déplacent vésicules et organites. Il contribue aussi au soutien de la cellule, à sa forme et à sa motilité.",
+      "practice": false
+    },
+    {
+      "id": "c1-064",
+      "section": "Cytosquelette et tissus",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 103",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            103
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Jonction serrée",
+        "Jonction gap",
+        "Desmosome"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Jonction serrée",
+      "question_html": "Quel type de jonction empêche un passage libre entre cellules épithéliales voisines ?",
+      "answer_html": "Les <b>jonctions serrées ou occlusives</b>, impliquant notamment les claudines. Elles scellent l’espace intercellulaire et contribuent à la fonction de barrière.",
+      "practice": false
+    },
+    {
+      "id": "c1-065",
+      "section": "Cytosquelette et tissus",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 103",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            103
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Gap : communication; ancrage : résistance mécanique",
+        "Gap : étanchéité; ancrage : communication ionique",
+        "Gap : adhésion à la matrice; ancrage : synthèse d’ATP"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Gap : communication; ancrage : résistance mécanique",
+      "question_html": "En quoi une jonction gap diffère-t-elle d’une jonction d’ancrage ?",
+      "answer_html": "La <b>jonction gap</b> forme des canaux permettant le passage d’ions et de petites molécules entre cellules. Une <b>jonction d’ancrage</b> transmet des contraintes mécaniques entre cellules ou vers la matrice.",
+      "practice": false
+    },
+    {
+      "id": "c1-066",
+      "section": "Cytosquelette et tissus",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 103,104",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            103,
+            104
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Cadhérines : cellule-cellule; intégrines : matrice; connexines : gap",
+        "Cadhérines : matrice; intégrines : gap; connexines : cellule-cellule",
+        "Cadhérines : gap; intégrines : cellule-cellule; connexines : matrice"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Cadhérines : cellule-cellule; intégrines : matrice; connexines : gap",
+      "question_html": "Associe cadhérines, intégrines et connexines à leur rôle principal dans les jonctions du cours.",
+      "answer_html": "<b>Cadhérines :</b> adhésion cellule-cellule. <b>Intégrines :</b> liaison cellule-matrice. <b>Connexines :</b> canaux des jonctions gap.",
+      "practice": false
+    },
+    {
+      "id": "c1-067",
+      "section": "Cytosquelette et tissus",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 104,105",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            104,
+            105
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Collagène/protéoglycanes; liaison par intégrines",
+        "Collagène/protéoglycanes; liaison par connexines",
+        "Tubuline/actine; liaison par anticodons"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Collagène/protéoglycanes; liaison par intégrines",
+      "question_html": "Quels composants de la matrice extracellulaire sont cités, et comment les cellules s’y attachent-elles ?",
+      "answer_html": "Le <b>collagène</b>, les <b>protéoglycanes</b> et la <b>fibronectine</b>. Les intégrines de la membrane plasmique relient la cellule à cette matrice.",
+      "practice": false
+    },
+    {
+      "id": "c1-068",
+      "section": "Cytosquelette et tissus",
+      "source": "C1 — Introduction à la biologie cellulaire · p. 105 · C1 — Questions du professeur · p. 2",
+      "references": [
+        {
+          "document": "c1",
+          "pages": [
+            105
+          ]
+        },
+        {
+          "document": "c1q",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Support, échanges et environnement des cellules",
+        "Seulement des cellules sans matrice ni vaisseaux",
+        "Une barrière exclusivement formée de cellules parenchymateuses"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Support, échanges et environnement des cellules",
+      "question_html": "Quel est le rôle du stroma, au-delà du simple remplissage entre les cellules ?",
+      "answer_html": "Il constitue un <b>tissu de soutien</b> comprenant notamment fibroblastes, vaisseaux et matrice extracellulaire. Selon le tissu, il contribue également à sa nutrition.",
+      "practice": false
+    }
+  ]
+}

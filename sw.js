@@ -1,4 +1,4 @@
-const SHELL = 'studyhub-shell-v5';
+const SHELL = 'studyhub-shell-v6';
 const CORE = ['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {

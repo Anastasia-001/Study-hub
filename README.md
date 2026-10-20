@@ -12,19 +12,23 @@ Application de révision en français, installable sur iPhone, hébergée gratui
 
 Ne pas effacer les données du site : cela supprime cours et progression. L’app demande un stockage persistant lors des interactions d’installation/synchronisation, mais iOS garde le contrôle du stockage. Une sauvegarde de progression est exportable depuis le bas de la bibliothèque et restaurable depuis « Installer sur iPhone ». La progression est locale à chaque appareil, sans synchronisation cloud.
 
+## Six cours et quiz
+
+La bibliothèque contient 370 questions dans six sections compactes. Chaque cours propose des thèmes. Les réponses courtes sont sélectionnables; le corrigé et une explication apparaissent après le choix (ou après « Valider » pour les réponses multiples). Les questions du professeur sont adaptées et distinguées des entraînements. Voir [les notes de contenu](COURSE_NOTES.md).
+
 ## Révisions
 
-- Priorité examen : cartes marquées `exam`, hors QCM.
-- Cours complet : toutes les cartes.
-- QCM du professeur : cartes marquées `qcm`.
+- Priorité examen : questions marquées `exam`, dont les questions du professeur.
+- Tout réviser : toutes les questions, avec les compléments.
+- Questions du professeur : questions marquées `prof_question` (ou `qcm` pour les données historiques).
 - À revoir : cartes marquées manuellement ou évaluées « À revoir / Difficile ».
 - Révisions prévues : cartes dont l’échéance est atteinte.
 
-Après révélation : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours puis intervalle précédent × 2,5. L’indicateur Acquisition compte les cartes dont l’intervalle est d’au moins 3 jours ; il ne constitue pas une mesure de réussite à l’examen. Les cartes gardent leur identifiant pour préserver le suivi après une mise à jour. Une session conserve son jeu de cartes pendant la synchronisation.
+Après réponse : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours puis intervalle précédent × 2,5. La barre de progression compte les cartes dont l’intervalle est d’au moins 3 jours ; il ne constitue pas une mesure de réussite à l’examen. Les cartes gardent leur identifiant pour préserver le suivi après une mise à jour. Une session conserve son jeu de cartes pendant la synchronisation.
 
 ## Architecture et garanties
 
-Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v5`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
+Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v6`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
 
 IndexedDB `studyhub` conserve :
 
@@ -64,19 +68,28 @@ Une conversation n’est pas une boîte de dépôt automatique. Sur demande expl
     "section": "Thème",
     "exam": true,
     "qcm": false,
-    "source": "12–13",
+    "source": "Nom du PDF · p. 12–13",
+    "references": [{"document": "cours", "pages": [12, 13]}],
+    "prof_question": false,
+    "priority_basis": "Objectifs du cours",
+    "type": "single",
+    "choices": ["Réponse correcte", "Distracteur plausible", "Autre distracteur"],
+    "correct": [0],
+    "short_answer": "Réponse correcte",
     "question_html": "Question précise ?",
-    "answer_html": "Réponse sourcée."
+    "answer_html": "Explication sourcée affichée après la sélection."
   }]
 }
 ```
+
+Déclarer aussi les sources dans `documents` avec identifiant, titre et nombre de pages. Pour un choix multiple, utiliser `type: "multiple"` et tous les indices corrects dans `correct`. `qcm` désigne les QCM du professeur, pas l’ensemble des questions à choix de réponse.
 
 Pour ajouter seulement du contenu : ne pas changer le cache de l’application. Pour modifier HTML/CSS/JS/manifeste/icônes : augmenter la version du cache dans **`sw.js` et `checkShell()` dans `app.js`**, ainsi que la version affichée. Le nouveau service worker précache l’application complète puis prend la main. Le bouton Actualiser apparaît à la bibliothèque ; aucune session active n’est interrompue.
 
 ## Développement et vérification
 
-Node.js et Chrome installés : `npm install`, `npm run check`, `npm test`. Les dépendances servent uniquement aux tests. Utiliser `STUDYHUB_BROWSER=msedge` si seul Edge est installé. Le serveur de tests est local, temporaire et utilise un port libre. Les cours de test sont simulés en mémoire et ne sont jamais publiés. Captures et résultats vont dans `test-results/` (ignoré par Git).
+Node.js et Chrome installés : `npm install`, `npm run check`, `npm test`. Les dépendances servent uniquement aux tests. Le serveur de tests est local, temporaire et utilise un port libre. Les cours de test sont simulés en mémoire et ne sont jamais publiés. Captures et résultats vont dans `test-results/` (ignoré par Git).
 
-La suite `tests/pwa.cjs` utilise un vrai Chromium avec service worker, Cache Storage et IndexedDB : premier téléchargement, modes, réponses, navigation, progression, sauvegarde, coupure réseau, rechargement/réouverture, erreur HTTP 503, JSON tronqué, conservation de progression après mise à jour, images manquantes/hors ligne, nouveaux cours, conservation d’un cours retiré du catalogue, absence d’erreurs JavaScript et formats d’écran mobiles.
+La suite `tests/quiz.cjs` utilise un vrai Chromium avec service worker, Cache Storage et IndexedDB : premier téléchargement, modes, réponses, navigation, progression, sauvegarde, coupure réseau, rechargement/réouverture, erreur HTTP 503, JSON tronqué, conservation de progression après mise à jour, images manquantes/hors ligne, nouveaux cours, conservation d’un cours retiré du catalogue, absence d’erreurs JavaScript et formats d’écran mobiles.
 
 La simulation Chromium ne prouve pas l’installation iOS ni les safe areas sur un iPhone physique : le test mode avion depuis l’icône reste nécessaire. Instructions Apple : https://support.apple.com/fr-ca/guide/iphone/iphea86e5236/ios ; politique de stockage WebKit : https://webkit.org/blog/14403/updates-to-storage-policy/.

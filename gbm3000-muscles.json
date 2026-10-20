@@ -1,0 +1,1409 @@
+{
+  "schema": 1,
+  "id": "gbm3000-muscles",
+  "version": 1,
+  "title": "Cours 6 · Muscles et contrôle moteur",
+  "subtitle": "Contraction, proprioception et réflexes",
+  "number": 6,
+  "updated_at": "2026-10-19",
+  "note": "Instrumentation hors priorité, selon la consigne d’examen. Exercices d’identification inclus.",
+  "documents": [
+    {
+      "id": "c6",
+      "page_count": 30,
+      "title": "Cours 6 — Muscles et contrôle moteur"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c6-001",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 3,4",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Muscle → fascicule → fibre → myofibrille → sarcomère",
+        "Muscle → fibre → fascicule → sarcomère → myofibrille",
+        "Sarcomère → fascicule → fibre → muscle"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Muscle → fascicule → fibre → myofibrille → sarcomère",
+      "question_html": "Quel ordre va du muscle entier à ses constituants fins ?",
+      "answer_html": "Un muscle contient des faisceaux de fibres; chaque fibre est une cellule contenant des myofibrilles. Celles-ci sont constituées de sarcomères répétés.",
+      "practice": false
+    },
+    {
+      "id": "c6-002",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 3",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Endomysium",
+        "Périmysium",
+        "Épimysium"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Endomysium",
+      "question_html": "Quelle enveloppe entoure une fibre musculaire individuelle ?",
+      "answer_html": "La jonction neuromusculaire uniquement entoure chaque fibre, le périmysium chaque fascicule et l’épimysium le muscle entier. Le sarcolemme est la membrane de la cellule musculaire.",
+      "practice": false
+    },
+    {
+      "id": "c6-003",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 4",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Deux lignes Z",
+        "Deux noyaux",
+        "Deux plaques motrices"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Deux lignes Z",
+      "question_html": "Un sarcomère est délimité par…",
+      "answer_html": "Il est l’unité contractile répétée des myofibrilles. Les filaments fins d’actine et épais de myosine s’y chevauchent.",
+      "practice": false
+    },
+    {
+      "id": "c6-004",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 4 · C6 — Muscles et contrôle moteur · p. 6",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            4
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "Pendant le raccourcissement d’un sarcomère, les filaments d’actine raccourcissent.",
+      "answer_html": "Les filaments glissent les uns par rapport aux autres. Leur longueur reste essentiellement constante tandis que le chevauchement augmente et que les lignes Z se rapprochent.",
+      "practice": false
+    },
+    {
+      "id": "c6-005",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 5,6",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Tubule T : propagation; réticulum : stockage de Ca²⁺",
+        "Tubule T : stockage principal d’ATP; réticulum : axone",
+        "Tubule T : tendon; réticulum : plaque motrice"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Tubule T : propagation; réticulum : stockage de Ca²⁺",
+      "question_html": "Quelle association est correcte ?",
+      "answer_html": "Les tubules T conduisent la dépolarisation vers l’intérieur de la fibre. Le réticulum sarcoplasmique stocke puis libère le Ca²⁺ qui permet l’activation des myofilaments.",
+      "practice": false
+    },
+    {
+      "id": "c6-006",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 6",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "La troponine",
+        "La calmoduline comme régulateur principal",
+        "L’acétylcholine"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La troponine",
+      "question_html": "Dans le muscle squelettique, le Ca²⁺ se lie principalement à…",
+      "answer_html": "La liaison à la troponine déplace la tropomyosine et rend accessibles les sites permettant les interactions actine–myosine. Le mécanisme calmoduline–kinase est celui du muscle lisse.",
+      "practice": false
+    },
+    {
+      "id": "c6-007",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 7",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "PA nerveux → Ca²⁺ présynaptique → ACh → activation musculaire",
+        "ACh → PA nerveux → disparition de tout Ca²⁺",
+        "PA musculaire → ACh → PA nerveux obligatoire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "PA nerveux → Ca²⁺ présynaptique → ACh → activation musculaire",
+      "question_html": "Quel ordre décrit la jonction neuromusculaire ?",
+      "answer_html": "L’entrée de Ca²⁺ déclenche la libération vésiculaire d’ACh. Celle-ci active la plaque motrice, ce qui permet normalement le déclenchement d’un PA musculaire.",
+      "practice": false
+    },
+    {
+      "id": "c6-008",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 8",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "La tension mécanique maximale précède le PA musculaire.",
+      "answer_html": "Le PA est bref et précède la secousse mécanique. Une latence sépare l’événement électrique de la production de tension, le temps du couplage excitation-contraction.",
+      "practice": false
+    },
+    {
+      "id": "c6-009",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 8",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Un motoneurone et toutes les fibres qu’il innerve",
+        "Une fibre et tous les neurones du cerveau",
+        "Tous les muscles d’un membre"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Un motoneurone et toutes les fibres qu’il innerve",
+      "question_html": "Une unité motrice comprend…",
+      "answer_html": "Un PA dans le motoneurone active normalement les fibres de son unité. La force globale varie notamment avec le nombre d’unités recrutées et leur fréquence de décharge.",
+      "practice": false
+    },
+    {
+      "id": "c6-010",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 9",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Isométrique",
+        "Isotonique avec raccourcissement",
+        "Saltatoire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Isométrique",
+      "question_html": "Quelle contraction maintient la longueur globale constante ?",
+      "answer_html": "En isométrie, la tension peut augmenter sans raccourcissement global. Dans la contraction isotonique idéalisée, la longueur change sous une charge approximativement constante.",
+      "practice": false
+    },
+    {
+      "id": "c6-011",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 10",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            10
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Les réponses mécaniques se somment",
+        "Les PA deviennent beaucoup plus grands",
+        "Les filaments d’actine se multiplient à chaque stimulus"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Les réponses mécaniques se somment",
+      "question_html": "Pourquoi des stimuli rapprochés augmentent-ils la force ?",
+      "answer_html": "Une nouvelle activation peut arriver avant la relaxation complète. La sommation temporelle peut mener à un tétanos fusionné; ce terme physiologique est distinct de la maladie infectieuse du même nom.",
+      "practice": false
+    },
+    {
+      "id": "c6-012",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 11",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Le chevauchement actine–myosine devient favorable",
+        "Les filaments ne doivent jamais se toucher",
+        "La longueur élimine tout besoin d’ATP"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le chevauchement actine–myosine devient favorable",
+      "question_html": "Pourquoi existe-t-il une longueur optimale pour la force active ?",
+      "answer_html": "Un sarcomère trop étiré réduit les interactions possibles; trop raccourci, il est aussi mécaniquement défavorable. La force active dépend de l’organisation du chevauchement.",
+      "practice": false
+    },
+    {
+      "id": "c6-013",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 11",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Phosphocréatine, glycolyse et phosphorylation oxydative",
+        "Uniquement l’ATP stocké, sans régénération",
+        "Seulement la lumière absorbée par la peau"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Phosphocréatine, glycolyse et phosphorylation oxydative",
+      "question_html": "Quelles sources régénèrent l’ATP du muscle ?",
+      "answer_html": "La phosphocréatine fournit rapidement de l’énergie; la glycolyse et le métabolisme oxydatif utilisent les substrats énergétiques. Leurs contributions dépendent de l’intensité et de la durée de l’activité.",
+      "practice": false
+    },
+    {
+      "id": "c6-014",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 12",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Type I, oxydatives lentes",
+        "Type IIb, glycolytiques rapides",
+        "Toutes ont exactement la même fatigue"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Type I, oxydatives lentes",
+      "question_html": "Quelles fibres résistent le mieux à la fatigue dans la classification du cours ?",
+      "answer_html": "Les fibres I développent une activité durable. Les IIa sont rapides avec une composante oxydative, et les IIb de la classification présentée sont rapides et plus fatigables. La diapositive inclut des exemples chez le rat.",
+      "practice": false
+    },
+    {
+      "id": "c6-015",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 13",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Petites unités lentes → unités plus grandes et rapides",
+        "Grandes unités rapides → petites lentes systématiquement",
+        "Ordre aléatoire indépendant de la demande"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Petites unités lentes → unités plus grandes et rapides",
+      "question_html": "Quel ordre de recrutement illustre le principe de Henneman ?",
+      "answer_html": "L’augmentation de force recrute d’abord les petites unités à faible seuil, puis des unités plus grandes. La fréquence de stimulation fournit un autre moyen de moduler la force.",
+      "practice": false
+    },
+    {
+      "id": "c6-016",
+      "section": "Muscle squelettique",
+      "source": "C6 — Muscles et contrôle moteur · p. 14",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            14
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "7 fois celle du raccourcissement musculaire",
+        "1/7 de celle du muscle",
+        "La même vitesse nécessairement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "7 fois celle du raccourcissement musculaire",
+      "question_html": "Avec des bras de levier de 35 cm pour la main et 5 cm pour le tendon, la vitesse de la main vaut environ…",
+      "answer_html": "Le rapport géométrique 35/5 = 7 amplifie le déplacement et la vitesse distale, avec un compromis de force. Le muscle doit produire une force importante pour équilibrer le moment distal.",
+      "practice": false
+    },
+    {
+      "id": "c6-017",
+      "section": "Muscle lisse",
+      "source": "C6 — Muscles et contrôle moteur · p. 15",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Actine et myosine sans sarcomères organisés",
+        "Absence totale d’actine et de myosine",
+        "Contrôle volontaire uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Actine et myosine sans sarcomères organisés",
+      "question_html": "Quel énoncé décrit le muscle lisse ?",
+      "answer_html": "Le muscle lisse contient des filaments contractiles mais pas l’organisation striée en sarcomères. Ses cellules fusiformes participent notamment aux parois d’organes creux et de vaisseaux.",
+      "practice": false
+    },
+    {
+      "id": "c6-018",
+      "section": "Muscle lisse",
+      "source": "C6 — Muscles et contrôle moteur · p. 16",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            16
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Ca²⁺ → calmoduline → kinase → phosphorylation de myosine",
+        "Ca²⁺ → troponine → sarcomère strié obligatoire",
+        "ACh → disparition de la myosine"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Ca²⁺ → calmoduline → kinase → phosphorylation de myosine",
+      "question_html": "Quel ordre active la contraction du muscle lisse ?",
+      "answer_html": "Le complexe Ca²⁺–calmoduline active une kinase des chaînes légères de myosine. La phosphorylation permet l’interaction productive avec l’actine; la régulation porte ici principalement sur la myosine.",
+      "practice": false
+    },
+    {
+      "id": "c6-019",
+      "section": "Muscle lisse",
+      "source": "C6 — Muscles et contrôle moteur · p. 15,16,17",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Vrai",
+      "question_html": "Le muscle lisse peut être activé par des hormones ou un étirement sans commande volontaire.",
+      "answer_html": "Le cours cite activité automatique, système autonome, hormones, étirement et changements du milieu extracellulaire. Les mécanismes et réponses dépendent du tissu.",
+      "practice": false
+    },
+    {
+      "id": "c6-020",
+      "section": "Muscle lisse",
+      "source": "C6 — Muscles et contrôle moteur · p. 16,17",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            16,
+            17
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "La propagation de l’excitation entre cellules",
+        "L’isolement électrique de toutes les cellules",
+        "La création d’une unité motrice somatique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La propagation de l’excitation entre cellules",
+      "question_html": "Dans un muscle lisse unitaire, les jonctions communicantes favorisent…",
+      "answer_html": "Le couplage permet une activité collective. Les muscles multiunitaires ont moins de couplage fonctionnel et un contrôle plus indépendant de leurs cellules.",
+      "practice": false
+    },
+    {
+      "id": "c6-021",
+      "section": "Muscle lisse",
+      "source": "C6 — Muscles et contrôle moteur · p. 17",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Le relâchement du muscle lisse bronchique",
+        "Le tétanos du muscle bronchique",
+        "Le raccourcissement des cartilages par myosine"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le relâchement du muscle lisse bronchique",
+      "question_html": "Une bronchodilatation implique notamment…",
+      "answer_html": "Le relâchement augmente le calibre et diminue la résistance au passage de l’air. À l’inverse, la contraction du muscle lisse contribue à la bronchoconstriction.",
+      "practice": false
+    },
+    {
+      "id": "c6-022",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 19,20",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Le fuseau neuromusculaire",
+        "L’organe tendineux de Golgi",
+        "La plaque motrice"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le fuseau neuromusculaire",
+      "question_html": "Quel récepteur renseigne principalement sur la longueur et l’étirement du muscle ?",
+      "answer_html": "Les fibres intrafusales du fuseau se trouvent dans le muscle. L’organe de Golgi, situé dans le tendon, renseigne davantage sur la tension.",
+      "practice": false
+    },
+    {
+      "id": "c6-023",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 19 · C6 — Muscles et contrôle moteur · p. 21",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            19
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "L’organe tendineux de Golgi",
+        "Le fuseau uniquement",
+        "La plaque motrice"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "L’organe tendineux de Golgi",
+      "question_html": "Quel récepteur renseigne principalement sur la tension musculotendineuse ?",
+      "answer_html": "Le Golgi détecte la tension transmise au tendon et participe aux boucles réflexes de régulation de la force.",
+      "practice": false
+    },
+    {
+      "id": "c6-024",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 20",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Alpha",
+        "Gamma",
+        "Les neurones sensoriels du fuseau"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Alpha",
+      "question_html": "Quels motoneurones activent les fibres extrafusales ?",
+      "answer_html": "Les motoneurones alpha commandent les fibres qui produisent l’essentiel de la force. Les gamma règlent les fibres intrafusales et la sensibilité du fuseau.",
+      "practice": false
+    },
+    {
+      "id": "c6-025",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 20",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Maintenir la sensibilité du fuseau",
+        "Arrêter toutes les afférences proprioceptives",
+        "Remplacer les motoneurones alpha"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Maintenir la sensibilité du fuseau",
+      "question_html": "Pourquoi coactiver les motoneurones gamma pendant un raccourcissement volontaire ?",
+      "answer_html": "Sans ajustement intrafusal, le raccourcissement extrafusal peut détendre le fuseau et réduire son signal. La commande gamma maintient sa capacité à renseigner sur l’étirement.",
+      "practice": false
+    },
+    {
+      "id": "c6-026",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 20",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "L’étirement des fuseaux du quadriceps",
+        "L’activation initiale des organes de Golgi par la tension seule",
+        "La contraction initiale des fléchisseurs"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "L’étirement des fuseaux du quadriceps",
+      "question_html": "Le réflexe patellaire est initié par…",
+      "answer_html": "Le coup sur le tendon étire brièvement le muscle. Les afférences du fuseau activent le circuit spinal qui provoque sa contraction, accompagnée de l’organisation appropriée des muscles antagonistes.",
+      "practice": false
+    },
+    {
+      "id": "c6-027",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 21",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Activation des fléchisseurs et inhibition des extenseurs",
+        "Activation simultanée maximale de tous les muscles",
+        "Inhibition de tous les muscles des deux jambes"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Activation des fléchisseurs et inhibition des extenseurs",
+      "question_html": "Dans le réflexe de retrait, quelle réponse protège le membre stimulé ?",
+      "answer_html": "Le circuit de retrait fléchit le membre. Une réponse d’extension croisée de l’autre membre peut contribuer au soutien et à l’équilibre.",
+      "practice": false
+    },
+    {
+      "id": "c6-028",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 22",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            22
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "M1 : exécution; prémotrice : planification",
+        "M1 : vision uniquement; prémotrice : audition uniquement",
+        "Le cortex pariétal ne reçoit aucun retour sensoriel"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "M1 : exécution; prémotrice : planification",
+      "question_html": "Quelle association corticale est correcte ?",
+      "answer_html": "Le cours distingue M1, l’aire prémotrice, l’aire motrice supplémentaire et le cortex d’association pariétal. La production de mouvement mobilise planification, séquences, exécution et retours sensoriels.",
+      "practice": false
+    },
+    {
+      "id": "c6-029",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 22",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            22
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Une organisation des régions du corps dans le cortex moteur",
+        "Une taille corticale proportionnelle au poids de chaque muscle",
+        "L’absence de spécialisation régionale"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une organisation des régions du corps dans le cortex moteur",
+      "question_html": "La représentation somatotopique signifie…",
+      "answer_html": "Des territoires corticaux correspondent à différentes parties du corps. La surface consacrée à une région reflète notamment les exigences de contrôle, pas simplement sa masse.",
+      "practice": false
+    },
+    {
+      "id": "c6-030",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 18 · C6 — Muscles et contrôle moteur · p. 23",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Le cervelet",
+        "Le cortex visuel primaire",
+        "La jonction neuromusculaire uniquement"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le cervelet",
+      "question_html": "Quelle structure contribue particulièrement à la coordination et à l’ajustement du mouvement ?",
+      "answer_html": "Le contrôle moteur implique des boucles entre cortex, noyaux de la base, thalamus, cervelet, tronc cérébral et moelle. Il ne dépend pas d’un seul centre isolé.",
+      "practice": false
+    },
+    {
+      "id": "c6-031",
+      "section": "Contrôle et réflexes",
+      "source": "C6 — Muscles et contrôle moteur · p. 23",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Le côté droit du corps",
+        "Le côté gauche uniquement",
+        "Uniquement les organes digestifs"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le côté droit du corps",
+      "question_html": "Après sa décussation, la voie corticospinale gauche commande principalement…",
+      "answer_html": "La décussation croise une grande partie des fibres de cette voie. Le côté d’un déficit dépend donc notamment de la position de la lésion par rapport au croisement.",
+      "practice": false
+    },
+    {
+      "id": "c6-032",
+      "section": "Entraînement vrai/faux",
+      "source": "C6 — Muscles et contrôle moteur · p. 4 · C6 — Muscles et contrôle moteur · p. 6",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            4
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Vrai",
+      "question_html": "« La contraction rapproche les lignes Z sans raccourcir les filaments. »",
+      "answer_html": "C’est le modèle du glissement des filaments. La longueur du sarcomère diminue parce que le chevauchement augmente.",
+      "practice": true
+    },
+    {
+      "id": "c6-033",
+      "section": "Entraînement vrai/faux",
+      "source": "C6 — Muscles et contrôle moteur · p. 8 · C6 — Muscles et contrôle moteur · p. 13",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "« Augmenter la force exige toujours d’augmenter l’amplitude du PA de chaque fibre. »",
+      "answer_html": "La force varie notamment avec le recrutement des unités motrices et la sommation temporelle. L’amplitude du PA n’est pas le réglage normal de force proposé.",
+      "practice": true
+    },
+    {
+      "id": "c6-034",
+      "section": "Entraînement vrai/faux",
+      "source": "C6 — Muscles et contrôle moteur · p. 15,16",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            15,
+            16
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "« Muscle squelettique et muscle lisse utilisent tous deux exclusivement la troponine pour détecter le Ca²⁺. »",
+      "answer_html": "Le muscle squelettique utilise la troponine. Le muscle lisse utilise notamment le complexe Ca²⁺–calmoduline et la phosphorylation de la myosine.",
+      "practice": true
+    },
+    {
+      "id": "c6-035",
+      "section": "Entraînement vrai/faux",
+      "source": "C6 — Muscles et contrôle moteur · p. 20",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Vrai",
+      "question_html": "« Les motoneurones gamma règlent les fibres intrafusales. »",
+      "answer_html": "Ils contribuent à maintenir la sensibilité du fuseau pendant les changements de longueur du muscle.",
+      "practice": true
+    },
+    {
+      "id": "c6-036",
+      "section": "Entraînement vrai/faux",
+      "source": "C6 — Muscles et contrôle moteur · p. 19,20,21",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "« Fuseau et Golgi transmettent exactement la même information. »",
+      "answer_html": "Le fuseau renseigne surtout sur longueur et étirement; l’organe tendineux de Golgi renseigne surtout sur tension. Les deux alimentent le contrôle moteur.",
+      "practice": true
+    },
+    {
+      "id": "c6-037",
+      "section": "Complément hors examen",
+      "source": "C6 — Muscles et contrôle moteur · p. 24,25 · C6 — Muscles et contrôle moteur · p. 30",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            24,
+            25
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Activer des muscles pour aider une fonction",
+        "Remplacer la myosine par une prothèse",
+        "Mesurer uniquement l’oxygène"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Activer des muscles pour aider une fonction",
+      "question_html": "Quel est le principe de la stimulation électrique fonctionnelle illustrée ?",
+      "answer_html": "Le cours illustre notamment une aide à la marche et à la correction du pied tombant. Cette partie instrumentation est explicitement annoncée hors examen et reste en complément.",
+      "practice": false
+    },
+    {
+      "id": "c6-038",
+      "section": "Complément hors examen",
+      "source": "C6 — Muscles et contrôle moteur · p. 26,27,28 · C6 — Muscles et contrôle moteur · p. 30",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            26,
+            27,
+            28
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Transformer peu de signaux de commande en plusieurs gestes",
+        "L’absence de tout moteur dans ces prothèses",
+        "L’impossibilité de changer un mode de préhension"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Transformer peu de signaux de commande en plusieurs gestes",
+      "question_html": "Quel défi complique la commande d’une main prothétique à nombreux mouvements ?",
+      "answer_html": "Les exemples montrent sélection de modes, capteurs, RFID et interfaces cérébrales. Ces technologies servent à relier intention, commande et mouvement; elles sont classées hors priorité d’examen selon la consigne finale du cours.",
+      "practice": false
+    },
+    {
+      "id": "c6-img-1",
+      "section": "Identifications",
+      "source": "C6 — Muscles et contrôle moteur · p. 4",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Filament fin d’actine",
+        "Filament épais de myosine",
+        "Ligne Z"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Filament fin d’actine",
+      "question_html": "Identifie A sur le schéma du sarcomère.<img src=\"assets/sarcomere.png\" alt=\"Schéma simplifié avec repères à identifier\">",
+      "answer_html": "A désigne le filament fin, attaché à une ligne Z. Il glisse par rapport à la myosine pendant la contraction.",
+      "practice": false
+    },
+    {
+      "id": "c6-img-2",
+      "section": "Identifications",
+      "source": "C6 — Muscles et contrôle moteur · p. 4",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Filament épais de myosine",
+        "Filament fin d’actine",
+        "Tubule T"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Filament épais de myosine",
+      "question_html": "Identifie B sur le schéma du sarcomère.<img src=\"assets/sarcomere.png\" alt=\"Schéma simplifié avec repères à identifier\">",
+      "answer_html": "B désigne le filament épais central. Les têtes de myosine interagissent avec l’actine.",
+      "practice": false
+    },
+    {
+      "id": "c6-img-3",
+      "section": "Identifications",
+      "source": "C6 — Muscles et contrôle moteur · p. 4",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Ligne Z",
+        "Plaque motrice",
+        "Mitochondrie"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Ligne Z",
+      "question_html": "Que désigne C sur le schéma ?<img src=\"assets/sarcomere.png\" alt=\"Schéma simplifié avec repères à identifier\">",
+      "answer_html": "Les lignes Z délimitent le sarcomère. Elles se rapprochent pendant le raccourcissement.",
+      "practice": false
+    },
+    {
+      "id": "c6-img-4",
+      "section": "Identifications",
+      "source": "C6 — Muscles et contrôle moteur · p. 19,20,21",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Fuseau neuromusculaire",
+        "Organe tendineux de Golgi",
+        "Plaque motrice"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Fuseau neuromusculaire",
+      "question_html": "Quel récepteur correspond à A, placé en parallèle des fibres ?<img src=\"assets/recepteurs.png\" alt=\"Schéma simplifié avec repères à identifier\">",
+      "answer_html": "Le fuseau est disposé en parallèle avec les fibres extrafusales et renseigne sur leur longueur et leur étirement.",
+      "practice": false
+    },
+    {
+      "id": "c6-img-5",
+      "section": "Identifications",
+      "source": "C6 — Muscles et contrôle moteur · p. 19,20,21",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "single",
+      "choices": [
+        "Organe tendineux de Golgi",
+        "Fuseau neuromusculaire",
+        "Sarcomère"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Organe tendineux de Golgi",
+      "question_html": "Quel récepteur correspond à B, dans le tendon en série avec le muscle ?<img src=\"assets/recepteurs.png\" alt=\"Schéma simplifié avec repères à identifier\">",
+      "answer_html": "L’organe de Golgi se trouve dans le tendon et renseigne surtout sur la tension transmise.",
+      "practice": false
+    },
+    {
+      "id": "c6-multi-1",
+      "section": "Énoncés multiples",
+      "source": "C6 — Muscles et contrôle moteur · p. 4 · C6 — Muscles et contrôle moteur · p. 8 · C6 — Muscles et contrôle moteur · p. 16 · C6 — Muscles et contrôle moteur · p. 20",
+      "references": [
+        {
+          "document": "c6",
+          "pages": [
+            4
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "document": "c6",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Objectifs du cours",
+      "type": "multiple",
+      "choices": [
+        "Une unité motrice contient un motoneurone",
+        "Le muscle lisse utilise la calmoduline",
+        "Les filaments d’actine raccourcissent",
+        "Les gamma activent les fibres extrafusales"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "short_answer": "Une unité motrice contient un motoneurone ; Le muscle lisse utilise la calmoduline",
+      "question_html": "Quels énoncés sont vrais ? Sélectionne toutes les réponses.",
+      "answer_html": "Une unité motrice regroupe un motoneurone et ses fibres. Le muscle lisse utilise Ca²⁺–calmoduline. Les filaments glissent sans raccourcir, et les gamma innervent les fibres intrafusales.",
+      "practice": true
+    }
+  ]
+}

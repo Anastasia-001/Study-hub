@@ -1,0 +1,1287 @@
+{
+  "schema": 1,
+  "id": "gbm3000-cardio-3",
+  "version": 1,
+  "title": "Cours 4 · Cœur mécanique et circulation",
+  "subtitle": "Cardiovasculaire 3",
+  "number": 4,
+  "updated_at": "2026-10-19",
+  "note": "Étoiles : contenu d’examen annoncé. Autres notions en complément.",
+  "documents": [
+    {
+      "id": "c4",
+      "page_count": 83,
+      "title": "Cours 4 — Système cardiovasculaire 3"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c4-001",
+      "section": "Cycle et valves",
+      "source": "C4 — Système cardiovasculaire 3 · p. 5 · C4 — Système cardiovasculaire 3 · p. 14,15",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Un gradient de pression favorable",
+        "Une commande nerveuse directe",
+        "La contraction du feuillet valvulaire"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Un gradient de pression favorable",
+      "question_html": "Qu’est-ce qui provoque normalement l’ouverture d’une valve cardiaque ?",
+      "answer_html": "Le sang se déplace d’une région de haute vers une région de basse pression. Les valves s’ouvrent ou se ferment selon le gradient de pression et empêchent le reflux.",
+      "practice": false
+    },
+    {
+      "id": "c4-002",
+      "section": "Cycle et valves",
+      "source": "C4 — Système cardiovasculaire 3 · p. 7,8 · C4 — Système cardiovasculaire 3 · p. 15",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Aucune",
+        "Mitrale seulement",
+        "Aortique seulement",
+        "Mitrale et aortique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Aucune",
+      "question_html": "Pendant la contraction isovolumétrique du VG, quelles valves sont ouvertes ?",
+      "answer_html": "La pression du VG dépasse celle de l’OG, ce qui ferme la mitrale, mais reste inférieure à la pression aortique. La valve aortique reste fermée : le volume ne change pas.",
+      "practice": false
+    },
+    {
+      "id": "c4-003",
+      "section": "Cycle et valves",
+      "source": "C4 — Système cardiovasculaire 3 · p. 9,10 · C4 — Système cardiovasculaire 3 · p. 15",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            9,
+            10
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "PVG > PAo",
+        "POG > PVG",
+        "PAo > PVG"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "PVG > PAo",
+      "question_html": "Quelle condition ouvre la valve aortique ?",
+      "answer_html": "Lorsque la pression du ventricule gauche dépasse celle de l’aorte, la valve aortique s’ouvre et l’éjection commence.",
+      "practice": false
+    },
+    {
+      "id": "c4-004",
+      "section": "Cycle et valves",
+      "source": "C4 — Système cardiovasculaire 3 · p. 11 · C4 — Système cardiovasculaire 3 · p. 15",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "Pendant la relaxation isovolumétrique, le volume du VG diminue.",
+      "answer_html": "Les valves sont fermées : la pression diminue pendant que le volume reste constant. « Isovolumétrique » décrit précisément cette absence de variation de volume.",
+      "practice": false
+    },
+    {
+      "id": "c4-005",
+      "section": "Cycle et valves",
+      "source": "C4 — Système cardiovasculaire 3 · p. 12,13,14,15",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "POG > PVG",
+        "PVG > PAo",
+        "PVG > POG"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "POG > PVG",
+      "question_html": "Quelle condition permet la réouverture de la mitrale ?",
+      "answer_html": "Après la relaxation, la pression du VG devient inférieure à celle de l’oreillette gauche. La mitrale s’ouvre et le remplissage reprend.",
+      "practice": false
+    },
+    {
+      "id": "c4-006",
+      "section": "Cycle et valves",
+      "source": "C4 — Système cardiovasculaire 3 · p. 14,15,16",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Remplissage → contraction iso. → éjection → relaxation iso.",
+        "Éjection → remplissage → contraction iso. → relaxation iso.",
+        "Contraction iso. → remplissage → relaxation iso. → éjection"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Remplissage → contraction iso. → éjection → relaxation iso.",
+      "question_html": "Quel ordre décrit correctement les phases ventriculaires ?",
+      "answer_html": "Les changements de pression commandent les transitions valvulaires. L’activité électrique précède les événements mécaniques correspondants.",
+      "practice": false
+    },
+    {
+      "id": "c4-007",
+      "section": "Cycle et valves",
+      "source": "C4 — Système cardiovasculaire 3 · p. 16",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            16
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Veines caves → OD → VD → artère pulmonaire",
+        "Veines pulmonaires → OD → VG → aorte",
+        "Aorte → OG → VD → veines pulmonaires"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Veines caves → OD → VD → artère pulmonaire",
+      "question_html": "Quel trajet mène du retour systémique aux poumons ?",
+      "answer_html": "Le sang passe de l’OD au VD par la tricuspide, puis à travers la valve pulmonaire vers les poumons. Les veines pulmonaires ramènent ensuite le sang à l’OG.",
+      "practice": false
+    },
+    {
+      "id": "c4-008",
+      "section": "Questions du prof",
+      "source": "C4 — Système cardiovasculaire 3 · p. 17",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Toutes les valves sont fermées en relaxation isovolumétrique",
+        "La systole atriale est la systole ventriculaire",
+        "La mitrale s’ouvre quand PVG dépasse POG",
+        "La valve pulmonaire ne participe pas au cycle"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Toutes les valves sont fermées en relaxation isovolumétrique",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "La relaxation isovolumétrique se déroule à valves fermées. La mitrale s’ouvre lorsque POG dépasse PVG; les systoles atriale et ventriculaire sont des événements distincts. Choix adaptés du QCM du professeur.",
+      "practice": false
+    },
+    {
+      "id": "c4-009",
+      "section": "Éjection et régulation",
+      "source": "C4 — Système cardiovasculaire 3 · p. 26,27,28",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            26,
+            27,
+            28
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "(VTD − VTS) / VTD",
+        "VTS / VTD",
+        "(VTD − VTS) / VTS"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "(VTD − VTS) / VTD",
+      "question_html": "Comment calcule-t-on la fraction d’éjection du VG ?",
+      "answer_html": "Le volume d’éjection est VTD − VTS. La fraction d’éjection rapporte ce volume au volume initial télédiastolique. Elle n’est ni un débit ni la fraction de sang restant dans le ventricule.",
+      "practice": false
+    },
+    {
+      "id": "c4-010",
+      "section": "Éjection et régulation",
+      "source": "C4 — Système cardiovasculaire 3 · p. 28",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "70 mL et environ 58 %",
+        "170 mL et 42 %",
+        "50 mL et environ 58 %"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "70 mL et environ 58 %",
+      "question_html": "Avec VTD = 120 mL et VTS = 50 mL, quelles sont VE et FEVG ?",
+      "answer_html": "VE = 120 − 50 = 70 mL. FEVG = 70/120 ≈ 0,58. Une fraction doit être multipliée par 100 pour être exprimée en pourcentage.",
+      "practice": false
+    },
+    {
+      "id": "c4-011",
+      "section": "Éjection et régulation",
+      "source": "C4 — Système cardiovasculaire 3 · p. 35 · C4 — Système cardiovasculaire 3 · p. 39,40",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            35
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            39,
+            40
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "4,9 L/min",
+        "0,49 L/min",
+        "49 L/min"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "4,9 L/min",
+      "question_html": "Avec FC = 70/min et VE = 70 mL, le débit cardiaque est environ…",
+      "answer_html": "DC = FC × VE = 4 900 mL/min = 4,9 L/min. Doubler FC et VE multiplierait ce débit par quatre, si les deux valeurs pouvaient être maintenues.",
+      "practice": false
+    },
+    {
+      "id": "c4-012",
+      "section": "Éjection et régulation",
+      "source": "C4 — Système cardiovasculaire 3 · p. 35 · C4 — Système cardiovasculaire 3 · p. 38",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            35
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            38
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Fréquence et contractilité accrues",
+        "Fréquence réduite et contractilité accrue",
+        "Fréquence et contractilité réduites"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Fréquence et contractilité accrues",
+      "question_html": "Quel effet sympathique est attendu sur le cœur ?",
+      "answer_html": "Le sympathique accélère le nœud sinusal, favorise la conduction AV et augmente la contractilité. Le parasympathique ralentit surtout les fonctions nodales.",
+      "practice": false
+    },
+    {
+      "id": "c4-013",
+      "section": "Éjection et régulation",
+      "source": "C4 — Système cardiovasculaire 3 · p. 38",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            38
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Vrai",
+      "question_html": "L’acétylcholine tend à ralentir la conduction et à prolonger la réfractarité du NAV.",
+      "answer_html": "L’action parasympathique sur le NAV s’oppose à la facilitation sympathique de la conduction. Cela contribue à limiter la transmission auriculaire vers les ventricules.",
+      "practice": false
+    },
+    {
+      "id": "c4-014",
+      "section": "Éjection et régulation",
+      "source": "C4 — Système cardiovasculaire 3 · p. 35",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            35
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Plus de remplissage → plus de volume éjecté",
+        "Plus de remplissage → moins de force",
+        "Un contrôle exclusivement nerveux du VE"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Plus de remplissage → plus de volume éjecté",
+      "question_html": "Que décrit le mécanisme de Frank–Starling, dans ses limites physiologiques ?",
+      "answer_html": "L’étirement accru des fibres lié au remplissage améliore la force développée. Ce mécanisme intrinsèque est distinct d’une augmentation de contractilité par le sympathique.",
+      "practice": false
+    },
+    {
+      "id": "c4-015",
+      "section": "Questions du prof",
+      "source": "C4 — Système cardiovasculaire 3 · p. 41",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            41
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "L’ACh prolonge la réfractarité du NAV",
+        "Le sympathique augmente la réfractarité du NAV",
+        "Le parasympathique n’agit que dans l’insuffisance cardiaque",
+        "Un défaut parasympathique cause habituellement une valvulopathie"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "L’ACh prolonge la réfractarité du NAV",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "Le choix correct du professeur est celui concernant l’acétylcholine. Elle ralentit la fonction nodale AV et tend à prolonger sa période réfractaire. Les autres mécanismes proposés sont incorrects.",
+      "practice": false
+    },
+    {
+      "id": "c4-016",
+      "section": "Bruits et souffles",
+      "source": "C4 — Système cardiovasculaire 3 · p. 43",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            43
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Mitrale et tricuspide",
+        "Aortique et pulmonaire",
+        "Mitrale et aortique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Mitrale et tricuspide",
+      "question_html": "Quelles fermetures produisent principalement B1 ?",
+      "answer_html": "B1 marque le début de la systole ventriculaire et résulte des événements associés à la fermeture des valves atrioventriculaires. B2 correspond aux valves aortique et pulmonaire.",
+      "practice": false
+    },
+    {
+      "id": "c4-017",
+      "section": "Bruits et souffles",
+      "source": "C4 — Système cardiovasculaire 3 · p. 43",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            43
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "B2 correspond principalement à l’ouverture des valves aortique et pulmonaire.",
+      "answer_html": "B2 est associé à leur fermeture, à la fin de l’éjection et au début de la relaxation ventriculaire.",
+      "practice": false
+    },
+    {
+      "id": "c4-018",
+      "section": "Bruits et souffles",
+      "source": "C4 — Système cardiovasculaire 3 · p. 44",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            44
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Sténose : orifice rétréci; insuffisance : reflux",
+        "Sténose : reflux; insuffisance : orifice rétréci",
+        "Les deux désignent une fermeture normale"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Sténose : orifice rétréci; insuffisance : reflux",
+      "question_html": "Quelle association est correcte ?",
+      "answer_html": "Une sténose gêne le passage à travers une valve ouverte. Une insuffisance permet un reflux lorsqu’elle devrait être fermée. La turbulence peut produire un souffle.",
+      "practice": false
+    },
+    {
+      "id": "c4-019",
+      "section": "Bruits et souffles",
+      "source": "C4 — Système cardiovasculaire 3 · p. 44",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            44
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Faux",
+        "Vrai"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Faux",
+      "question_html": "Tout souffle cardiaque est nécessairement pathologique.",
+      "answer_html": "Le cours distingue les souffles physiologiques et pathologiques. Un souffle traduit un écoulement turbulent audible; il faut l’interpréter dans son contexte.",
+      "practice": false
+    },
+    {
+      "id": "c4-020",
+      "section": "Bruits et souffles",
+      "source": "C4 — Système cardiovasculaire 3 · p. 46 · C4 — Système cardiovasculaire 3 · p. 49",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            46
+          ]
+        },
+        {
+          "document": "c4",
+          "pages": [
+            49
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Augmente pour un débit conservé",
+        "Diminue pour un débit conservé",
+        "Reste nécessairement identique"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Augmente pour un débit conservé",
+      "question_html": "Selon la continuité du débit, si la section valvulaire diminue, la vitesse locale…",
+      "answer_html": "Q = A × v. Pour un même débit, diminuer A augmente v. L’équation de continuité permet d’estimer une aire valvulaire à partir d’une section et des intégrales vitesse-temps.",
+      "practice": false
+    },
+    {
+      "id": "c4-021",
+      "section": "Questions du prof",
+      "source": "C4 — Système cardiovasculaire 3 · p. 50",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            50
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "La continuité peut estimer la sévérité d’une lésion valvulaire",
+        "Un souffle est une turbulence électrique",
+        "B2 vient de la mitrale et de la tricuspide",
+        "La sténose aortique crée un gradient VD–aorte"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La continuité peut estimer la sévérité d’une lésion valvulaire",
+      "question_html": "Quel énoncé est vrai ?",
+      "answer_html": "Le professeur retient l’équation de continuité. La sténose aortique concerne le trajet VG–aorte, et les souffles sont des phénomènes d’écoulement sanguin.",
+      "practice": false
+    },
+    {
+      "id": "c4-022",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 54",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            54
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Un flux allant du cœur vers les organes",
+        "Un sang toujours oxygéné",
+        "Une absence de muscle lisse"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Un flux allant du cœur vers les organes",
+      "question_html": "Une artère se définit par…",
+      "answer_html": "Artère et veine décrivent le sens par rapport au cœur. L’artère pulmonaire transporte ainsi du sang désoxygéné, et les veines pulmonaires du sang oxygéné.",
+      "practice": false
+    },
+    {
+      "id": "c4-023",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 56",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            56
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Double",
+        "Est divisé par deux",
+        "Est multiplié par quatre"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Double",
+      "question_html": "Si ΔP double et que R reste constante, le débit…",
+      "answer_html": "F = ΔP/R. La relation est linéaire à résistance fixée; il ne faut pas la confondre avec la dépendance en puissance quatre au rayon.",
+      "practice": false
+    },
+    {
+      "id": "c4-024",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 57,58",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            57,
+            58
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "ηL/r⁴",
+        "r⁴/(ηL)",
+        "ηr⁴/L"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "ηL/r⁴",
+      "question_html": "Dans Poiseuille, R est proportionnelle à…",
+      "answer_html": "Pour un tube et un écoulement laminaire idéalisés : R = 8ηL/(πr⁴). Le rayon a donc un effet très important sur la résistance.",
+      "practice": false
+    },
+    {
+      "id": "c4-025",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 58",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            58
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Il est divisé par 16",
+        "Il est divisé par 2",
+        "Il est multiplié par 16"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Il est divisé par 16",
+      "question_html": "À pression, longueur et viscosité fixes, diviser le rayon par deux modifie le débit comment ?",
+      "answer_html": "Le débit varie comme r⁴. (1/2)⁴ = 1/16. La résistance est, elle, multipliée par 16.",
+      "practice": false
+    },
+    {
+      "id": "c4-026",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 59",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            59
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "4 fois celle du tube d’aire A",
+        "La même résistance",
+        "16 fois la résistance"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "4 fois celle du tube d’aire A",
+      "question_html": "Un tube est remplacé par quatre tubes en parallèle, de même longueur, chacun d’aire A/4. Leur résistance équivalente vaut…",
+      "answer_html": "Chaque petit tube a un rayon moitié et une résistance 16 fois plus grande. Quatre résistances identiques en parallèle divisent cette résistance par quatre : Réq = 4R. L’égalité de longueur est ici explicitement supposée.",
+      "practice": false
+    },
+    {
+      "id": "c4-027",
+      "section": "Questions du prof",
+      "source": "C4 — Système cardiovasculaire 3 · p. 60",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            60
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": true,
+      "prof_question": true,
+      "priority_basis": "Question du prof",
+      "type": "single",
+      "choices": [
+        "Non, les données sont insuffisantes",
+        "Oui, elles sont forcément égales",
+        "Oui, les artérioles ont toujours moins de résistance"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Non, les données sont insuffisantes",
+      "question_html": "Une artère d’aire A se divise en quatre artérioles d’aire A/4. Sans donnée de longueur, peut-on comparer exactement leurs résistances ?",
+      "answer_html": "La résistance dépend aussi de la longueur et de la viscosité. Le choix « information insuffisante » est défendable tel que le QCM est rédigé. Avec l’hypothèse supplémentaire de tubes de même longueur et viscosité, le modèle de la page 59 donne Réq = 4R. Cette hypothèse doit être explicite.",
+      "practice": false
+    },
+    {
+      "id": "c4-028",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 61,62",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            61,
+            62
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Le capillaire",
+        "La grosse artère élastique",
+        "La veine cave"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le capillaire",
+      "question_html": "Quel vaisseau a une paroi particulièrement adaptée aux échanges ?",
+      "answer_html": "Une couche endothéliale et une lame basale forment une paroi très mince. Les artères possèdent davantage de structure musculaire et élastique; les veines offrent une forte capacité de stockage de volume.",
+      "practice": false
+    },
+    {
+      "id": "c4-029",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 61",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            61
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Une grande variation de volume pour ΔP donné",
+        "Une grande résistance à tout débit",
+        "Une pression toujours élevée"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Une grande variation de volume pour ΔP donné",
+      "question_html": "Que signifie une grande compliance vasculaire ?",
+      "answer_html": "C = ΔV/ΔP. Une grande compliance permet de stocker davantage de volume pour une même augmentation de pression, propriété importante du système veineux.",
+      "practice": false
+    },
+    {
+      "id": "c4-030",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 64,65",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            64,
+            65
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Les artérioles",
+        "Les capillaires uniquement",
+        "Les veines caves"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Les artérioles",
+      "question_html": "Quels vaisseaux contrôlent principalement la résistance périphérique et la distribution du débit ?",
+      "answer_html": "Le tonus du muscle lisse artériolaire change le rayon et donc fortement la résistance. Les lits vasculaires peuvent recevoir des débits différents selon leurs résistances respectives.",
+      "practice": false
+    },
+    {
+      "id": "c4-031",
+      "section": "Vaisseaux et écoulement",
+      "source": "C4 — Système cardiovasculaire 3 · p. 67",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            67
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Leur aire de section totale est grande",
+        "Chaque capillaire a un grand rayon",
+        "Le cœur cesse de pousser à ce niveau"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Leur aire de section totale est grande",
+      "question_html": "Pourquoi le sang circule-t-il lentement dans l’ensemble des capillaires ?",
+      "answer_html": "Pour un débit total donné, v = Q/A totale. Bien que chaque capillaire soit petit, leur très grand nombre crée une vaste section totale, ce qui favorise les échanges.",
+      "practice": false
+    },
+    {
+      "id": "c4-032",
+      "section": "Pression et contrôle",
+      "source": "C4 — Système cardiovasculaire 3 · p. 69,70",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            69,
+            70
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Le maximum pendant le cycle",
+        "Le minimum pendant le cycle",
+        "La moyenne arithmétique obligatoire des pressions"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Le maximum pendant le cycle",
+      "question_html": "La pression artérielle systolique est…",
+      "answer_html": "La pression diastolique est le minimum. La pression moyenne tient compte du temps passé aux différents niveaux de pression; elle n’est pas simplement la moyenne des deux extrêmes.",
+      "practice": false
+    },
+    {
+      "id": "c4-033",
+      "section": "Pression et contrôle",
+      "source": "C4 — Système cardiovasculaire 3 · p. 70",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            70
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "La pression systolique",
+        "La pression diastolique",
+        "La pression veineuse centrale"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "La pression systolique",
+      "question_html": "Dans la mesure auscultatoire au brassard, les bruits apparaissent quand la pression du brassard descend sous…",
+      "answer_html": "L’artère laisse passer du sang de façon intermittente, produisant les bruits de Korotkoff. Leur disparition correspond habituellement à la pression diastolique dans la méthode montrée.",
+      "practice": false
+    },
+    {
+      "id": "c4-034",
+      "section": "Pression et contrôle",
+      "source": "C4 — Système cardiovasculaire 3 · p. 71,72,73",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            71,
+            72,
+            73
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Plus de parasympathique, moins de sympathique",
+        "Plus de sympathique, moins de parasympathique",
+        "Aucun changement du tonus autonome"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Plus de parasympathique, moins de sympathique",
+      "question_html": "Une hausse de pression étire les barorécepteurs. Quelle réponse réflexe limite cette hausse ?",
+      "answer_html": "L’augmentation de décharge des barorécepteurs conduit à ralentir le cœur et à diminuer les effets sympathiques sur cœur et vaisseaux. C’est une rétroaction négative.",
+      "practice": false
+    },
+    {
+      "id": "c4-035",
+      "section": "Pression et contrôle",
+      "source": "C4 — Système cardiovasculaire 3 · p. 74",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            74
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Rénine → angiotensine I → ECA → angiotensine II",
+        "ECA → rénine → angiotensine II → angiotensine I",
+        "Aldostérone → ECA → rénine"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Rénine → angiotensine I → ECA → angiotensine II",
+      "question_html": "Quel ordre décrit le système rénine–angiotensine ?",
+      "answer_html": "La rénine agit sur l’angiotensinogène pour former l’angiotensine I; l’ECA forme l’angiotensine II. Celle-ci provoque notamment vasoconstriction et stimulation de l’aldostérone, de l’ADH et de la soif.",
+      "practice": false
+    },
+    {
+      "id": "c4-036",
+      "section": "Pression et contrôle",
+      "source": "C4 — Système cardiovasculaire 3 · p. 74",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            74
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Vrai",
+      "question_html": "L’aldostérone favorise la rétention de sodium et d’eau.",
+      "answer_html": "Cette rétention contribue à augmenter le volume sanguin et le remplissage. Elle participe au contrôle hormonal, plus lent que les ajustements nerveux immédiats.",
+      "practice": false
+    },
+    {
+      "id": "c4-037",
+      "section": "Pression et contrôle",
+      "source": "C4 — Système cardiovasculaire 3 · p. 75",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            75
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "TAM ≈ DC × RPT",
+        "TAM ≈ DC / RPT",
+        "TAM ≈ VE / FC"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "TAM ≈ DC × RPT",
+      "question_html": "Quelle relation utilise le cours pour la tension artérielle moyenne ?",
+      "answer_html": "En négligeant la pression veineuse centrale, TAM ≈ DC × RPT = FC × VE × RPT. Le débit et la résistance contribuent donc tous deux à la pression.",
+      "practice": false
+    },
+    {
+      "id": "c4-038",
+      "section": "Pression et contrôle",
+      "source": "C4 — Système cardiovasculaire 3 · p. 75",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            75
+          ]
+        }
+      ],
+      "exam": true,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Étoile rouge",
+      "type": "single",
+      "choices": [
+        "Augmente de 20 %",
+        "Baisse de 20 %",
+        "Reste constante"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Augmente de 20 %",
+      "question_html": "Si le débit reste constant et que RPT augmente de 20 %, la TAM du modèle…",
+      "answer_html": "TAM ≈ DC × RPT : à débit constant, la pression varie proportionnellement à la résistance. Dans l’organisme, plusieurs variables peuvent toutefois changer ensemble.",
+      "practice": false
+    },
+    {
+      "id": "c4-039",
+      "section": "Interventions",
+      "source": "C4 — Système cardiovasculaire 3 · p. 19,20,21,22,23,24",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Rétablir la lumière et le flux coronarien",
+        "Créer une voie électrique accessoire",
+        "Fermer la valve mitrale"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Rétablir la lumière et le flux coronarien",
+      "question_html": "Quel est le but d’une intervention coronarienne percutanée dans l’exemple d’occlusion ?",
+      "answer_html": "Les images montrent une approche par cathéter pour traiter une obstruction coronarienne. L’objectif est la perfusion du myocarde, pas le réglage direct du rythme.",
+      "practice": false
+    },
+    {
+      "id": "c4-040",
+      "section": "Interventions",
+      "source": "C4 — Système cardiovasculaire 3 · p. 77,78,79,80,81,82",
+      "references": [
+        {
+          "document": "c4",
+          "pages": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82
+          ]
+        }
+      ],
+      "exam": false,
+      "qcm": false,
+      "prof_question": false,
+      "priority_basis": "Complément",
+      "type": "single",
+      "choices": [
+        "Impella : assistance au pompage ventriculaire",
+        "Watchman : remplacement aortique",
+        "Clip mitral : stimulation du NSA"
+      ],
+      "correct": [
+        0
+      ],
+      "short_answer": "Impella : assistance au pompage ventriculaire",
+      "question_html": "Associe le dispositif à son objectif.",
+      "answer_html": "Le cours présente Watchman pour fermer l’appendice auriculaire gauche, le remplacement aortique pour la valve aortique, le clip pour la valve mitrale et Impella pour assister le pompage.",
+      "practice": false
+    }
+  ]
+}

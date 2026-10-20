@@ -1,7 +1,7 @@
 {
   "name": "Study Hub",
   "short_name": "Study Hub",
-  "description": "Flashcards de cours utilisables hors ligne avec synchronisation en ligne.",
+  "description": "Quiz de physiologie utilisables hors ligne avec synchronisation des cours.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

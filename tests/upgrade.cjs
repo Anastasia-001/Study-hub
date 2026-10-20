@@ -24,19 +24,19 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('studyhub.progress.v1'))['gbm3000-cardio-1a:exam']),2);
   legacy=false;
   await page.evaluate(async()=>{const reg=await navigator.serviceWorker.getRegistration();await reg.update();});
-  await page.waitForFunction(async()=>{const c=await caches.open('studyhub-shell-v5');return !!await c.match(new URL('./app.js',location.href));});
+  await page.waitForFunction(async()=>{const c=await caches.open('studyhub-shell-v6');return !!await c.match(new URL('./app.js',location.href));});
   await page.waitForFunction(async()=>{const reg=await navigator.serviceWorker.getRegistration();return reg.active?.state==='activated'&&!reg.installing&&!reg.waiting;});
   failData=true;await page.reload();
-  try{await page.locator('.tile-footer').filter({hasText:'Disponible sans Internet'}).waitFor();}catch(e){console.log('Upgrade page:',await page.locator('body').innerText());console.log('Caches:',await page.evaluate(async()=>{const a={};for(const k of await caches.keys())a[k]=(await(await caches.open(k)).keys()).map(r=>r.url);return a;}));throw e;}
+  try{await page.waitForFunction(()=>document.body.textContent.includes('Prêt pour le hors ligne')||document.body.textContent.includes('Mode hors ligne'));await page.locator('[data-course=gbm3000-cardio-1a]').click();}catch(e){console.log('Upgrade page:',await page.locator('body').innerText());console.log('Caches:',await page.evaluate(async()=>{const a={};for(const k of await caches.keys())a[k]=(await(await caches.open(k)).keys()).map(r=>r.url);return a;}));throw e;}
   assert.equal(await page.evaluate(()=>StudyStorage.get('courses','gbm3000-cardio-1a').then(r=>r.course.cards.length)),59);
-  await page.locator('[data-mode=exam]').click();assert.match(await page.locator('.session-info').innerText(),/03/);
+  await page.locator('[data-mode=exam]').click();assert.match(await page.locator('.session-info').innerText(),/QUESTION 3 /);
   console.log('PASS Real v1 service worker upgrade: cached course and saved position migrated despite HTTP 503');
   await page.locator('[data-action=reveal]').click();await page.locator('[data-rate=hard]').click();
-  await page.waitForFunction(()=>document.querySelector('.session-info')?.textContent.includes('04'));
+  await page.waitForFunction(()=>document.querySelector('.session-info')?.textContent.includes('QUESTION 4 '));
   await ctx.close();ctx=null;
   ctx=await chromium.launchPersistentContext(profile,{channel:process.env.STUDYHUB_BROWSER||'chrome',headless:true});
-  await ctx.setOffline(true);page=await ctx.newPage();await page.goto(url);await page.locator('.tile-footer').filter({hasText:'Disponible sans Internet'}).waitFor();
-  await page.locator('[data-mode=exam]').click();assert.match(await page.locator('.session-info').innerText(),/04/);
+  await ctx.setOffline(true);page=await ctx.newPage();await page.goto(url);await page.waitForFunction(()=>document.body.textContent.includes('Prêt pour le hors ligne')||document.body.textContent.includes('Mode hors ligne'));await page.locator('[data-course=gbm3000-cardio-1a]').click();
+  await page.locator('[data-mode=exam]').click();assert.match(await page.locator('.session-info').innerText(),/QUESTION 4 /);
   await page.locator('[data-action=reveal]').click();assert(await page.locator('#answer').isVisible());
   assert.equal(await page.evaluate(()=>StudyStorage.get('progress','reviews').then(r=>r['gbm3000-cardio-1a:card-003'].hard)),true);
   console.log('PASS Full browser process exit and restart offline: shell, course, review state and session position retained');
