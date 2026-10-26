@@ -1,12 +1,20 @@
 # Study Hub
 
-Application de révision en français, installable sur iPhone, hébergée gratuitement sur [GitHub Pages](https://anastasia-001.github.io/Study-hub/). Interface blanc/noir/gris ; rouge pour les notions prioritaires et les cartes à revoir. Aucun compte ni service payant.
+Application de révision en français, installable sur iPhone, hébergée gratuitement sur [GitHub Pages](https://anastasia-001.github.io/Study-hub/). Interface blanc/noir/gris ; rouge pour les notions prioritaires et les cartes à revoir. Les amis activent leur navigateur avec un code, sans compte.
+
+## Codes d’accès
+
+Le propriétaire crée les codes depuis [Gérer mes codes](https://study-hub-activation.zoutommy12.chatgpt.site/admin), avec sa connexion ChatGPT. Les amis reçoivent simplement le lien Study Hub et un code. Un code ne peut activer qu’un navigateur ou une app installée. Il est consommé atomiquement côté serveur et refusé sur un autre navigateur.
+
+L’activation exige Internet. L’autorisation est ensuite conservée dans IndexedDB avec les cours et la progression. Une réponse d’activation perdue peut être récupérée avec le même code sur le même navigateur. Effacer les données du site ou changer de navigateur/appareil nécessite un nouveau code. Les sauvegardes de progression n’incluent pas l’autorisation d’accès.
+
+Le service conserve les codes sous forme d’empreintes et protège les paquets de cours par une licence signée. Les cours ne sont plus publiés en clair dans la version courante de ce dépôt. Les copies déjà téléchargées et l’historique de l’ancienne publication ne peuvent pas être retirés par ce mécanisme.
 
 ## Utilisation sur iPhone
 
 1. Ouvrir le site dans Safari → Partager → Sur l’écran d’accueil. Garder « Ouvrir comme app web » activé si proposé.
 2. **Ouvrir l’app depuis cette icône avec Internet**. Le stockage de Safari et celui de l’app installée peuvent être distincts.
-3. Attendre « Prêt pour le hors ligne » et « Disponible sans Internet » sur chaque cours.
+3. Entrer le code dans l’app installée, puis attendre « Prêt pour le hors ligne » et « Disponible sans Internet » sur chaque cours.
 4. Activer le mode avion, quitter puis rouvrir Study Hub et essayer les questions, réponses, modes et navigation.
 5. Retrouver Internet puis ouvrir l’app : les nouveaux cours et leurs images sont téléchargés automatiquement. « Synchroniser » permet de réessayer manuellement.
 
@@ -28,7 +36,7 @@ Après réponse : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours 
 
 ## Architecture et garanties
 
-Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v6`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
+Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v7`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
 
 IndexedDB `studyhub` conserve :
 
@@ -40,7 +48,7 @@ Le chargement initial lit IndexedDB sans attendre le réseau. Une synchronisatio
 
 Les téléchargements expirent après 15 secondes par ressource. Le JSON est validé et son empreinte SHA-256 vérifiée avant enregistrement. Les images doivent toutes être téléchargées et décodables. L’ensemble d’un cours est enregistré en une transaction IndexedDB : panne serveur, téléchargement incomplet, JSON invalide, image manquante ou quota dépassé conservent l’ancien cours. Les téléchargements réussis d’autres cours restent acquis. Le catalogue distant n’efface jamais les cours locaux. Aucun retour automatique à une version plus ancienne.
 
-Les images sont hébergées dans ce dépôt, aux formats PNG/JPEG/WebP/GIF. Les chemins `src` sont relatifs à la racine de l’application, même pour un JSON dans un sous-dossier. Le HTML pédagogique autorise seulement les éléments simples (paragraphes, listes, gras, indices, tableaux, images), sans scripts ni attributs actifs. Utiliser des fichiers d’image versionnés et une nouvelle version du cours pour chaque changement visuel.
+Les JSON des cours sont servis par le service d’activation, qui vérifie la licence. La progression reste locale; elle n’est pas envoyée à ce serveur. Les images sont hébergées dans ce dépôt, aux formats PNG/JPEG/WebP/GIF. Les chemins `src` sont relatifs à la racine de l’application, même pour un JSON dans un sous-dossier. Le HTML pédagogique autorise seulement les éléments simples (paragraphes, listes, gras, indices, tableaux, images), sans scripts ni attributs actifs. Utiliser des fichiers d’image versionnés et une nouvelle version du cours pour chaque changement visuel.
 
 Le service worker ne masque pas les échecs réseau des synchronisations. Les anciens caches sont conservés pour permettre la migration des anciens cours ; les caches d’autres applications du même domaine ne sont jamais supprimés. Le cours historique sans images et les positions v1 sont migrés lorsque présents localement.
 
@@ -49,11 +57,11 @@ Le service worker ne masque pas les échecs réseau des synchronisations. Les an
 Une conversation n’est pas une boîte de dépôt automatique. Sur demande explicite d’ajout : l’agent doit avoir accès au PDF et un accès GitHub en écriture à ce dépôt. Aucun service supplémentaire n’est nécessaire tant que cet accès est disponible.
 
 1. Lire le PDF transmis, repérer les étoiles rouges et les QCM du professeur, rédiger les cartes avec les diapositives sources. Ne pas inventer de faits. Ne pas modifier les cartes actuelles sans consulter leur source.
-2. Créer `cours/<identifiant>.json` (ou conserver les fichiers historiques à la racine) au format ci-dessous. Garder des IDs de cartes stables ; augmenter `version` pour une mise à jour. Une carte au sens différent reçoit un nouvel ID.
+2. Créer le JSON du cours dans le dépôt privé du service (`../access-service/content/<identifiant>.json`) et l’importer dans `lib/courses.ts`, au format ci-dessous. Garder des IDs de cartes stables ; augmenter `version` pour une mise à jour. Une carte au sens différent reçoit un nouvel ID.
 3. Ajouter les images utiles, lisibles, recadrées, sans réponse visible côté question. Ne pas publier le PDF original sans autorisation explicite. Le dépôt et les flashcards publiées sont publics.
-4. Ajouter une entrée `{ "id": "...", "url": "./cours/....json" }` dans `catalog.json` si le cours est nouveau.
+4. Ajouter une entrée avec son identifiant et l’URL `https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/<identifiant>` dans `catalog.json` si le cours est nouveau.
 5. Exécuter `npm run catalog`, puis `npm run check`. Le script recalcule les compteurs et SHA-256, et incrémente `catalog_version`. `.gitattributes` empêche Git de changer les octets JSON après calcul.
-6. Publier JSON, images et catalogue **dans le même commit** sur `main`. GitHub Pages doit continuer à publier la racine de cette branche.
+6. Publier d’abord le service privé avec les nouveaux JSON, puis le catalogue et les images sur `main`. GitHub Pages continue à publier cette application; ne jamais y recopier les JSON privés.
 7. Attendre la publication et vérifier l’empreinte du cours en ligne. Ouvrir Study Hub et tester l’apparition puis l’accès hors ligne. La même icône iPhone reste utilisable sans réinstallation.
 
 ```json
@@ -87,6 +95,8 @@ Déclarer aussi les sources dans `documents` avec identifiant, titre et nombre d
 Pour ajouter seulement du contenu : ne pas changer le cache de l’application. Pour modifier HTML/CSS/JS/manifeste/icônes : augmenter la version du cache dans **`sw.js` et `checkShell()` dans `app.js`**, ainsi que la version affichée. Le nouveau service worker précache l’application complète puis prend la main. Le bouton Actualiser apparaît à la bibliothèque ; aucune session active n’est interrompue.
 
 ## Développement et vérification
+
+Les scripts de catalogue et de validation lisent les sources du dépôt privé voisin `../access-service/content`, ou du dossier `STUDYHUB_CONTENT_DIR`. Ce dossier est nécessaire aux tests de contenu.
 
 Node.js et Chrome installés : `npm install`, `npm run check`, `npm test`. Les dépendances servent uniquement aux tests. Le serveur de tests est local, temporaire et utilise un port libre. Les cours de test sont simulés en mémoire et ne sont jamais publiés. Captures et résultats vont dans `test-results/` (ignoré par Git).
 

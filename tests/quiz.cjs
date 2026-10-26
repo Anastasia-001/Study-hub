@@ -2,20 +2,24 @@
 const {chromium}=require('playwright');
 const fs=require('fs'),path=require('path'),http=require('http'),crypto=require('crypto'),assert=require('assert/strict');
 const root=path.resolve(__dirname,'..'),out=process.env.STUDYHUB_TEST_OUTPUT||path.join(root,'test-results');fs.mkdirSync(out,{recursive:true});
-const original=JSON.parse(fs.readFileSync(path.join(root,'catalog.json'))),pack=JSON.parse(fs.readFileSync(path.join(root,'gbm3000-cardio-1a.json')));
+const original=JSON.parse(fs.readFileSync(path.join(root,'catalog.json'))),pack=JSON.parse(fs.readFileSync(require('../scripts/course-source.cjs')('gbm3000-cardio-1a')));
+const fixtureToken='00000000-0000-4000-8000-000000000000.'+'a'.repeat(64)+'.'+'b'.repeat(64);
 let scenario='normal',remote=structuredClone(original),packs=new Map(),failImages=false;
 const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.png':'image/png','.webmanifest':'application/manifest+json'};
 const server=http.createServer((req,res)=>{
  const rel=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\/Study-hub\//,'');res.setHeader('Cache-Control','no-store');
- if(scenario==='server-error'&&rel.endsWith('.json')){res.writeHead(503);return res.end('unavailable');}
- if(rel==='catalog.json'){res.setHeader('Content-Type','application/json');return res.end(JSON.stringify(remote));}
+ if(scenario==='server-error'&&(rel.endsWith('.json')||rel.startsWith('/api/courses/'))){res.writeHead(503);return res.end('unavailable');}
+ if(rel==='catalog.json'){res.setHeader('Content-Type','application/json');return res.end(JSON.stringify({...remote,courses:remote.courses.map(m=>({...m,url:'http://127.0.0.1:'+server.address().port+'/api/courses/'+m.id}))}));}
+ if(rel==='/api/redeem'){res.setHeader('Content-Type','application/json');return res.end(JSON.stringify({token:fixtureToken,activatedAt:Date.now()}));}
+ if(rel.startsWith('/api/courses/')){if(req.headers.authorization!=='Bearer '+fixtureToken){res.writeHead(401);return res.end();}const id=rel.slice('/api/courses/'.length),m=remote.courses.find(m=>m.id===id),file=m?.url.startsWith('./')?m.url.slice(2):id+'.json';res.setHeader('Content-Type','application/json');if(packs.has(file))return res.end(packs.get(file));try{return res.end(fs.readFileSync(require('../scripts/course-source.cjs')(id)));}catch{res.writeHead(404);return res.end();}}
+ if(rel==='access.js'){res.setHeader('Content-Type','text/javascript');return res.end(fs.readFileSync(path.join(root,'access.js'),'utf8').replace('https://study-hub-activation.zoutommy12.chatgpt.site','http://127.0.0.1:'+server.address().port));}
  if(packs.has(rel)){res.setHeader('Content-Type','application/json');return res.end(packs.get(rel));}
  if(failImages&&rel==='fixture-image.png'){res.writeHead(503);return res.end('unavailable');}
  const file=path.resolve(root,rel==='fixture-image.png'?'icon-192.png':rel||'index.html');if(!file.startsWith(root+path.sep)){res.writeHead(403);return res.end();}
  try{res.setHeader('Content-Type',types[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file));}catch{res.writeHead(404);res.end();}
 });
 const report=[],pass=x=>{report.push(x);console.log('PASS',x);};
-const ready=async page=>{await page.waitForFunction(()=>document.body.textContent.includes('Prêt pour le hors ligne')||document.body.textContent.includes('Mode hors ligne'));await page.locator('.sync-button:not([disabled])').waitFor();};
+const ready=async page=>{await page.waitForFunction(()=>document.querySelector('#accessCode')||document.body.textContent.includes('Prêt pour le hors ligne')||document.body.textContent.includes('Mode hors ligne'));if(await page.locator('#accessCode').count()){await page.locator('#accessCode').fill('SH-AAAA-AAAA-AAAA-AAAA');await page.locator('#activate button').click();}await page.waitForFunction(()=>document.body.textContent.includes('Prêt pour le hors ligne')||document.body.textContent.includes('Mode hors ligne'));await page.locator('.sync-button:not([disabled])').waitFor();};
 const sync=async page=>{await page.locator('[data-action=sync]').click();await page.locator('.sync-button:not([disabled])').waitFor();};
 const stored=(page,id=pack.id)=>page.evaluate(id=>StudyStorage.get('courses',id),id);
 const library=async page=>{const b=page.locator('[data-action=library]').first();if(await b.count())await b.click();else{await page.locator('[data-action=home]').click();await page.locator('[data-action=library]').click();}};

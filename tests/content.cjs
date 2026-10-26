@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),catalog=JSON.parse(fs.readFileSync(path.
 assert.equal(catalog.courses.length,6);
 let total=0,prof=0,multi=0,images=0;
 for(const m of catalog.courses){
- const c=JSON.parse(fs.readFileSync(path.join(root,m.url))),docs=new Map(c.documents.map(d=>[d.id,d]));
+ const c=JSON.parse(fs.readFileSync(require('../scripts/course-source.cjs')(m.id))),docs=new Map(c.documents.map(d=>[d.id,d]));
  for(const card of c.cards){
   assert(card.choices?.length>=2,card.id);assert(card.correct.length>=1&&card.correct.length<card.choices.length,card.id);
   assert.equal(new Set(card.choices).size,card.choices.length,card.id);

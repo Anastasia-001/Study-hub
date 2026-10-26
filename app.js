@@ -24,10 +24,10 @@ window.StudyStorage = (() => {
   return {open, get, all, put};
 })();
 
-if (!document.querySelector('#help')) { document.body.insertAdjacentHTML('beforeend', "<dialog id=\"help\"><div class=\"dialog-header\"><h2>Study Hub sur iPhone</h2><button id=\"closeHelp\" aria-label=\"Fermer\">×</button></div><ol><li>Ouvre ce site dans <b>Safari</b>.</li><li>Touche <b>Partager → Sur l’écran d’accueil</b>. Active « Ouvrir comme app web » si cette option apparaît, puis Ajouter.</li><li>Ouvre <b>Study Hub depuis sa nouvelle icône</b>, avec Internet, et attends « Prêt pour le hors ligne » ainsi que « Disponible sans Internet » sur chaque cours.</li><li>Active le mode avion, ferme l’app, puis rouvre-la depuis son icône. Vérifie les questions et les réponses.</li></ol><p>Les cours se synchronisent quand tu ouvres l’app, reviens dedans ou retrouves une connexion pendant son utilisation. iOS ne garantit pas la synchronisation lorsque l’app est fermée.</p><p>La progression reste sur cet appareil. iOS peut libérer du stockage : conserve une sauvegarde si tu changes d’appareil ou effaces les données du navigateur.</p><label class=\"import-label\">Restaurer une sauvegarde de progression<input id=\"importProgress\" type=\"file\" accept=\"application/json,.json\"></label></dialog>"); const css=document.createElement('link'); css.rel='stylesheet'; css.href='./styles.css?sh-shell=6'; document.head.append(css); document.querySelector('meta[name=theme-color]')?.setAttribute('content','#f6f6f4'); }
+if (!document.querySelector('#help')) { document.body.insertAdjacentHTML('beforeend', "<dialog id=\"help\"><div class=\"dialog-header\"><h2>Study Hub sur iPhone</h2><button id=\"closeHelp\" aria-label=\"Fermer\">×</button></div><ol><li>Ouvre ce site dans <b>Safari</b>.</li><li>Touche <b>Partager → Sur l’écran d’accueil</b>. Active « Ouvrir comme app web » si cette option apparaît, puis Ajouter.</li><li>Ouvre <b>Study Hub depuis sa nouvelle icône</b>, avec Internet, et attends « Prêt pour le hors ligne » ainsi que « Disponible sans Internet » sur chaque cours.</li><li>Active le mode avion, ferme l’app, puis rouvre-la depuis son icône. Vérifie les questions et les réponses.</li></ol><p>Les cours se synchronisent quand tu ouvres l’app, reviens dedans ou retrouves une connexion pendant son utilisation. iOS ne garantit pas la synchronisation lorsque l’app est fermée.</p><p>La progression reste sur cet appareil. iOS peut libérer du stockage : conserve une sauvegarde si tu changes d’appareil ou effaces les données du navigateur.</p><label class=\"import-label\">Restaurer une sauvegarde de progression<input id=\"importProgress\" type=\"file\" accept=\"application/json,.json\"></label></dialog>"); const css=document.createElement('link'); css.rel='stylesheet'; css.href='./styles.css?sh-shell=7'; document.head.append(css); document.querySelector('meta[name=theme-color]')?.setAttribute('content','#f6f6f4'); }
 (() => {
 'use strict';
-const VERSION = '3.0.0';
+const VERSION = '3.1.0';
 const app = document.querySelector('#app'), db = window.StudyStorage;
 const base = new URL('./', location.href);
 const records = new Map(), imageURLs = new Map();
@@ -47,10 +47,14 @@ function localURL(path) {
   if (u.origin !== base.origin || !u.pathname.startsWith(base.pathname)) throw new Error('Les ressources doivent être hébergées avec Study Hub');
   return u.href;
 }
+function resourceURL(path) {
+  if(window.StudyAccess?.remote(path))return new URL(path).href;
+  return localURL(path);
+}
 async function fetchFresh(path) {
-  const u = new URL(localURL(path)); u.searchParams.set('sh-sync', Date.now());
+  const u = new URL(resourceURL(path)); u.searchParams.set('sh-sync', Date.now());
   const abort = new AbortController(), timeout = setTimeout(() => abort.abort(), 15000);
-  try {const r = await fetch(u, {cache: 'no-store', signal: abort.signal}); if (!r.ok) throw new Error(`Serveur indisponible (${r.status})`); return await r.arrayBuffer();}
+  try {const r = await fetch(u, {cache: 'no-store', signal: abort.signal, redirect:'error', headers:window.StudyAccess?.remote(u.href)?{Authorization:'Bearer '+window.StudyAccess.token}:{}}); if (!r.ok) throw new Error(`Serveur indisponible (${r.status})`); return await r.arrayBuffer();}
   finally {clearTimeout(timeout);}
 }
 async function digest(bytes) { return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), x => x.toString(16).padStart(2, '0')).join(''); }
@@ -59,7 +63,7 @@ function validateCatalogue(c) {
   const ids = new Set();
   for (const m of c.courses) {
     if (!m.id || ids.has(m.id) || !m.title || !Number.isInteger(m.version) || !/^[a-f0-9]{64}$/i.test(m.sha256)) throw new Error('Référence de cours invalide');
-    localURL(m.url); ids.add(m.id);
+    resourceURL(m.url); ids.add(m.id);
   }
 }
 function validateCourse(c, m) {
@@ -105,7 +109,7 @@ async function download(m) {
   await db.put('courses', record); records.set(m.id, record);
 }
 async function sync(manual = false) {
-  if (syncing || !storageOK) return;
+  if (syncing || !storageOK || !window.StudyAccess?.authorized) return;
   if (!navigator.onLine) {if (manual) toast('Hors ligne. Tes cours téléchargés restent accessibles.'); return;}
   syncing = true; syncMessage = 'Vérification des cours…'; refreshHome();
   let added = 0, updated = 0;
@@ -163,7 +167,7 @@ function courseDetail() {
   const modes=[['exam','Priorité examen',filtered.filter(c=>c.exam).length],['all','Tout réviser',filtered.length],['qcm','Questions du prof',filtered.filter(c=>c.prof_question||c.qcm).length],['hard','À revoir',filtered.filter(c=>review[reviewKey(m.id,c.id)]?.hard).length],['due','Révisions prévues',filtered.filter(c=>review[reviewKey(m.id,c.id)]?.due<=Date.now()).length],['images','Identifications',filtered.filter(c=>/<img\b/i.test(c.question_html)).length]];
   app.innerHTML=`<main class="detail"><header class="study-header"><button class="back-button" data-action="library">${icon('back')} Mes cours</button><button class="text-button" data-action="help">Installer</button></header><div class="library-scroll"><div class="eyebrow course-code">${esc(m.title.split('·')[0])}</div><h1>${esc(m.title.split('·').slice(1).join('·').trim()||m.title)}</h1><p class="detail-subtitle">${cards.length} questions · ${r&&shellReady?'Disponible sans Internet':r?'Téléchargé':'À télécharger'}</p>${m.note?`<p class="course-note">${esc(m.note)}</p>`:''}${r?`<div class="modes detail-modes">${modes.filter(x=>x[0]!=='images'||x[2]).map(([mode,label,n])=>`<button class="${mode==='exam'?'exam-mode':''}" data-open="${esc(m.id)}" data-mode="${mode}" ${n?'':'disabled'}><span>${mode==='exam'?'★ ':''}${label}</span><small>${n}</small></button>`).join('')}</div><div class="topic-heading"><h2>Thèmes</h2><span>Filtre les modes ci-dessus</span></div><div class="topics"><button class="chip ${topic==='all'?'selected':''}" data-topic="all">Tous <small>${cards.length}</small></button>${topics.map(t=>`<button class="chip ${topic===t?'selected':''}" data-topic="${esc(t)}">${esc(t)} <small>${cards.filter(c=>c.section===t).length}</small></button>`).join('')}</div>`:'<button class="primary" data-action="sync">Télécharger</button>'}${syncPanel()}</div></main>`;
 }
-function refreshHome() {if(!session){const scroll=document.querySelector('.library-scroll')?.scrollTop||0, focus=document.activeElement?.id==='search';home();const el=document.querySelector('.library-scroll');if(el)el.scrollTop=scroll;if(focus)document.querySelector('#search')?.focus();}}
+function refreshHome() {if(!window.StudyAccess?.authorized)return;if(!session){const scroll=document.querySelector('.library-scroll')?.scrollTop||0, focus=document.activeElement?.id==='search';home();const el=document.querySelector('.library-scroll');if(el)el.scrollTop=scroll;if(focus)document.querySelector('#search')?.focus();}}
 function modeName(mode) {return {exam:'Priorité examen',all:'Tout réviser',qcm:'Questions du prof',hard:'À revoir',due:'Révisions prévues',images:'Identifications'}[mode];}
 function enter(id,mode) {
   const r=records.get(id);if(!r)return;
@@ -268,7 +272,7 @@ async function setupSW() {
   }catch(e){syncMessage='Installation hors ligne incomplète. Reconnecte-toi et actualise.';refreshHome();console.warn(e);}
 }
 async function checkShell() {
-  const cache=await caches.open('studyhub-shell-v6');
+  const cache=await caches.open('studyhub-shell-v7');
   shellReady=!!(navigator.serviceWorker.controller && await cache.match(new URL('index.html',base).href)); refreshHome();
 }
 async function boot() {
@@ -290,6 +294,9 @@ async function boot() {
       }catch(e){console.warn('Migration',e);}
     }
   }catch(e){storageOK=false;syncMessage='Le stockage local est indisponible. Ouvre Study Hub hors navigation privée, puis réessaie.';console.warn(e);}
+  if(!storageOK){app.innerHTML='<div class="loading"><b>Study Hub</b><p>Le stockage est indisponible. Ouvre l’app hors navigation privée.</p></div>';return;}
+  if(!window.StudyAccess)await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='./access.js';script.onload=resolve;script.onerror=reject;document.head.append(script);});
+  await window.StudyAccess.unlock(db);
   home(); setupSW(); sync();
   window.addEventListener('online',()=>{refreshHome();sync();});
   window.addEventListener('offline',refreshHome);

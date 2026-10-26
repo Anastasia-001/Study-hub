@@ -8,6 +8,8 @@ let legacy=true,failData=false;
 const types={'.html':'text/html','.css':'text/css','.js':'text/javascript','.json':'application/json','.png':'image/png','.webmanifest':'application/manifest+json'};
 const server=http.createServer((req,res)=>{
  const url=new URL(req.url,'http://localhost');let file=url.pathname.replace(/^\/Study-hub\//,'')||'index.html';
+ if(file==='api/redeem'||file==='/api/redeem'){res.setHeader('Content-Type','application/json');return res.end(JSON.stringify({token:'00000000-0000-4000-8000-000000000000.'+'a'.repeat(64)+'.'+'b'.repeat(64),activatedAt:Date.now()}));}
+ if(file==='access.js'){res.setHeader('Content-Type','text/javascript');return res.end(fs.readFileSync(path.join(root,'access.js'),'utf8').replace('https://study-hub-activation.zoutommy12.chatgpt.site','http://127.0.0.1:'+server.address().port));}
  if(failData&&file.endsWith('.json')){res.writeHead(503);return res.end('Offline data server');}
  res.setHeader('Content-Type',types[path.extname(file)]||'text/plain');res.setHeader('Cache-Control','no-store');
  try{res.end(legacy?oldFiles.get(file)||'':fs.readFileSync(path.join(root,file)));}catch{res.writeHead(404);res.end();}
@@ -24,9 +26,9 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('studyhub.progress.v1'))['gbm3000-cardio-1a:exam']),2);
   legacy=false;
   await page.evaluate(async()=>{const reg=await navigator.serviceWorker.getRegistration();await reg.update();});
-  await page.waitForFunction(async()=>{const c=await caches.open('studyhub-shell-v6');return !!await c.match(new URL('./app.js',location.href));});
+  await page.waitForFunction(async()=>{const c=await caches.open('studyhub-shell-v7');return !!await c.match(new URL('./app.js',location.href));});
   await page.waitForFunction(async()=>{const reg=await navigator.serviceWorker.getRegistration();return reg.active?.state==='activated'&&!reg.installing&&!reg.waiting;});
-  failData=true;await page.reload();
+  failData=true;await page.reload();await page.locator('#accessCode').waitFor();await page.locator('#accessCode').fill('SH-AAAA-AAAA-AAAA-AAAA');await page.locator('#activate button').click();
   try{await page.waitForFunction(()=>document.body.textContent.includes('Prêt pour le hors ligne')||document.body.textContent.includes('Mode hors ligne'));await page.locator('[data-course=gbm3000-cardio-1a]').click();}catch(e){console.log('Upgrade page:',await page.locator('body').innerText());console.log('Caches:',await page.evaluate(async()=>{const a={};for(const k of await caches.keys())a[k]=(await(await caches.open(k)).keys()).map(r=>r.url);return a;}));throw e;}
   assert.equal(await page.evaluate(()=>StudyStorage.get('courses','gbm3000-cardio-1a').then(r=>r.course.cards.length)),59);
   await page.locator('[data-mode=exam]').click();assert.match(await page.locator('.session-info').innerText(),/QUESTION 3 /);

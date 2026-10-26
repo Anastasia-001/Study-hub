@@ -2,3 +2,6 @@ node_modules/
 test-results/
 *.pdf
 .DS_Store
+
+# Course source belongs to the private activation service.
+gbm3000-*.json

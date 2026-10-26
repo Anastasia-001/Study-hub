@@ -2,10 +2,11 @@
 const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
 const root=path.resolve(__dirname,'..'),file=path.join(root,'catalog.json'),catalog=JSON.parse(fs.readFileSync(file)),check=process.argv.includes('--check');
 const ids=new Set();
+const sourceFile=require('./course-source.cjs');
 assert.equal(catalog.schema,1);assert(Number.isInteger(catalog.catalog_version));
 for(const m of catalog.courses){
  assert(!ids.has(m.id),'Duplicate course ID');ids.add(m.id);
- const p=path.resolve(root,m.url);assert(p.startsWith(root+path.sep),'Course must stay in this repository');
+ const p=sourceFile(m.id);
  const bytes=fs.readFileSync(p),c=JSON.parse(bytes);assert.equal(c.schema,1);assert.equal(c.id,m.id);assert(Number.isInteger(c.version)&&c.version>0);assert(c.cards.length);
  const cardIds=new Set();for(const card of c.cards){assert(card.id&&!cardIds.has(card.id),'Duplicate/missing card ID');cardIds.add(card.id);assert(card.question_html?.trim()&&card.answer_html?.trim()&&card.source,'Missing question, answer or source');
  for(const html of [card.question_html,card.answer_html]){assert(!/<(?:script|iframe|object|style)\b|\bon\w+\s*=/i.test(html),'Active HTML prohibited');for(const match of html.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/gi)){assert(!/^(?:[a-z]+:|\/\/)/i.test(match[1]),'Images must be local');const img=path.resolve(root,match[1]);assert(img.startsWith(root+path.sep)&&fs.existsSync(img),'Missing image');assert(/\.(png|jpe?g|webp|gif)$/i.test(img),'Unsupported image');}}
