@@ -22,21 +22,20 @@ Ne pas effacer les données du site : cela supprime cours et progression. L’ap
 
 ## Six cours et quiz
 
-La bibliothèque contient 370 questions dans six sections compactes. Chaque cours propose des thèmes. Les réponses courtes sont sélectionnables; le corrigé et une explication apparaissent après le choix (ou après « Valider » pour les réponses multiples). Les questions du professeur sont adaptées et distinguées des entraînements. Voir [les notes de contenu](COURSE_NOTES.md).
+La bibliothèque contient 562 questions dans six cours compacts, sans filtre de thèmes. Chaque question propose cinq choix, sauf les vrai/faux qui en proposent deux. Les réponses restent courtes ; une explication apparaît après le choix (ou après « Valider » pour les réponses multiples). Cinquante et une questions présentent des affirmations A/B/C et cinq combinaisons possibles, numérotées pour éviter de confondre lettres des affirmations et lettres des réponses. Les 26 questions du professeur sont adaptées et distinguées des entraînements. Les schémas se touchent pour les agrandir. Voir [les notes de contenu](COURSE_NOTES.md).
 
 ## Révisions
 
-- Priorité examen : questions marquées `exam`, dont les questions du professeur.
-- Tout réviser : toutes les questions, avec les compléments.
+- Questions : toutes les questions, avec les compléments et celles du professeur.
+- À réviser : uniquement les questions dont l’échéance est atteinte, y compris celles du professeur.
 - Questions du professeur : questions marquées `prof_question` (ou `qcm` pour les données historiques).
-- À revoir : cartes marquées manuellement ou évaluées « À revoir / Difficile ».
-- Révisions prévues : cartes dont l’échéance est atteinte.
+- ★ Priorité examen : catégorie supplémentaire exclusivement dans les deux cours cardio, pour les notions correspondant aux étoiles rouges.
 
-Après réponse : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours puis intervalle précédent × 2,5. La barre de progression compte les cartes dont l’intervalle est d’au moins 3 jours ; il ne constitue pas une mesure de réussite à l’examen. Les cartes gardent leur identifiant pour préserver le suivi après une mise à jour. Une session conserve son jeu de cartes pendant la synchronisation.
+Après réponse : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours puis intervalle précédent × 2,5. La carte replanifiée quitte immédiatement la file des questions dues et ne revient qu’à son échéance, indépendamment de son ancienne marque de difficulté. « Marquer » l’ajoute immédiatement aux questions dues. Les compteurs sont actualisés au retour à l’app et toutes les 15 secondes dans le cours. La barre de progression compte les cartes dont l’intervalle est d’au moins 3 jours ; elle ne constitue pas une mesure de réussite à l’examen. Les 370 identifiants existants sont conservés. Une session conserve sa version de contenu pendant la synchronisation.
 
 ## Architecture et garanties
 
-Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v8`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
+Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v9`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
 
 IndexedDB `studyhub` conserve :
 
@@ -81,7 +80,7 @@ Une conversation n’est pas une boîte de dépôt automatique. Sur demande expl
     "prof_question": false,
     "priority_basis": "Objectifs du cours",
     "type": "single",
-    "choices": ["Réponse correcte", "Distracteur plausible", "Autre distracteur"],
+    "choices": ["Réponse correcte", "Distracteur 1", "Distracteur 2", "Distracteur 3", "Distracteur 4"],
     "correct": [0],
     "short_answer": "Réponse correcte",
     "question_html": "Question précise ?",

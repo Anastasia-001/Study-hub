@@ -24,10 +24,10 @@ window.StudyStorage = (() => {
   return {open, get, all, put};
 })();
 
-if (!document.querySelector('#help')) { document.body.insertAdjacentHTML('beforeend', "<dialog id=\"help\"><div class=\"dialog-header\"><h2>Study Hub sur iPhone</h2><button id=\"closeHelp\" aria-label=\"Fermer\">×</button></div><ol><li>Ouvre ce site dans <b>Safari</b>.</li><li>Touche <b>Partager → Sur l’écran d’accueil</b>. Active « Ouvrir comme app web » si cette option apparaît, puis Ajouter.</li><li>Ouvre <b>Study Hub depuis sa nouvelle icône</b>, avec Internet, et attends « Prêt pour le hors ligne » ainsi que « Disponible sans Internet » sur chaque cours.</li><li>Active le mode avion, ferme l’app, puis rouvre-la depuis son icône. Vérifie les questions et les réponses.</li></ol><p>Les cours se synchronisent quand tu ouvres l’app, reviens dedans ou retrouves une connexion pendant son utilisation. iOS ne garantit pas la synchronisation lorsque l’app est fermée.</p><p>La progression reste sur cet appareil. iOS peut libérer du stockage : conserve une sauvegarde si tu changes d’appareil ou effaces les données du navigateur.</p><label class=\"import-label\">Restaurer une sauvegarde de progression<input id=\"importProgress\" type=\"file\" accept=\"application/json,.json\"></label></dialog>"); const css=document.createElement('link'); css.rel='stylesheet'; css.href='./styles.css?sh-shell=8'; document.head.append(css); document.querySelector('meta[name=theme-color]')?.setAttribute('content','#f6f6f4'); }
+if (!document.querySelector('#help')) { document.body.insertAdjacentHTML('beforeend', "<dialog id=\"help\"><div class=\"dialog-header\"><h2>Study Hub sur iPhone</h2><button id=\"closeHelp\" aria-label=\"Fermer\">×</button></div><ol><li>Ouvre ce site dans <b>Safari</b>.</li><li>Touche <b>Partager → Sur l’écran d’accueil</b>. Active « Ouvrir comme app web » si cette option apparaît, puis Ajouter.</li><li>Ouvre <b>Study Hub depuis sa nouvelle icône</b>, avec Internet, et attends « Prêt pour le hors ligne » ainsi que « Disponible sans Internet » sur chaque cours.</li><li>Active le mode avion, ferme l’app, puis rouvre-la depuis son icône. Vérifie les questions et les réponses.</li></ol><p>Les cours se synchronisent quand tu ouvres l’app, reviens dedans ou retrouves une connexion pendant son utilisation. iOS ne garantit pas la synchronisation lorsque l’app est fermée.</p><p>La progression reste sur cet appareil. iOS peut libérer du stockage : conserve une sauvegarde si tu changes d’appareil ou effaces les données du navigateur.</p><label class=\"import-label\">Restaurer une sauvegarde de progression<input id=\"importProgress\" type=\"file\" accept=\"application/json,.json\"></label></dialog>"); const css=document.createElement('link'); css.rel='stylesheet'; css.href='./styles.css?sh-shell=9'; document.head.append(css); document.querySelector('meta[name=theme-color]')?.setAttribute('content','#f6f6f4'); }
 (() => {
 'use strict';
-const VERSION = '3.1.1';
+const VERSION = '3.2.0';
 const app = document.querySelector('#app'), db = window.StudyStorage;
 const base = new URL('./', location.href);
 const records = new Map(), imageURLs = new Map();
@@ -41,6 +41,11 @@ const icon = (name, size = 20) => {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[name] || paths.book}"/></svg>`;
 };
 function toast(message) { const el = document.querySelector('#toast'); el.textContent = message; el.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('show'), 4500); }
+function showFigure(img) {
+  let viewer=document.querySelector('#figureViewer');
+  if(!viewer){viewer=document.createElement('dialog');viewer.id='figureViewer';viewer.innerHTML='<div class="dialog-header"><h2>Schéma</h2><button aria-label="Fermer le schéma">×</button></div><div class="figure-scroll"><img alt="Schéma agrandi"></div>';document.body.append(viewer);viewer.querySelector('button').onclick=()=>viewer.close();}
+  viewer.querySelector('img').src=img.src;viewer.showModal();
+}
 function localJSON(key, fallback) { try {return JSON.parse(localStorage.getItem(key)) ?? fallback;} catch {return fallback;} }
 function localURL(path) {
   const u = new URL(path, base);
@@ -134,18 +139,20 @@ async function sync(manual = false) {
 }
 function metas() {const map = new Map(catalogue.courses.map(m => [m.id, m])); for (const r of records.values()) if (!map.has(r.id)) map.set(r.id, r.meta); return [...map.values()];}
 const reviewKey = (course, card) => `${course}:${card}`;
+const hasStars = id => ['gbm3000-cardio-1a','gbm3000-cardio-3'].includes(id);
+const isDue = p => !!p && Number.isFinite(p.due) && p.due <= Date.now();
 function counts(id) {
   const cards = records.get(id)?.course.cards || [];
   return {all: cards.length, exam: cards.filter(c => c.exam).length, qcm: cards.filter(c => c.prof_question || c.qcm).length,
     hard: cards.filter(c => review[reviewKey(id,c.id)]?.hard).length,
-    due: cards.filter(c => {const p=review[reviewKey(id,c.id)]; return p && p.due <= Date.now();}).length,
+    due: cards.filter(c => {const p=review[reviewKey(id,c.id)]; return isDue(p);}).length,
     known: cards.filter(c => review[reviewKey(id,c.id)]?.interval >= 3).length};
 }
 function lastSyncText() {return lastSync ? new Date(lastSync).toLocaleString('fr-CA',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}) : 'Pas encore effectuée';}
 function shellStatus() {return !storageOK ? 'Stockage indisponible' : !shellReady ? 'Préparation du mode hors ligne…' : !records.size ? 'Application prête · cours à télécharger' : navigator.onLine ? 'Prêt pour le hors ligne' : 'Mode hors ligne';}
 function courseTile(meta) {
   const r=records.get(meta.id), m=r?.meta||meta, n=counts(meta.id), title=m.title.split('·');
-  return `<button class="course-tile" data-course="${esc(m.id)}"><div class="tile-top"><span class="course-code">${esc(title[0])}</span><span class="download-state">${r?icon('check',14)+' Hors ligne':'À télécharger'}</span></div><h2>${esc(title.slice(1).join('·').trim()||m.title)}</h2><div class="tile-numbers"><span>${r?n.all:m.card_count} questions</span><span class="important">${r?n.exam:m.exam_count||0} prioritaires</span>${icon('arrow',17)}</div><div class="meter"><span style="width:${n.all?n.known/n.all*100:0}%"></span></div></button>`;
+  return `<button class="course-tile" data-course="${esc(m.id)}"><div class="tile-top"><span class="course-code">${esc(title[0])}</span><span class="download-state">${r?icon('check',14)+' Hors ligne':'À télécharger'}</span></div><h2>${esc(title.slice(1).join('·').trim()||m.title)}</h2><div class="tile-numbers"><span>${r?n.all:m.card_count} questions</span>${hasStars(m.id)?`<span class="important">★ ${r?n.exam:m.exam_count||0}</span>`:''}${icon('arrow',17)}</div><div class="meter"><span style="width:${n.all?n.known/n.all*100:0}%"></span></div></button>`;
 }
 function syncPanel() {return `<section class="sync-panel" aria-live="polite"><span class="status-dot ${!navigator.onLine?'offline':''}"></span><div><b>${esc(shellStatus())}</b><p>${syncing?esc(syncMessage):'Synchronisation : '+esc(lastSyncText())}</p>${!syncing&&syncMessage&&syncMessage!=='Tous les cours sont à jour'?`<p class="sync-detail">${esc(syncMessage)}</p>`:''}</div><button class="sync-button" data-action="sync" ${syncing||!storageOK?'disabled':''}>${icon('sync',17)} ${syncing?'En cours…':'Synchroniser'}</button></section>${updateReady?'<div class="update-banner">Mise à jour prête. <button data-action="reload">Actualiser</button></div>':''}`;}
 function home() {
@@ -162,21 +169,23 @@ function renderList() {
 function courseDetail() {
   const r=records.get(selectedCourse),m=r?.course||metas().find(m=>m.id===selectedCourse);
   if(!m){selectedCourse=null;return home();}
-  const cards=r?.course.cards||[],topics=[...new Set(cards.map(c=>c.section))];
-  const filtered=cards.filter(c=>topic==='all'||c.section===topic);
-  const modes=[['exam','Priorité examen',filtered.filter(c=>c.exam).length],['all','Tout réviser',filtered.length],['qcm','Questions du prof',filtered.filter(c=>c.prof_question||c.qcm).length],['hard','À revoir',filtered.filter(c=>review[reviewKey(m.id,c.id)]?.hard).length],['due','Révisions prévues',filtered.filter(c=>review[reviewKey(m.id,c.id)]?.due<=Date.now()).length],['images','Identifications',filtered.filter(c=>/<img\b/i.test(c.question_html)).length]];
-  app.innerHTML=`<main class="detail"><header class="study-header"><button class="back-button" data-action="library">${icon('back')} Mes cours</button><button class="text-button" data-action="help">Installer</button></header><div class="library-scroll"><div class="eyebrow course-code">${esc(m.title.split('·')[0])}</div><h1>${esc(m.title.split('·').slice(1).join('·').trim()||m.title)}</h1><p class="detail-subtitle">${cards.length} questions · ${r&&shellReady?'Disponible sans Internet':r?'Téléchargé':'À télécharger'}</p>${m.note?`<p class="course-note">${esc(m.note)}</p>`:''}${r?`<div class="modes detail-modes">${modes.filter(x=>x[0]!=='images'||x[2]).map(([mode,label,n])=>`<button class="${mode==='exam'?'exam-mode':''}" data-open="${esc(m.id)}" data-mode="${mode}" ${n?'':'disabled'}><span>${mode==='exam'?'★ ':''}${label}</span><small>${n}</small></button>`).join('')}</div><div class="topic-heading"><h2>Thèmes</h2><span>Filtre les modes ci-dessus</span></div><div class="topics"><button class="chip ${topic==='all'?'selected':''}" data-topic="all">Tous <small>${cards.length}</small></button>${topics.map(t=>`<button class="chip ${topic===t?'selected':''}" data-topic="${esc(t)}">${esc(t)} <small>${cards.filter(c=>c.section===t).length}</small></button>`).join('')}</div>`:'<button class="primary" data-action="sync">Télécharger</button>'}${syncPanel()}</div></main>`;
+  const cards=r?.course.cards||[];
+  const modes=[['all','Questions',cards.length],['due','À réviser',cards.filter(c=>isDue(review[reviewKey(m.id,c.id)])).length],['qcm','Questions du prof',cards.filter(c=>c.prof_question||c.qcm).length]];
+  if(hasStars(m.id))modes.push(['exam','★ Priorité examen',cards.filter(c=>c.exam).length]);
+  const pending=cards.map(c=>review[reviewKey(m.id,c.id)]?.due).filter(d=>Number.isFinite(d)&&d>Date.now());
+  const nextDue=pending.length?Math.min(...pending):null;
+  app.innerHTML=`<main class="detail"><header class="study-header"><button class="back-button" data-action="library">${icon('back')} Mes cours</button><button class="text-button" data-action="help">Installer</button></header><div class="library-scroll"><div class="eyebrow course-code">${esc(m.title.split('·')[0])}</div><h1>${esc(m.title.split('·').slice(1).join('·').trim()||m.title)}</h1><p class="detail-subtitle">${cards.length} questions · ${r&&shellReady?'Disponible sans Internet':r?'Téléchargé':'À télécharger'}</p>${r?`<div class="modes detail-modes">${modes.map(([mode,label,n])=>`<button class="${mode==='exam'?'exam-mode':''}" data-open="${esc(m.id)}" data-mode="${mode}" ${n?'':'disabled'}><span>${label}</span><small>${n}</small></button>`).join('')}</div>${nextDue?`<p class="next-review">Prochaine révision ${esc(new Date(nextDue).toLocaleString('fr-CA',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}))}</p>`:''}`:'<button class="primary" data-action="sync">Télécharger</button>'}${syncPanel()}</div></main>`;
 }
 function refreshHome() {if(!window.StudyAccess?.authorized)return;if(!session){const scroll=document.querySelector('.library-scroll')?.scrollTop||0, focus=document.activeElement?.id==='search';home();const el=document.querySelector('.library-scroll');if(el)el.scrollTop=scroll;if(focus)document.querySelector('#search')?.focus();}}
-function modeName(mode) {return {exam:'Priorité examen',all:'Tout réviser',qcm:'Questions du prof',hard:'À revoir',due:'Révisions prévues',images:'Identifications'}[mode];}
+function modeName(mode) {return {exam:'★ Priorité examen',all:'Questions',qcm:'Questions du prof',hard:'À réviser',due:'À réviser',images:'Questions'}[mode];}
 function enter(id,mode) {
   const r=records.get(id);if(!r)return;
   selectedCourse=id;
-  const cards=r.course.cards.filter(c=>(topic==='all'||c.section===topic)&&(mode==='exam'?c.exam:mode==='qcm'?c.prof_question||c.qcm:mode==='hard'?review[reviewKey(id,c.id)]?.hard:mode==='due'?review[reviewKey(id,c.id)]?.due<=Date.now():mode==='images'?/<img\b/i.test(c.question_html):true));
+  const cards=r.course.cards.filter(c=>(mode==='exam'?c.exam:mode==='qcm'?c.prof_question||c.qcm:mode==='hard'?review[reviewKey(id,c.id)]?.hard:mode==='due'?isDue(review[reviewKey(id,c.id)]):mode==='images'?/<img\b/i.test(c.question_html):true));
   if(!cards.length)return toast('Aucune question dans ce mode.');
   for(const url of imageURLs.values())URL.revokeObjectURL(url);imageURLs.clear();
   for(const asset of r.assets)imageURLs.set(asset.url,URL.createObjectURL(asset.blob));
-  const positionKey=`${id}:${mode}${topic==='all'?'':':'+topic}`,saved=positions[positionKey],index=typeof saved==='string'?cards.findIndex(c=>c.id===saved):Number(saved)||0;
+  const positionKey=`${id}:${mode}${topic==='all'?'':':'+topic}`,saved=mode==='due'?null:positions[positionKey],index=typeof saved==='string'?cards.findIndex(c=>c.id===saved):Number(saved)||0;
   session={id,mode,course:r.course,cards,index:Math.max(0,Math.min(index,cards.length-1)),positionKey,answer:false,selected:[],orders:new Map()};renderCard();
 }
 async function savePosition() {
@@ -189,7 +198,7 @@ function choiceOrder(card) {
 }
 function renderCard() {
   const s=session,card=s.cards[s.index],p=review[reviewKey(s.id,card.id)],quiz=Array.isArray(card.choices),correct=quiz&&s.answer&&s.selected.length===card.correct.length&&s.selected.every(i=>card.correct.includes(i));
-  app.innerHTML=`<main class="study"><header class="study-header"><button class="back-button" data-action="home">${icon('back')}<span>Le cours</span></button><span class="study-title">${esc(s.course.title)}</span><button class="mark-button ${p?.hard?'marked':''}" data-action="mark" aria-pressed="${!!p?.hard}">${p?.hard?'★ À revoir':'☆ Marquer'}</button></header><div class="session-info"><span class="eyebrow ${s.mode==='exam'?'important':''}">${esc(modeName(s.mode))}</span><span>QUESTION <b>${s.index+1}</b> / ${s.cards.length}</span></div><div class="session-meter"><span style="width:${(s.index+1)/s.cards.length*100}%"></span></div><article class="flashcard quiz ${s.answer?'revealed':''}"><div class="card-meta"><span>${esc(card.section)}</span>${card.exam?`<span class="priority-badge">${esc(card.priority_basis||'Priorité examen')}</span>`:''}${card.practice?'<span>Entraînement</span>':''}</div><div class="quiz-scroll"><div class="question"><span class="question-label">${quiz?(card.type==='multiple'?'PLUSIEURS RÉPONSES':'UNE RÉPONSE'):'QUESTION'}</span><div class="question-content">${cleanHTML(card.question_html,null,imageURLs)}</div></div>${quiz?`<div class="choices" role="group" aria-label="Choix de réponse">${choiceOrder(card).map((index,j)=>{const selected=s.selected.includes(index),right=card.correct.includes(index);return `<button class="choice ${selected?'picked':''} ${s.answer?(right?'correct-choice':selected?'wrong-choice':'muted-choice'):''}" data-choice="${index}" aria-pressed="${selected}" ${s.answer?'disabled':''}><span class="choice-letter">${String.fromCharCode(65+j)}</span><span>${esc(card.choices[index])}</span>${s.answer&&right?'<span class="choice-check">✓</span>':''}</button>`;}).join('')}</div>${card.type==='multiple'&&!s.answer?`<button class="primary validate" data-action="validate" ${s.selected.length?'':'disabled'}>Valider</button>`:''}`:''}<div class="answer" id="answer" ${s.answer?'':'hidden'}><span class="result-label ${quiz&&!correct?'important':''}">${quiz?(correct?'Bonne réponse':'À corriger'):'RÉPONSE'}</span>${quiz?`<p class="short-answer">${esc(card.short_answer)}</p>`:''}<div class="explanation">${cleanHTML(card.answer_html,null,imageURLs)}</div></div><details class="source-detail"><summary>Source</summary><p>${esc(card.source)}</p></details></div>${!quiz?`<button class="reveal-button" data-action="reveal">${s.answer?'Cacher':'Afficher'} la réponse</button>`:''}</article><div class="rating ${s.answer?'visible':''}" aria-label="Évaluer la mémorisation"><div><button data-rate="again" ${s.answer?'':'disabled'}>À revoir <small>10 min</small></button><button data-rate="hard" ${s.answer?'':'disabled'}>Difficile <small>1 jour</small></button><button data-rate="good" ${s.answer?'':'disabled'}>Compris <small>${p?.interval>=1?Math.round(p.interval*2.5):3} jours</small></button></div></div><nav class="card-nav" aria-label="Navigation des questions"><button data-action="prev" ${s.index===0?'disabled':''}>${icon('back',17)} Précédente</button><button data-action="next">${s.index===s.cards.length-1?'Terminer':'Suivante'} ${icon('arrow',17)}</button></nav></main>`;
+  app.innerHTML=`<main class="study"><header class="study-header"><button class="back-button" data-action="home">${icon('back')}<span>Le cours</span></button><span class="study-title">${esc(s.course.title)}</span><button class="mark-button ${isDue(p)?'marked':''}" data-action="mark" aria-pressed="${isDue(p)}">${isDue(p)?'À réviser':'Marquer'}</button></header><div class="session-info"><span class="eyebrow ${s.mode==='exam'?'important':''}">${esc(modeName(s.mode))}</span><span>QUESTION <b>${s.index+1}</b> / ${s.cards.length}</span></div><div class="session-meter"><span style="width:${(s.index+1)/s.cards.length*100}%"></span></div><article class="flashcard quiz ${s.answer?'revealed':''}"><div class="card-meta"><span>${esc(card.section)}</span>${hasStars(s.id)&&card.exam?`<span class="priority-badge">${esc(card.priority_basis||'Priorité examen')}</span>`:''}${card.practice?'<span>Entraînement</span>':''}</div><div class="quiz-scroll"><div class="question"><span class="question-label">${quiz?(card.type==='multiple'?'PLUSIEURS RÉPONSES':'UNE RÉPONSE'):'QUESTION'}</span><div class="question-content">${cleanHTML(card.question_html,null,imageURLs)}</div></div>${quiz?`<div class="choices" role="group" aria-label="Choix de réponse">${choiceOrder(card).map((index,j)=>{const selected=s.selected.includes(index),right=card.correct.includes(index);return `<button class="choice ${selected?'picked':''} ${s.answer?(right?'correct-choice':selected?'wrong-choice':'muted-choice'):''}" data-choice="${index}" aria-pressed="${selected}" ${s.answer?'disabled':''}><span class="choice-letter">${card.format==='combination'?j+1:String.fromCharCode(65+j)}</span><span>${esc(card.choices[index])}</span>${s.answer&&right?'<span class="choice-check">✓</span>':''}</button>`;}).join('')}</div>${card.type==='multiple'&&!s.answer?`<button class="primary validate" data-action="validate" ${s.selected.length?'':'disabled'}>Valider</button>`:''}`:''}<div class="answer" id="answer" ${s.answer?'':'hidden'}><span class="result-label ${quiz&&!correct?'important':''}">${quiz?(correct?'Bonne réponse':'À corriger'):'RÉPONSE'}</span>${quiz?`<p class="short-answer">${esc(card.short_answer)}</p>`:''}<div class="explanation">${cleanHTML(card.answer_html,null,imageURLs)}</div></div><details class="source-detail"><summary>Source</summary><p>${esc(card.source)}</p></details></div>${!quiz?`<button class="reveal-button" data-action="reveal">${s.answer?'Cacher':'Afficher'} la réponse</button>`:''}</article><div class="rating ${s.answer?'visible':''}" aria-label="Évaluer la mémorisation"><div><button data-rate="again" ${s.answer?'':'disabled'}>À revoir <small>10 min</small></button><button data-rate="hard" ${s.answer?'':'disabled'}>Difficile <small>1 jour</small></button><button data-rate="good" ${s.answer?'':'disabled'}>Compris <small>${p?.interval>=1?Math.round(p.interval*2.5):3} jours</small></button></div></div><nav class="card-nav" aria-label="Navigation des questions"><button data-action="prev" ${s.index===0?'disabled':''}>${icon('back',17)} Précédente</button><button data-action="next">${s.index===s.cards.length-1?'Terminer':'Suivante'} ${icon('arrow',17)}</button></nav></main>`;
   savePosition();
   if(s.answer)requestAnimationFrame(()=>document.querySelector('#answer')?.scrollIntoView({block:'nearest'}));
 }
@@ -205,7 +214,7 @@ function step(delta) {
   session.index=Math.max(0,next); session.answer=false; session.selected=[]; renderCard();
 }
 async function mark() {
-  const s=session, key=reviewKey(s.id,s.cards[s.index].id), prev=review[key]||{}, next={...review,[key]:{...prev,hard:!prev.hard}};
+  const s=session, key=reviewKey(s.id,s.cards[s.index].id), prev=review[key]||{}, value={...prev,hard:!isDue(prev),last:Date.now()}; if(isDue(prev))delete value.due;else value.due=Date.now(); const next={...review,[key]:value};
   try {await db.put('progress',next,'reviews'); review=next; if(session===s)renderCard();}catch{toast('Progression non enregistrée : stockage indisponible.');}
 }
 let ratingBusy=false;
@@ -214,7 +223,7 @@ async function rate(kind) {
   const s=session, index=s.index, key=reviewKey(s.id,s.cards[index].id), prev=review[key]||{};
   const interval=kind==='again'?0:kind==='hard'?1:prev.interval>=1?Math.round(prev.interval*2.5):3;
   const next={...review,[key]:{hard:kind!=='good',interval,due:Date.now()+(interval?interval*86400000:600000),last:Date.now(),reviews:(prev.reviews||0)+1}};
-  try {await db.put('progress',next,'reviews'); review=next; if(session===s&&s.index===index)step(1);}catch{toast('Progression non enregistrée : stockage indisponible.');}
+  try {await db.put('progress',next,'reviews'); review=next; if(session===s&&s.index===index){if(s.mode==='due'){s.cards.splice(index,1);if(!s.cards.length){session=null;home();toast('Révisions terminées.');}else{s.index=Math.min(index,s.cards.length-1);s.answer=false;s.selected=[];renderCard();}}else step(1);}}catch{toast('Progression non enregistrée : stockage indisponible.');}
   finally{ratingBusy=false;}
 }
 function showHelp() {document.querySelector('#help').showModal(); navigator.storage?.persist?.().catch(()=>{});}
@@ -237,6 +246,7 @@ async function importProgress(file) {
   }catch{toast('Impossible de restaurer ce fichier.');}
 }
 app.addEventListener('click',e=>{
+  const figure=e.target.closest('.question img,.explanation img');if(figure)return showFigure(figure);
   const b=e.target.closest('button'); if(!b||b.disabled)return;
   if(b.dataset.course){selectedCourse=b.dataset.course;topic='all';return home();}
   if(b.dataset.topic){topic=b.dataset.topic;return courseDetail();}
@@ -272,7 +282,7 @@ async function setupSW() {
   }catch(e){syncMessage='Installation hors ligne incomplète. Reconnecte-toi et actualise.';refreshHome();console.warn(e);}
 }
 async function checkShell() {
-  const cache=await caches.open('studyhub-shell-v8');
+  const cache=await caches.open('studyhub-shell-v9');
   shellReady=!!(navigator.serviceWorker.controller && await cache.match(new URL('index.html',base).href)); refreshHome();
 }
 async function boot() {
@@ -298,9 +308,10 @@ async function boot() {
   if(!window.StudyAccess)await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='./access.js';script.onload=resolve;script.onerror=reject;document.head.append(script);});
   await window.StudyAccess.unlock(db);
   home(); setupSW(); sync();
+  setInterval(()=>{if(document.visibilityState==='visible'&&!session&&selectedCourse)refreshHome();},15000);
   window.addEventListener('online',()=>{refreshHome();sync();});
   window.addEventListener('offline',refreshHome);
-  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){sync();registration?.update().catch(()=>{});}});
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){refreshHome();sync();registration?.update().catch(()=>{});}});
 }
 boot();
 })();
