@@ -4,7 +4,7 @@ Application de révision en français, installable sur iPhone, hébergée gratui
 
 ## Codes d’accès
 
-Le propriétaire crée les codes depuis [Gérer mes codes](https://study-hub-activation.zoutommy12.chatgpt.site/admin), avec sa connexion ChatGPT. Les amis reçoivent simplement le lien Study Hub et un code. Un code ne peut activer qu’un navigateur ou une app installée. Il est consommé atomiquement côté serveur et refusé sur un autre navigateur.
+Le propriétaire crée les codes depuis [Gérer mes codes](https://study-hub-activation.zoutommy12.chatgpt.site/admin), avec sa connexion ChatGPT. Les amis reçoivent simplement le lien Study Hub et un code. Les nouveaux codes comportent quatre caractères faciles à lire. Les anciens codes restent valables. Un code ne peut activer qu’un navigateur ou une app installée. Il est consommé atomiquement côté serveur et refusé sur un autre navigateur.
 
 L’activation exige Internet. L’autorisation est ensuite conservée dans IndexedDB avec les cours et la progression. Une réponse d’activation perdue peut être récupérée avec le même code sur le même navigateur. Effacer les données du site ou changer de navigateur/appareil nécessite un nouveau code. Les sauvegardes de progression n’incluent pas l’autorisation d’accès.
 
@@ -36,7 +36,7 @@ Après réponse : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours 
 
 ## Architecture et garanties
 
-Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v7`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
+Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v8`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
 
 IndexedDB `studyhub` conserve :
 
