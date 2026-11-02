@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "catalog_version": 7,
-  "updated_at": "2026-10-27",
+  "catalog_version": 8,
+  "updated_at": "2026-11-01",
   "courses": [
     {
       "id": "gbm3000-cellulaire",
@@ -74,6 +74,18 @@
       "exam_count": 0,
       "qcm_count": 0,
       "note": ""
+    },
+    {
+      "id": "gbm3000-homeostasie-hormones",
+      "version": 1,
+      "title": "Cours 7 · Homéostasie, hormones et métabolisme",
+      "subtitle": "Régulation, glycémie, énergie et thermorégulation",
+      "url": "https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/gbm3000-homeostasie-hormones",
+      "sha256": "362760976adf5203a00beb5e8e2106580ad71ef1d069a84544d860e29316afaa",
+      "card_count": 110,
+      "exam_count": 0,
+      "qcm_count": 0,
+      "note": "Instrumentation exclue selon la consigne du document. Questions d’entraînement rédigées à partir des notes."
     }
   ]
 }

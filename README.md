@@ -20,9 +20,9 @@ Le service conserve les codes sous forme d’empreintes et protège les paquets 
 
 Ne pas effacer les données du site : cela supprime cours et progression. L’app demande un stockage persistant lors des interactions d’installation/synchronisation, mais iOS garde le contrôle du stockage. Une sauvegarde de progression est exportable depuis le bas de la bibliothèque et restaurable depuis « Installer sur iPhone ». La progression est locale à chaque appareil, sans synchronisation cloud.
 
-## Six cours et quiz
+## Sept cours et quiz
 
-La bibliothèque contient 562 questions dans six cours compacts, sans filtre de thèmes. Chaque question propose cinq choix, sauf les vrai/faux qui en proposent deux. Les réponses restent courtes ; une explication apparaît après le choix (ou après « Valider » pour les réponses multiples). Cinquante et une questions présentent des affirmations A/B/C et cinq combinaisons possibles, numérotées pour éviter de confondre lettres des affirmations et lettres des réponses. Les 26 questions du professeur sont adaptées et distinguées des entraînements. Les schémas se touchent pour les agrandir. Voir [les notes de contenu](COURSE_NOTES.md).
+La bibliothèque contient 672 questions dans sept cours compacts, sans filtre de thèmes. Chaque question propose cinq choix, sauf les vrai/faux qui en proposent deux. Les réponses restent courtes ; une explication apparaît après le choix (ou après « Valider » pour les réponses multiples). Soixante et onze questions présentent des affirmations A/B/C et cinq combinaisons possibles, numérotées pour éviter de confondre lettres des affirmations et lettres des réponses. Les 26 questions du professeur sont adaptées et distinguées des entraînements. Les schémas se touchent pour les agrandir. Le nouveau cours Homéostasie, hormones et métabolisme ajoute 110 entraînements, dont dix vrai/faux et cinq identifications tirées des notes. Voir [les notes de contenu](COURSE_NOTES.md).
 
 ## Révisions
 
@@ -35,7 +35,7 @@ Après réponse : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours 
 
 ## Architecture et garanties
 
-Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v9`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
+Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v10`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
 
 IndexedDB `studyhub` conserve :
 

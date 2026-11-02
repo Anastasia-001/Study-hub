@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),assert=require('assert/strict');
 const root=path.resolve(__dirname,'..'),catalog=JSON.parse(fs.readFileSync(path.join(root,'catalog.json')));
-assert.equal(catalog.courses.length,6);
+assert.equal(catalog.courses.length,7);
 let total=0,prof=0,multi=0,images=0;
 for(const m of catalog.courses){
  const c=JSON.parse(fs.readFileSync(require('../scripts/course-source.cjs')(m.id))),docs=new Map(c.documents.map(d=>[d.id,d]));
