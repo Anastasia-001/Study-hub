@@ -24,10 +24,14 @@ window.StudyStorage = (() => {
   return {open, get, all, put};
 })();
 
-if (!document.querySelector('#help')) { document.body.insertAdjacentHTML('beforeend', "<dialog id=\"help\"><div class=\"dialog-header\"><h2>Study Hub sur iPhone</h2><button id=\"closeHelp\" aria-label=\"Fermer\">×</button></div><ol><li>Ouvre ce site dans <b>Safari</b>.</li><li>Touche <b>Partager → Sur l’écran d’accueil</b>. Active « Ouvrir comme app web » si cette option apparaît, puis Ajouter.</li><li>Ouvre <b>Study Hub depuis sa nouvelle icône</b>, avec Internet, et attends « Prêt pour le hors ligne » ainsi que « Disponible sans Internet » sur chaque cours.</li><li>Active le mode avion, ferme l’app, puis rouvre-la depuis son icône. Vérifie les questions et les réponses.</li></ol><p>Les cours se synchronisent quand tu ouvres l’app, reviens dedans ou retrouves une connexion pendant son utilisation. iOS ne garantit pas la synchronisation lorsque l’app est fermée.</p><p>La progression reste sur cet appareil. iOS peut libérer du stockage : conserve une sauvegarde si tu changes d’appareil ou effaces les données du navigateur.</p><label class=\"import-label\">Restaurer une sauvegarde de progression<input id=\"importProgress\" type=\"file\" accept=\"application/json,.json\"></label></dialog>"); const css=document.createElement('link'); css.rel='stylesheet'; css.href='./styles.css?sh-shell=10'; document.head.append(css); document.querySelector('meta[name=theme-color]')?.setAttribute('content','#f6f6f4'); }
+if (!document.querySelector('#help')) { document.body.insertAdjacentHTML('beforeend', "<dialog id=\"help\"><div class=\"dialog-header\"><h2>Study Hub sur iPhone</h2><button id=\"closeHelp\" aria-label=\"Fermer\">×</button></div><ol><li>Ouvre ce site dans <b>Safari</b>.</li><li>Touche <b>Partager → Sur l’écran d’accueil</b>. Active « Ouvrir comme app web » si cette option apparaît, puis Ajouter.</li><li>Ouvre <b>Study Hub depuis sa nouvelle icône</b>, avec Internet, et attends « Prêt pour le hors ligne » ainsi que « Disponible sans Internet » sur chaque cours.</li><li>Active le mode avion, ferme l’app, puis rouvre-la depuis son icône. Vérifie les questions et les réponses.</li></ol><p>Les cours se synchronisent quand tu ouvres l’app, reviens dedans ou retrouves une connexion pendant son utilisation. iOS ne garantit pas la synchronisation lorsque l’app est fermée.</p><p>La progression reste sur cet appareil. iOS peut libérer du stockage : conserve une sauvegarde si tu changes d’appareil ou effaces les données du navigateur.</p><label class=\"import-label\">Restaurer une sauvegarde de progression<input id=\"importProgress\" type=\"file\" accept=\"application/json,.json\"></label></dialog>"); const css=document.createElement('link'); css.rel='stylesheet'; css.href='./styles.css?sh-shell=11'; document.head.append(css); document.querySelector('meta[name=theme-color]')?.setAttribute('content','#f6f6f4'); }
 (() => {
 'use strict';
-const VERSION = '3.3.0';
+const VERSION = '3.4.0';
+const archivedCourses = new Set([
+  'gbm3000-cellulaire', 'gbm3000-cardio-1a', 'gbm3000-nerveux',
+  'gbm3000-cardio-3', 'gbm3000-respiratoire', 'gbm3000-muscles',
+]);
 const app = document.querySelector('#app'), db = window.StudyStorage;
 const base = new URL('./', location.href);
 const records = new Map(), imageURLs = new Map();
@@ -35,6 +39,7 @@ let catalogue = {schema: 1, catalog_version: 0, courses: []};
 let review = {}, positions = {}, lastSync = '', syncing = false, shellReady = false, storageOK = false;
 let syncMessage = '', updateReady = false, registration, search = '', filter = 'all';
 let session = null, toastTimer, selectedCourse = null, topic = "all";
+let archiveOpen = false;
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon = (name, size = 20) => {
   const paths = {book:'M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-2H4z M20 4h-4a3 3 0 0 0-3 3v14a4 4 0 0 1 4-2h3z', sync:'M20 7v5h-5 M4 17v-5h5 M6 7a7 7 0 0 1 12-1l2 3 M4 15l2 3a7 7 0 0 0 12-1', arrow:'M5 12h14 M14 7l5 5-5 5', check:'m5 12 4 4L19 6', back:'m14 6-6 6 6 6', download:'M12 3v12 m-5-5 5 5 5-5 M4 16v5h16v-5', search:'M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14 M15 15l6 6', grid:'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z'};
@@ -156,14 +161,19 @@ function courseTile(meta) {
 }
 function syncPanel() {return `<section class="sync-panel" aria-live="polite"><span class="status-dot ${!navigator.onLine?'offline':''}"></span><div><b>${esc(shellStatus())}</b><p>${syncing?esc(syncMessage):'Synchronisation : '+esc(lastSyncText())}</p>${!syncing&&syncMessage&&syncMessage!=='Tous les cours sont à jour'?`<p class="sync-detail">${esc(syncMessage)}</p>`:''}</div><button class="sync-button" data-action="sync" ${syncing||!storageOK?'disabled':''}>${icon('sync',17)} ${syncing?'En cours…':'Synchroniser'}</button></section>${updateReady?'<div class="update-banner">Mise à jour prête. <button data-action="reload">Actualiser</button></div>':''}`;}
 function home() {
+  archiveOpen = document.querySelector('#archives')?.open ?? archiveOpen;
   if(selectedCourse)return courseDetail();
-  const all=metas(), total=[...records.keys()].reduce((n,id)=>n+counts(id).all,0);
-  app.innerHTML=`<div class="layout"><aside class="sidebar"><a class="brand" href="./" aria-label="Study Hub, accueil"><span class="brand-mark">${icon('book',23)}</span>study<span class="brand-light">hub</span><span class="brand-dot">.</span></a><div class="sidebar-caption">PHYSIOLOGIE · GBM3000</div><button class="side-active" data-action="library">${icon('grid')} Bibliothèque <span>${all.length}</span></button><div class="sidebar-bottom"><div class="offline-icon">${icon('download')}</div><b>${records.size} cours téléchargés</b><p>${total} questions</p></div></aside><main class="main"><header class="topbar"><span>STUDY HUB <span class="slash">/</span> Physiologie</span><button class="text-button" data-action="help">Installer sur iPhone ${icon('arrow',15)}</button></header><div class="library-scroll"><section class="intro"><h1>Mes <span>cours.</span></h1></section><section class="library"><div class="section-heading"><span class="library-caption">PHYSIOLOGIE · ${all.length} COURS</span><label class="search">${icon('search',17)}<input id="search" type="search" value="${esc(search)}" placeholder="Rechercher" aria-label="Rechercher un cours"></label></div><div id="courseList" class="course-list"></div></section>${syncPanel()}<footer class="footer"><button data-action="export">Sauvegarder ma progression</button><span>v${VERSION}</span></footer></div></main></div>`;
-  renderList();document.querySelector('#search').addEventListener('input',e=>{search=e.target.value;renderList();});
+  const all = metas();
+  const active = all.filter(m => !archivedCourses.has(m.id));
+  const archived = all.filter(m => archivedCourses.has(m.id));
+  const downloaded = active.filter(m => records.has(m.id));
+  const total = downloaded.reduce((n,m) => n + counts(m.id).all, 0);
+  app.innerHTML=`<div class="layout"><aside class="sidebar"><a class="brand" href="./" aria-label="Study Hub, accueil"><span class="brand-mark">${icon('book',23)}</span>study<span class="brand-light">hub</span><span class="brand-dot">.</span></a><div class="sidebar-caption">PHYSIOLOGIE · GBM3000</div><button class="side-active" data-action="library">${icon('grid')} Bibliothèque <span>${active.length}</span></button><div class="sidebar-bottom"><div class="offline-icon">${icon('download')}</div><b>${downloaded.length} cours téléchargés</b><p>${total} questions</p></div></aside><main class="main"><header class="topbar"><span>STUDY HUB <span class="slash">/</span> Physiologie</span><button class="text-button" data-action="help">Installer sur iPhone ${icon('arrow',15)}</button></header><div class="library-scroll"><section class="intro"><h1>Mes <span>cours.</span></h1></section><section class="library"><div class="section-heading"><span class="library-caption">PHYSIOLOGIE · ${active.length} COURS</span><label class="search">${icon('search',17)}<input id="search" type="search" value="${esc(search)}" placeholder="Rechercher" aria-label="Rechercher dans les cours actifs"></label></div><div id="courseList" class="course-list"></div></section>${syncPanel()}${archived.length?`<details id="archives" class="archives" ${archiveOpen?'open':''}><summary>Archives <span>· ${archived.length} cours</span></summary><div class="course-list">${archived.map(courseTile).join('')}</div></details>`:''}<footer class="footer"><button data-action="export">Sauvegarder ma progression</button><span>v${VERSION}</span></footer></div></main></div>`;
+  renderList(active);document.querySelector('#search').addEventListener('input',e=>{search=e.target.value;renderList(active);});
 }
-function renderList() {
+function renderList(active) {
   const q=search.toLocaleLowerCase('fr');
-  const list=metas().filter(m=>`${m.title} ${m.subtitle}`.toLocaleLowerCase('fr').includes(q));
+  const list=active.filter(m=>`${m.title} ${m.subtitle}`.toLocaleLowerCase('fr').includes(q));
   document.querySelector('#courseList').innerHTML=list.map(courseTile).join('')||'<div class="empty">Aucun cours trouvé.</div>';
 }
 function courseDetail() {
@@ -282,7 +292,7 @@ async function setupSW() {
   }catch(e){syncMessage='Installation hors ligne incomplète. Reconnecte-toi et actualise.';refreshHome();console.warn(e);}
 }
 async function checkShell() {
-  const cache=await caches.open('studyhub-shell-v10');
+  const cache=await caches.open('studyhub-shell-v11');
   shellReady=!!(navigator.serviceWorker.controller && await cache.match(new URL('index.html',base).href)); refreshHome();
 }
 async function boot() {

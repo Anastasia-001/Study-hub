@@ -17,3 +17,12 @@
 
 .question-content ol{list-style:none;padding-left:0;text-align:left}.quiz .question img{max-height:340px;object-fit:contain}.zoom-figure{display:block}
 .question img,.explanation img{cursor:zoom-in}#figureViewer{width:min(1100px,94vw);max-width:94vw;max-height:90dvh;padding:16px;border:1px solid var(--line);border-radius:12px}#figureViewer .dialog-header{margin-bottom:12px}#figureViewer .figure-scroll{overflow:auto;max-height:calc(90dvh - 100px);overscroll-behavior:contain}#figureViewer img{display:block;width:max(100%,850px);max-width:none;height:auto}
+
+.archives{margin-top:14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.archives summary{min-height:44px;padding:12px 3px;font-size:14px;font-weight:600;cursor:pointer}
+.archives summary span{color:var(--muted);font-size:12px;font-weight:400}
+.archives summary:focus-visible{outline:3px solid #b92c3080;outline-offset:3px}
+.archives .course-list{margin:3px 0 14px}
+.quiz .question-content table{width:100%;border-collapse:collapse;margin-top:14px;font-size:clamp(11px,3.3vw,14px);letter-spacing:normal}
+.quiz .question-content th,.quiz .question-content td{border:1px solid var(--line);padding:6px;overflow-wrap:anywhere}
+.quiz .question-content th{background:#f2f2f0;font-weight:650}

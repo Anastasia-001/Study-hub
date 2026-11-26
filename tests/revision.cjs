@@ -16,12 +16,20 @@ const server=http.createServer((req,res)=>{
 });
 const ready=async p=>{await p.waitForFunction(()=>document.querySelector('#accessCode')||document.body.textContent.includes('Prêt pour le hors ligne')||document.body.textContent.includes('Mode hors ligne'));if(await p.locator('#accessCode').count()){await p.locator('#accessCode').fill('ABCD');await p.locator('#activate button').click();}await p.waitForFunction(n=>document.querySelectorAll('.course-tile').length===n&&document.body.textContent.includes('Prêt pour le hors ligne'),catalog.courses.length);await p.locator('.sync-button:not([disabled])').waitFor();};
 const home=async p=>{if(await p.locator('[data-action=home]').count())await p.locator('[data-action=home]').click();if(await p.locator('[data-action=library]').count())await p.locator('[data-action=library]').first().click();};
-const detail=async(p,id)=>{await home(p);await p.locator(`[data-course="${id}"]`).click();};
+const detail=async(p,id)=>{await home(p);const card=p.locator(`[data-course="${id}"]`);if(!await card.isVisible())await p.locator('#archives:not([open]) > summary').click();await card.click();};
 const position=async(p,id,card)=>{await p.evaluate(async({id,card})=>StudyStorage.put('progress',{...await StudyStorage.get('progress','positions'),[id+':all']:card},'positions'),{id,card});await p.reload();await ready(p);};
 (async()=>{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await chromium.launch({channel:'chrome',headless:true});
  try{
   const ctx=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),p=await ctx.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(`http://127.0.0.1:${server.address().port}/Study-hub/`);await ready(p);
+  assert.equal(await p.locator('#courseList .course-tile').count(),7);
+  assert.equal(await p.locator('#archives .course-tile').count(),6);
+  assert.equal(await p.locator('#archives .course-tile:visible').count(),0);
+  await p.locator('#archives > summary').click();
+  assert.equal(await p.locator('#archives .course-tile:visible').count(),6);
+  await p.locator('[data-action=sync]').click();await ready(p);
+  assert.equal(await p.locator('#archives[open]').count(),1);
+  console.log('PASS Six archived courses hidden on open, accessible in Archives and retained through sync');
   for(const c of courses){await detail(p,c.id);assert.equal(await p.locator('.detail-modes button').count(),[2,4].includes(c.number)?4:3);assert.equal(await p.locator('[data-mode=exam]').count(),[2,4].includes(c.number)?1:0);assert.equal(await p.locator('[data-topic],.topics,.topic-heading').count(),0);assert.match(await p.locator('[data-mode=all]').innerText(),/Questions/);assert.equal(await p.locator('[data-mode=qcm] small').innerText(),String(c.cards.filter(q=>q.prof_question||q.qcm).length));}
   console.log('PASS Requested categories in every course; stars only in cardio; no themes');
   const c=courses[0],prof=c.cards.find(q=>q.prof_question);
@@ -42,13 +50,20 @@ const position=async(p,id,card)=>{await p.evaluate(async({id,card})=>StudyStorag
   await p.locator('[data-action=mark]').click();await home(p);await detail(p,digestif.id);
   assert.equal(await p.locator('[data-mode=due] small').innerText(),'1');
   const additions=courses.filter(c=>c.number>=7);
+  const previousCounts=[110,51,54,50,65,51,49];let checked=0;
   for(const course of additions){
-   await position(p,course.id,course.cards[0].id);await detail(p,course.id);await p.locator('[data-mode=all]').click();
-   for(let i=0;i<course.cards.length;i++){const q=course.cards[i];assert.equal(await p.locator('.choice').count(),q.choices.length);await p.locator(`[data-choice="${q.correct[0]}"]`).click();assert.equal(await p.locator('.result-label').innerText(),'Bonne réponse',q.id);assert((await p.locator('.explanation').innerText()).length>30);if(i<course.cards.length-1)await p.locator('[data-action=next]').click();}
+   const first=previousCounts[course.number-7];
+   await position(p,course.id,course.cards[first].id);await detail(p,course.id);await p.locator('[data-mode=all]').click();
+   for(let i=first;i<course.cards.length;i++){const q=course.cards[i];assert.equal(await p.locator('.choice').count(),q.choices.length);assert(await p.locator('.question-content').innerText());if(q.question_html.includes('<table>'))assert(await p.locator('.question-content table').isVisible());await p.locator(`[data-choice="${q.correct[0]}"]`).click();assert.equal(await p.locator('.result-label').innerText(),'Bonne réponse',q.id);assert((await p.locator('.explanation').innerText()).length>30);if(q.answer_html.includes('<img'))await p.waitForFunction(()=>document.querySelector('.answer img')?.naturalWidth>0);if(i<course.cards.length-1)await p.locator('[data-action=next]').click();checked++;}
    console.log('PASS All choices, feedback, explanations and navigation for',course.title);
   }
   const last=additions.at(-1);
-  await ctx.setOffline(true);await p.reload();await p.waitForFunction(n=>document.querySelectorAll('.course-tile').length===n,courses.length);await p.locator(`[data-course="${last.id}"]`).click();await p.locator('[data-mode=all]').click();await p.waitForFunction(()=>document.querySelector('.question img')?.naturalWidth>0);await p.locator('[data-choice="0"]').click();await p.waitForFunction(()=>document.querySelector('.answer img')?.naturalWidth>0);await p.screenshot({path:path.join(out,'offline-correction.png')});console.log('PASS New course, saved position and original PDF figures available after offline reload');
+  assert.equal(checked,232);
+  await position(p,last.id,last.cards.find(q=>q.question_html.includes('<table>')).id);
+  await ctx.setOffline(true);await p.reload();await p.waitForFunction(n=>document.querySelectorAll('.course-tile').length===n,courses.length);
+  assert.equal(await p.locator('#courseList .course-tile').count(),7);assert.equal(await p.locator('#archives .course-tile:visible').count(),0);
+  await p.locator(`[data-course="${last.id}"]`).click();await p.locator('[data-mode=all]').click();await p.locator('.question-content table').waitFor();
+  await p.screenshot({path:path.join(out,'offline-table.png')});await p.locator('[data-action=next]').click();await p.locator('[data-choice="0"]').click();await p.waitForFunction(()=>document.querySelector('.answer img')?.naturalWidth>0);await p.screenshot({path:path.join(out,'offline-correction.png')});console.log('PASS Offline archives, saved position in an expanded course, data table and PDF correction');
   assert.deepEqual(errors,[]);await ctx.close();
  }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});

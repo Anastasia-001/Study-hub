@@ -1,6 +1,6 @@
 # Contenu de physiologie
 
-992 questions à choix de réponse, réparties en treize cours. Les cours 8 à 13 ajoutent 320 entraînements, dont 62 questions à combinaisons, 31 vrai/faux et 12 identifications. Chaque question a cinq choix, sauf les vrai/faux à deux choix. Les références indiquent les pages des PDF fournis.
+1 224 questions à choix de réponse dans treize cours. La bibliothèque affiche les 662 questions des cours 7 à 13, dont 232 nouveaux entraînements. Les 562 questions des cours 1 à 6 restent accessibles dans **Archives**. Chaque question a cinq choix, sauf les vrai/faux à deux choix. Les références indiquent les pages des PDF fournis.
 
 | Cours | Questions | Sources fournies |
 | --- | ---: | --- |
@@ -10,13 +10,13 @@
 | 4 · Cœur mécanique et circulation | 72 | Cardiovasculaire 3 (83 pages) |
 | 5 · Système respiratoire | 102 | Cours (101 pages), objectifs spécifiques (2 pages) |
 | 6 · Muscles et contrôle moteur | 76 | Cours (30 pages, deux diapositives par page) |
-| 7 · Homéostasie, hormones et métabolisme | 110 | Notes du 21 octobre 2026 (27 pages, deux diapositives par page) |
-| 8 · Physiologie sensorielle | 51 | Parties 1, 2 et 3 (60, 65 et 42 pages) |
-| 9 · Système auditif | 54 | Cours (122 pages), objectifs spécifiques (2 pages) |
-| 10 · Système visuel | 50 | Cours (80 pages) |
-| 11 · Système digestif | 65 | Cours (119 pages), objectifs spécifiques (2 pages) |
-| 12 · Système immunitaire | 51 | Cours (141 pages) |
-| 13 · Système rénal | 49 | Cours (76 pages) |
+| 7 · Homéostasie, hormones et métabolisme | 145 | Notes du 21 octobre 2026 (27 pages, deux diapositives par page) |
+| 8 · Physiologie sensorielle | 85 | Parties 1, 2 et 3 (60, 65 et 42 pages) |
+| 9 · Système auditif | 86 | Cours (122 pages), objectifs spécifiques (2 pages) |
+| 10 · Système visuel | 83 | Cours (80 pages) |
+| 11 · Système digestif | 98 | Cours (119 pages), objectifs spécifiques (2 pages) |
+| 12 · Système immunitaire | 84 | Cours (141 pages) |
+| 13 · Système rénal | 81 | Cours (76 pages) |
 
 Les références dans les questions donnent les **pages du fichier PDF**, qui ne correspondent pas toujours aux numéros imprimés des diapositives. Les métadonnées `references` et `documents` permettent de vérifier les bornes des références.
 
@@ -27,7 +27,7 @@ Les références dans les questions donnent les **pages du fichier PDF**, qui ne
 - Cours 6 : l’instrumentation est explicitement hors examen à la page 30. Ses deux questions sont exclusivement en complément. Cinq questions d’identification utilisent deux schémas originaux simplifiés.
 - 32 questions sont adaptées de questions ou FAQ des professeurs. Six proviennent des questions de discussion sur la digestion. La catégorie « Questions du prof » est active quand le cours fournit des questions réutilisables.
 
-133 entraînements combinent des affirmations A/B/C et cinq combinaisons de réponse possibles. Les réponses de ces questions sont numérotées pour préserver le sens des lettres lors du mélange. Deux exercices demandent plusieurs sélections explicites.
+178 entraînements combinent des affirmations A/B/C et cinq combinaisons possibles. Les choix sont numérotés pour les distinguer des lettres des affirmations. Deux exercices demandent plusieurs sélections explicites.
 
 34 questions utilisent un schéma. Les exercices d’identification masquent les légendes révélatrices et une flèche rouge indique la cible. Les corrections montrent le schéma légendé. Plusieurs explications utilisent également ces schémas, agrandissables au toucher.
 

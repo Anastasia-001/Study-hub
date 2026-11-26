@@ -20,5 +20,5 @@ for(const m of catalog.courses){
  }
  total+=c.cards.length;
 }
-assert.equal(total,992);assert.equal(prof,32);assert(multi>=2);assert(images>=34);
+assert.equal(total,1224);assert.equal(prof,32);assert(multi>=2);assert(images>=34);
 console.log(`PASS Content: ${total} questions, ${prof} professor questions, ${multi} multiple-answer questions, ${images} diagram questions; references and short choices checked`);

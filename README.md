@@ -20,9 +20,11 @@ Le service conserve les codes sous forme d’empreintes et protège les paquets 
 
 Ne pas effacer les données du site : cela supprime cours et progression. L’app demande un stockage persistant lors des interactions d’installation/synchronisation, mais iOS garde le contrôle du stockage. Une sauvegarde de progression est exportable depuis le bas de la bibliothèque et restaurable depuis « Installer sur iPhone ». La progression est locale à chaque appareil, sans synchronisation cloud.
 
-## Treize cours et quiz
+## Cours, archives et quiz
 
-La bibliothèque contient 992 questions réparties en treize cours. Chaque question propose cinq choix, sauf les vrai/faux qui en proposent deux. Une explication apparaît après le choix ou après « Valider » pour les réponses multiples. 133 questions présentent des affirmations A/B/C et cinq combinaisons possibles. Les choix sont numérotés pour distinguer les réponses des affirmations. La bibliothèque compte 32 questions adaptées de celles des professeurs et 34 questions sur schéma. Les schémas se touchent pour les agrandir. Voir [les notes de contenu](COURSE_NOTES.md).
+La bibliothèque affiche les cours 7 à 13 et leurs 662 questions. Le volet **Archives**, replié par défaut, donne accès aux cours 1 à 6 et à leurs 562 questions. La progression est conservée dans les deux vues.
+
+Chaque question propose cinq choix, sauf les vrai/faux qui en proposent deux. Une explication apparaît après le choix ou après « Valider » pour les réponses multiples. 178 questions présentent des affirmations A/B/C et cinq combinaisons possibles. Les choix sont numérotés pour distinguer les réponses des affirmations. Les schémas se touchent pour les agrandir. Voir [les notes de contenu](COURSE_NOTES.md).
 
 ## Révisions
 
@@ -35,7 +37,7 @@ Après réponse : À revoir = 10 minutes, Difficile = 1 jour, Compris = 3 jours 
 
 ## Architecture et garanties
 
-Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v10`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
+Application statique, sans étape de compilation ni dépendance d’exécution. `index.html`, `styles.css`, `app.js`, manifeste et icônes constituent l’application, précachée par `sw.js` dans `studyhub-shell-v11`. Le contrôle d’activation est dans `access.js`. Le stockage est inclus dans le script principal, qui sait aussi démarrer depuis l’ancien HTML pendant la transition de service worker.
 
 IndexedDB `studyhub` conserve :
 
