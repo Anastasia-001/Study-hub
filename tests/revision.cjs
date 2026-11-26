@@ -35,11 +35,20 @@ const position=async(p,id,card)=>{await p.evaluate(async({id,card})=>StudyStorag
    const combo=c.cards.find(q=>q.format==='combination');await position(p,c.id,combo.id);await detail(p,c.id);await p.locator('[data-mode=all]').click();assert.equal(await p.locator('.choice').count(),5);assert.deepEqual(await p.locator('.choice-letter').allTextContents(),['1','2','3','4','5']);await p.locator(`[data-choice="${combo.correct[0]}"]`).click();assert.equal(await p.locator('.result-label').innerText(),'Bonne réponse');
    for(const q of c.cards.filter(q=>q.format==='identification')){await position(p,c.id,q.id);await detail(p,c.id);await p.locator('[data-mode=all]').click();await p.waitForFunction(()=>document.querySelector('.question img')?.naturalWidth>0);await p.locator('.question img').click();assert(await p.locator('#figureViewer').isVisible());await p.locator('#figureViewer button').click();await p.locator(`[data-choice="${q.correct[0]}"]`).click();await p.waitForFunction(()=>document.querySelector('.answer img')?.naturalWidth>0);assert(await p.locator('.answer').isVisible());if(q.id===c.cards.at(-1).id){await p.screenshot({path:path.join(out,`c${c.number}-image-correction.png`)});}}
   }
-  console.log('PASS All seven courses: combination labels survive shuffle; all PDF identifications and labelled corrections load and enlarge');
-  const added=courses.find(c=>c.id==='gbm3000-homeostasie-hormones');await position(p,added.id,added.cards[0].id);await detail(p,added.id);await p.locator('[data-mode=all]').click();
-  for(let i=0;i<added.cards.length;i++){const q=added.cards[i];assert.equal(await p.locator('.choice').count(),q.choices.length);await p.locator(`[data-choice="${q.correct[0]}"]`).click();assert.equal(await p.locator('.result-label').innerText(),'Bonne réponse',q.id);assert((await p.locator('.explanation').innerText()).length>30);if(i<added.cards.length-1)await p.locator('[data-action=next]').click();}
-  console.log('PASS Every one of the 110 new questions: choices, correct feedback, explanation and navigation');
-  await ctx.setOffline(true);await p.reload();await p.waitForFunction(()=>document.querySelectorAll('.course-tile').length===7);await p.locator(`[data-course="${added.id}"]`).click();await p.locator('[data-mode=all]').click();await p.waitForFunction(()=>document.querySelector('.question img')?.naturalWidth>0);await p.locator('[data-choice="0"]').click();await p.waitForFunction(()=>document.querySelector('.answer img')?.naturalWidth>0);await p.screenshot({path:path.join(out,'c7-offline-correction.png')});console.log('PASS New course, saved position and original PDF figures available after offline reload');
+  console.log('PASS All courses: combination labels survive shuffle; all PDF identifications and labelled corrections load and enlarge');
+  const digestif=courses.find(c=>c.number===11);
+  await detail(p,digestif.id);await p.locator('[data-mode=qcm]').click();
+  assert.equal(await p.locator('.question-content').innerText(),digestif.cards.find(q=>q.prof_question).question_html);
+  await p.locator('[data-action=mark]').click();await home(p);await detail(p,digestif.id);
+  assert.equal(await p.locator('[data-mode=due] small').innerText(),'1');
+  const additions=courses.filter(c=>c.number>=7);
+  for(const course of additions){
+   await position(p,course.id,course.cards[0].id);await detail(p,course.id);await p.locator('[data-mode=all]').click();
+   for(let i=0;i<course.cards.length;i++){const q=course.cards[i];assert.equal(await p.locator('.choice').count(),q.choices.length);await p.locator(`[data-choice="${q.correct[0]}"]`).click();assert.equal(await p.locator('.result-label').innerText(),'Bonne réponse',q.id);assert((await p.locator('.explanation').innerText()).length>30);if(i<course.cards.length-1)await p.locator('[data-action=next]').click();}
+   console.log('PASS All choices, feedback, explanations and navigation for',course.title);
+  }
+  const last=additions.at(-1);
+  await ctx.setOffline(true);await p.reload();await p.waitForFunction(n=>document.querySelectorAll('.course-tile').length===n,courses.length);await p.locator(`[data-course="${last.id}"]`).click();await p.locator('[data-mode=all]').click();await p.waitForFunction(()=>document.querySelector('.question img')?.naturalWidth>0);await p.locator('[data-choice="0"]').click();await p.waitForFunction(()=>document.querySelector('.answer img')?.naturalWidth>0);await p.screenshot({path:path.join(out,'offline-correction.png')});console.log('PASS New course, saved position and original PDF figures available after offline reload');
   assert.deepEqual(errors,[]);await ctx.close();
  }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});

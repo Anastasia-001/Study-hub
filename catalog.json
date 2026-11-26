@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "catalog_version": 8,
-  "updated_at": "2026-11-01",
+  "catalog_version": 9,
+  "updated_at": "2026-11-25",
   "courses": [
     {
       "id": "gbm3000-cellulaire",
@@ -86,6 +86,78 @@
       "exam_count": 0,
       "qcm_count": 0,
       "note": "Instrumentation exclue selon la consigne du document. Questions d’entraînement rédigées à partir des notes."
+    },
+    {
+      "id": "gbm3000-sensorielle",
+      "version": 1,
+      "title": "Cours 8 · Physiologie sensorielle",
+      "subtitle": "Toucher, douleur, perception et mesures",
+      "url": "https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/gbm3000-sensorielle",
+      "sha256": "5394d71b2c2ab4fd6243fef9166d84356159e2bd2cd36bae8b648411eda49025",
+      "card_count": 51,
+      "exam_count": 0,
+      "qcm_count": 0,
+      "note": ""
+    },
+    {
+      "id": "gbm3000-auditif",
+      "version": 1,
+      "title": "Cours 9 · Système auditif",
+      "subtitle": "Acoustique, cochlée, codage et implants",
+      "url": "https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/gbm3000-auditif",
+      "sha256": "bdf067f51bd75269ecce076b68e985865a0ea74d0116c1234f97b33a8fd55d1d",
+      "card_count": 54,
+      "exam_count": 0,
+      "qcm_count": 0,
+      "note": ""
+    },
+    {
+      "id": "gbm3000-visuel",
+      "version": 1,
+      "title": "Cours 10 · Système visuel",
+      "subtitle": "Optique, rétine, couleurs et voies visuelles",
+      "url": "https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/gbm3000-visuel",
+      "sha256": "d912c5e739235c23eb49d1aefcb5c94f862e0e071eb743ea8ef0087fae1c7760",
+      "card_count": 50,
+      "exam_count": 0,
+      "qcm_count": 0,
+      "note": ""
+    },
+    {
+      "id": "gbm3000-digestif",
+      "version": 1,
+      "title": "Cours 11 · Système digestif",
+      "subtitle": "Motilité, sécrétions, digestion et absorption",
+      "url": "https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/gbm3000-digestif",
+      "sha256": "1b99ce7408d97a068259d8342aa827226450fe445c47ab354bce2daf654f00ed",
+      "card_count": 65,
+      "exam_count": 0,
+      "qcm_count": 6,
+      "note": "Inclut les questions de discussion du prof adaptées en QCM."
+    },
+    {
+      "id": "gbm3000-immunitaire",
+      "version": 1,
+      "title": "Cours 12 · Système immunitaire",
+      "subtitle": "Barrières, immunité innée et adaptative",
+      "url": "https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/gbm3000-immunitaire",
+      "sha256": "efc9abbe7668c35a78787266032c0ef83b5275ce10d1242228e10a727f7189a3",
+      "card_count": 51,
+      "exam_count": 0,
+      "qcm_count": 0,
+      "note": "Avancées en immunologie exclues selon le programme d’examen du cours."
+    },
+    {
+      "id": "gbm3000-renal",
+      "version": 1,
+      "title": "Cours 13 · Système rénal",
+      "subtitle": "Filtration, transports et équilibre hydrique",
+      "url": "https://study-hub-activation.zoutommy12.chatgpt.site/api/courses/gbm3000-renal",
+      "sha256": "e3789568b084507478a1f592139fe4c041ebea809eeb9528aa541d58992a0519",
+      "card_count": 49,
+      "exam_count": 0,
+      "qcm_count": 0,
+      "note": ""
     }
   ]
 }

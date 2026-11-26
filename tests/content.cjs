@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),assert=require('assert/strict');
 const root=path.resolve(__dirname,'..'),catalog=JSON.parse(fs.readFileSync(path.join(root,'catalog.json')));
-assert.equal(catalog.courses.length,7);
+assert.equal(catalog.courses.length,13);
 let total=0,prof=0,multi=0,images=0;
 for(const m of catalog.courses){
  const c=JSON.parse(fs.readFileSync(require('../scripts/course-source.cjs')(m.id))),docs=new Map(c.documents.map(d=>[d.id,d]));
@@ -20,5 +20,5 @@ for(const m of catalog.courses){
  }
  total+=c.cards.length;
 }
-assert(total>=350);assert(prof>=20);assert(multi>=2);assert(images>=5);
+assert.equal(total,992);assert.equal(prof,32);assert(multi>=2);assert(images>=34);
 console.log(`PASS Content: ${total} questions, ${prof} professor questions, ${multi} multiple-answer questions, ${images} diagram questions; references and short choices checked`);

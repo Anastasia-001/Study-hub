@@ -20,9 +20,9 @@ Le service conserve les codes sous forme d’empreintes et protège les paquets 
 
 Ne pas effacer les données du site : cela supprime cours et progression. L’app demande un stockage persistant lors des interactions d’installation/synchronisation, mais iOS garde le contrôle du stockage. Une sauvegarde de progression est exportable depuis le bas de la bibliothèque et restaurable depuis « Installer sur iPhone ». La progression est locale à chaque appareil, sans synchronisation cloud.
 
-## Sept cours et quiz
+## Treize cours et quiz
 
-La bibliothèque contient 672 questions dans sept cours compacts, sans filtre de thèmes. Chaque question propose cinq choix, sauf les vrai/faux qui en proposent deux. Les réponses restent courtes ; une explication apparaît après le choix (ou après « Valider » pour les réponses multiples). Soixante et onze questions présentent des affirmations A/B/C et cinq combinaisons possibles, numérotées pour éviter de confondre lettres des affirmations et lettres des réponses. Les 26 questions du professeur sont adaptées et distinguées des entraînements. Les schémas se touchent pour les agrandir. Le nouveau cours Homéostasie, hormones et métabolisme ajoute 110 entraînements, dont dix vrai/faux et cinq identifications tirées des notes. Voir [les notes de contenu](COURSE_NOTES.md).
+La bibliothèque contient 992 questions réparties en treize cours. Chaque question propose cinq choix, sauf les vrai/faux qui en proposent deux. Une explication apparaît après le choix ou après « Valider » pour les réponses multiples. 133 questions présentent des affirmations A/B/C et cinq combinaisons possibles. Les choix sont numérotés pour distinguer les réponses des affirmations. La bibliothèque compte 32 questions adaptées de celles des professeurs et 34 questions sur schéma. Les schémas se touchent pour les agrandir. Voir [les notes de contenu](COURSE_NOTES.md).
 
 ## Révisions
 
